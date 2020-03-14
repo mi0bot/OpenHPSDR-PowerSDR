@@ -99,8 +99,8 @@ namespace PowerSDR
 		} 
 
 
-		private bool AlexEnableIsStateSaved = false; 
-		private bool AlexEnableSavedState; 
+//		private bool AlexEnableIsStateSaved = false; 
+//		private bool AlexEnableSavedState; 
 
 		
 		public static Band AntBandFromFreq() 

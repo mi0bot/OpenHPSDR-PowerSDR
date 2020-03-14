@@ -43,7 +43,7 @@ namespace PowerSDR
     public class DiversityForm : System.Windows.Forms.Form
     {
         private Point p = new Point(200, 200);
-        private Point last_p;
+//        private Point last_p;
         private Point last_Phase1 = new Point(100, 250);
         private Point last_Phase2 = new Point(100, 100);
         private double angle;
@@ -928,7 +928,7 @@ namespace PowerSDR
 
         private void picRadar_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            int i;
+//            int i;
             Graphics g = e.Graphics;
             int size = Math.Min(picRadar.Width, picRadar.Height);
             Pen pen = new Pen(lineColor);

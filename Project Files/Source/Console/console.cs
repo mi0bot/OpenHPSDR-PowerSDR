@@ -9417,8 +9417,8 @@ namespace PowerSDR
 
                 if (name.Contains("by_radio"))
                 {
-                    int iii=1;
-                    iii = 3;
+//                    int iii=1;
+//                    iii = 3;
                 }
 
                 if (name.StartsWith("rx1_filters["))
@@ -22971,7 +22971,7 @@ namespace PowerSDR
                 //Debug.WriteLine("dds_freq: "+dds_freq.ToString("f6"));
 
                 double vfoFreq = value, f = value;
-                double dsp_osc_freq = 0.0;
+//                double dsp_osc_freq = 0.0;
 
                 //calculate DDS Tuning Word
                 if (xvtr_present && f >= 144 && f <= 146)		// If transverter enabled compute 28MHz IF frequency
@@ -24826,7 +24826,7 @@ namespace PowerSDR
         public string CATReadFwdPwr()
         {
             double power = 0.0;
-            float num = 0f;
+//            float num = 0f;
 
             if (alexpresent)
             {
@@ -33411,7 +33411,7 @@ namespace PowerSDR
                         HandleXml(tmp);
                     }
                 }
-                catch (SocketException e) // handle blocking exception
+                catch (SocketException) // handle blocking exception
                 {
                     Thread.Sleep(500);
                     continue;

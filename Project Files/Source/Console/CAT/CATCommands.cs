@@ -3936,7 +3936,7 @@ namespace PowerSDR
             if (s.Length == parser.nSet)
             {
                 string msg = "";
-                char ch;
+//                char ch;
                 int code;
                 int cntr;
 
@@ -6065,9 +6065,9 @@ namespace PowerSDR
                 float volts = 0.0f;
                 double temp2 = 0.0f;
 
-                int chan = 4;
+//                int chan = 4;
                 if (console.CurrentModel == Model.FLEX3000)
-                    chan = 3;
+//                    chan = 3;
 
                 //FWC.ReadPAADC(chan, out val);
                 volts = (float)val / 4096 * 2.5f;

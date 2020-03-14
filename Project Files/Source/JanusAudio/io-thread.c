@@ -824,7 +824,7 @@ void IOThreadMainLoop(void) {
 	double R_Q = 0;				//Q component of phase-shift rotate vector R
 	double R_IA = 0;
 	double R_QA = 0;
-	int r_Merc;					//Mercury board to use as reference stream
+//	int r_Merc;					//Mercury board to use as reference stream
 	double I_shift = 0;			//for vector phase shift calc
 	double Q_shift = 0;			//for vector phase shift calc
 	int Merc1_I = 0;			//I input from first Merc board

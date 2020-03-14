@@ -44,10 +44,10 @@ int Write_RAM(struct usb_dev_handle *hdev, int start_addr, char *buffer, size_t 
     int bytes_written = 0;
     int addr;
     int nsize;
-    char *pbuffer;
+//    char *pbuffer;
     int count;
     
-    for (addr = start_addr; addr < start_addr + length; addr += pkt_size)
+    for (addr = start_addr; addr < start_addr + (int) length; addr += pkt_size)
     {
         nsize = length + start_addr - addr;
         if (nsize > pkt_size) nsize = pkt_size;

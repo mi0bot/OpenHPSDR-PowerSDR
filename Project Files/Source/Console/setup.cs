@@ -15924,7 +15924,7 @@ namespace PowerSDR
             console.ZeroBeatRIT = chkZeroBeatRIT.Checked;
         }
 
-        private FWCAnt old_ant = FWCAnt.ANT1;
+//        private FWCAnt old_ant = FWCAnt.ANT1;
         private void ckEnableSigGen_CheckedChanged(object sender, System.EventArgs e)
         {
 
@@ -20974,7 +20974,7 @@ namespace PowerSDR
 
         int numnotches = 0;
         bool AddActive = false;
-        bool RunNotches = false;
+//        bool RunNotches = false;
         bool EditActive = false;
 
         // 'OFF/ON' button for Multi Notch Filter

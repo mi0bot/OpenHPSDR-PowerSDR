@@ -10662,7 +10662,7 @@ namespace PowerSDR
                     else g.DrawLines(data_line_pen, points);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // Trace.WriteLine(ex);
             }
@@ -10907,7 +10907,7 @@ namespace PowerSDR
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
 

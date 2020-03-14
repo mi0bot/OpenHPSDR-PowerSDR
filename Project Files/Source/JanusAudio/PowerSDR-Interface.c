@@ -1685,7 +1685,7 @@ KD5TFDVK6APHAUDIO_API void SetProLpacks(int lpacks)
 
 KD5TFDVK6APHAUDIO_API int GetOoopCounter()
 {
-	if (prop == NULL) return;
+	if (prop == NULL) return 0;
 	EnterCriticalSection(&prop->cspro);
 	int n = prop->ooopCounter;
 	LeaveCriticalSection(&prop->cspro);
