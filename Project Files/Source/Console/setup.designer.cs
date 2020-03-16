@@ -254,6 +254,7 @@
             this.comboFRSRegion = new System.Windows.Forms.ComboBoxTS();
             this.chkGeneralUseSi570 = new System.Windows.Forms.CheckBoxTS();
             this.grpGeneralModel = new System.Windows.Forms.GroupBoxTS();
+            this.radGenModelHermesLite = new System.Windows.Forms.RadioButtonTS();
             this.radGenModelANAN7000D = new System.Windows.Forms.RadioButtonTS();
             this.radGenModelANAN8000D = new System.Windows.Forms.RadioButtonTS();
             this.radGenModelANAN10E = new System.Windows.Forms.RadioButtonTS();
@@ -7239,6 +7240,7 @@
             // 
             // grpGeneralModel
             // 
+            this.grpGeneralModel.Controls.Add(this.radGenModelHermesLite);
             this.grpGeneralModel.Controls.Add(this.radGenModelANAN7000D);
             this.grpGeneralModel.Controls.Add(this.radGenModelANAN8000D);
             this.grpGeneralModel.Controls.Add(this.radGenModelANAN10E);
@@ -7259,6 +7261,17 @@
             this.grpGeneralModel.TabIndex = 25;
             this.grpGeneralModel.TabStop = false;
             this.grpGeneralModel.Text = "Radio Model";
+            // 
+            // radGenModelHermesLite
+            // 
+            this.radGenModelHermesLite.Image = null;
+            this.radGenModelHermesLite.Location = new System.Drawing.Point(90, 44);
+            this.radGenModelHermesLite.Name = "radGenModelHermesLite";
+            this.radGenModelHermesLite.Size = new System.Drawing.Size(50, 24);
+            this.radGenModelHermesLite.TabIndex = 15;
+            this.radGenModelHermesLite.Text = "LITE";
+            this.radGenModelHermesLite.UseVisualStyleBackColor = true;
+            this.radGenModelHermesLite.CheckedChanged += new System.EventHandler(this.radGenModelHermesLite_CheckedChanged);
             // 
             // radGenModelANAN7000D
             // 
@@ -7923,7 +7936,7 @@
             this.grpHermesStepAttenuator.Size = new System.Drawing.Size(144, 56);
             this.grpHermesStepAttenuator.TabIndex = 30;
             this.grpHermesStepAttenuator.TabStop = false;
-            this.grpHermesStepAttenuator.Text = "Hermes Step Attenuator";
+            this.grpHermesStepAttenuator.Text = "Hermes Attenuator";
             // 
             // udHermesStepAttenuatorData
             // 
@@ -14615,7 +14628,7 @@
             this.chkMercDither.Image = null;
             this.chkMercDither.Location = new System.Drawing.Point(8, 24);
             this.chkMercDither.Name = "chkMercDither";
-            this.chkMercDither.Size = new System.Drawing.Size(104, 16);
+            this.chkMercDither.Size = new System.Drawing.Size(125, 16);
             this.chkMercDither.TabIndex = 0;
             this.chkMercDither.Text = "Dither Enabled";
             this.chkMercDither.UseVisualStyleBackColor = true;
@@ -52897,6 +52910,7 @@
         private System.Windows.Forms.RadioButtonTS radPROLatency0;
         private System.Windows.Forms.CheckBoxTS chkBPF1HFLNAControl;
         private System.Windows.Forms.CheckBoxTS chkBPF2HFLNAControl;
+        private System.Windows.Forms.RadioButtonTS radGenModelHermesLite;
 
     }
 }

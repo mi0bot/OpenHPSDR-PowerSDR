@@ -135,6 +135,7 @@ namespace PowerSDR
         private RadioButtonTS radGenModelANAN10E;
         private RadioButtonTS radGenModelANAN8000D;
         private RadioButtonTS radGenModelANAN7000D;
+        private RadioButtonTS radGenModelHermesLite;
         private System.ComponentModel.Container components = null;
 
 		#endregion
@@ -191,6 +192,9 @@ namespace PowerSDR
                     break;
                 case Model.HERMES:
                     radGenModelHermes.Checked = true;
+                    break;
+                case Model.HERMESLITE:
+                    radGenModelHermesLite.Checked = true;
                     break;
                 case Model.ANAN10:
                     radGenModelANAN10.Checked = true;
@@ -252,6 +256,7 @@ namespace PowerSDR
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.grpModel = new System.Windows.Forms.GroupBoxTS();
+            this.radGenModelHermesLite = new System.Windows.Forms.RadioButtonTS();
             this.radGenModelANAN7000D = new System.Windows.Forms.RadioButtonTS();
             this.radGenModelANAN8000D = new System.Windows.Forms.RadioButtonTS();
             this.radGenModelANAN10E = new System.Windows.Forms.RadioButtonTS();
@@ -339,6 +344,7 @@ namespace PowerSDR
             // 
             // grpModel
             // 
+            this.grpModel.Controls.Add(this.radGenModelHermesLite);
             this.grpModel.Controls.Add(this.radGenModelANAN7000D);
             this.grpModel.Controls.Add(this.radGenModelANAN8000D);
             this.grpModel.Controls.Add(this.radGenModelANAN10E);
@@ -353,18 +359,30 @@ namespace PowerSDR
             this.grpModel.Controls.Add(this.radGenModelDemoNone);
             this.grpModel.Controls.Add(this.radGenModelSoftRock40);
             this.grpModel.Controls.Add(this.radGenModelSDR1000);
-            this.grpModel.Location = new System.Drawing.Point(256, 24);
+            this.grpModel.Location = new System.Drawing.Point(326, 23);
             this.grpModel.Name = "grpModel";
-            this.grpModel.Size = new System.Drawing.Size(136, 216);
+            this.grpModel.Size = new System.Drawing.Size(122, 242);
             this.grpModel.TabIndex = 20;
             this.grpModel.TabStop = false;
             this.grpModel.Text = "Model";
             this.grpModel.Visible = false;
             // 
+            // radGenModelHermesLite
+            // 
+            this.radGenModelHermesLite.AutoSize = true;
+            this.radGenModelHermesLite.Image = null;
+            this.radGenModelHermesLite.Location = new System.Drawing.Point(18, 55);
+            this.radGenModelHermesLite.Name = "radGenModelHermesLite";
+            this.radGenModelHermesLite.Size = new System.Drawing.Size(97, 17);
+            this.radGenModelHermesLite.TabIndex = 17;
+            this.radGenModelHermesLite.Text = "HERMES-LITE";
+            this.radGenModelHermesLite.UseVisualStyleBackColor = true;
+            this.radGenModelHermesLite.CheckedChanged += new System.EventHandler(this.radioButtonTS1_CheckedChanged);
+            // 
             // radGenModelANAN7000D
             // 
             this.radGenModelANAN7000D.Image = null;
-            this.radGenModelANAN7000D.Location = new System.Drawing.Point(19, 156);
+            this.radGenModelANAN7000D.Location = new System.Drawing.Point(18, 174);
             this.radGenModelANAN7000D.Name = "radGenModelANAN7000D";
             this.radGenModelANAN7000D.Size = new System.Drawing.Size(110, 17);
             this.radGenModelANAN7000D.TabIndex = 16;
@@ -375,7 +393,7 @@ namespace PowerSDR
             // radGenModelANAN8000D
             // 
             this.radGenModelANAN8000D.Image = null;
-            this.radGenModelANAN8000D.Location = new System.Drawing.Point(19, 173);
+            this.radGenModelANAN8000D.Location = new System.Drawing.Point(18, 191);
             this.radGenModelANAN8000D.Name = "radGenModelANAN8000D";
             this.radGenModelANAN8000D.Size = new System.Drawing.Size(110, 17);
             this.radGenModelANAN8000D.TabIndex = 15;
@@ -387,7 +405,7 @@ namespace PowerSDR
             // 
             this.radGenModelANAN10E.AutoSize = true;
             this.radGenModelANAN10E.Image = null;
-            this.radGenModelANAN10E.Location = new System.Drawing.Point(19, 71);
+            this.radGenModelANAN10E.Location = new System.Drawing.Point(18, 89);
             this.radGenModelANAN10E.Name = "radGenModelANAN10E";
             this.radGenModelANAN10E.Size = new System.Drawing.Size(77, 17);
             this.radGenModelANAN10E.TabIndex = 14;
@@ -399,7 +417,7 @@ namespace PowerSDR
             // 
             this.radGenModelANAN100B.AutoSize = true;
             this.radGenModelANAN100B.Image = null;
-            this.radGenModelANAN100B.Location = new System.Drawing.Point(19, 105);
+            this.radGenModelANAN100B.Location = new System.Drawing.Point(18, 123);
             this.radGenModelANAN100B.Name = "radGenModelANAN100B";
             this.radGenModelANAN100B.Size = new System.Drawing.Size(83, 17);
             this.radGenModelANAN100B.TabIndex = 13;
@@ -410,7 +428,7 @@ namespace PowerSDR
             // 
             this.radGenModelOrion.AutoSize = true;
             this.radGenModelOrion.Image = null;
-            this.radGenModelOrion.Location = new System.Drawing.Point(19, 139);
+            this.radGenModelOrion.Location = new System.Drawing.Point(18, 157);
             this.radGenModelOrion.Name = "radGenModelOrion";
             this.radGenModelOrion.Size = new System.Drawing.Size(84, 17);
             this.radGenModelOrion.TabIndex = 12;
@@ -422,7 +440,7 @@ namespace PowerSDR
             // 
             this.radGenModelANAN100D.AutoSize = true;
             this.radGenModelANAN100D.Image = null;
-            this.radGenModelANAN100D.Location = new System.Drawing.Point(19, 122);
+            this.radGenModelANAN100D.Location = new System.Drawing.Point(18, 140);
             this.radGenModelANAN100D.Name = "radGenModelANAN100D";
             this.radGenModelANAN100D.Size = new System.Drawing.Size(84, 17);
             this.radGenModelANAN100D.TabIndex = 11;
@@ -434,7 +452,7 @@ namespace PowerSDR
             // 
             this.radGenModelANAN100.AutoSize = true;
             this.radGenModelANAN100.Image = null;
-            this.radGenModelANAN100.Location = new System.Drawing.Point(19, 88);
+            this.radGenModelANAN100.Location = new System.Drawing.Point(18, 106);
             this.radGenModelANAN100.Name = "radGenModelANAN100";
             this.radGenModelANAN100.Size = new System.Drawing.Size(76, 17);
             this.radGenModelANAN100.TabIndex = 10;
@@ -446,7 +464,7 @@ namespace PowerSDR
             // 
             this.radGenModelANAN10.AutoSize = true;
             this.radGenModelANAN10.Image = null;
-            this.radGenModelANAN10.Location = new System.Drawing.Point(19, 54);
+            this.radGenModelANAN10.Location = new System.Drawing.Point(18, 72);
             this.radGenModelANAN10.Name = "radGenModelANAN10";
             this.radGenModelANAN10.Size = new System.Drawing.Size(70, 17);
             this.radGenModelANAN10.TabIndex = 9;
@@ -458,7 +476,7 @@ namespace PowerSDR
             // 
             this.radGenModelHermes.AutoSize = true;
             this.radGenModelHermes.Image = null;
-            this.radGenModelHermes.Location = new System.Drawing.Point(19, 37);
+            this.radGenModelHermes.Location = new System.Drawing.Point(18, 38);
             this.radGenModelHermes.Name = "radGenModelHermes";
             this.radGenModelHermes.Size = new System.Drawing.Size(71, 17);
             this.radGenModelHermes.TabIndex = 8;
@@ -470,7 +488,7 @@ namespace PowerSDR
             // 
             this.radGenModelHPSDR.AutoSize = true;
             this.radGenModelHPSDR.Image = null;
-            this.radGenModelHPSDR.Location = new System.Drawing.Point(19, 20);
+            this.radGenModelHPSDR.Location = new System.Drawing.Point(18, 21);
             this.radGenModelHPSDR.Name = "radGenModelHPSDR";
             this.radGenModelHPSDR.Size = new System.Drawing.Size(63, 17);
             this.radGenModelHPSDR.TabIndex = 7;
@@ -482,7 +500,7 @@ namespace PowerSDR
             // 
             this.radGenModelFLEX5000.Checked = true;
             this.radGenModelFLEX5000.Image = null;
-            this.radGenModelFLEX5000.Location = new System.Drawing.Point(18, 190);
+            this.radGenModelFLEX5000.Location = new System.Drawing.Point(18, 211);
             this.radGenModelFLEX5000.Name = "radGenModelFLEX5000";
             this.radGenModelFLEX5000.Size = new System.Drawing.Size(88, 17);
             this.radGenModelFLEX5000.TabIndex = 6;
@@ -1017,7 +1035,7 @@ namespace PowerSDR
             // 
             this.btnFinished.Enabled = false;
             this.btnFinished.Image = null;
-            this.btnFinished.Location = new System.Drawing.Point(400, 248);
+            this.btnFinished.Location = new System.Drawing.Point(400, 271);
             this.btnFinished.Name = "btnFinished";
             this.btnFinished.Size = new System.Drawing.Size(75, 23);
             this.btnFinished.TabIndex = 2;
@@ -1027,7 +1045,7 @@ namespace PowerSDR
             // btnNext
             // 
             this.btnNext.Image = null;
-            this.btnNext.Location = new System.Drawing.Point(312, 248);
+            this.btnNext.Location = new System.Drawing.Point(312, 271);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 23);
             this.btnNext.TabIndex = 1;
@@ -1037,7 +1055,7 @@ namespace PowerSDR
             // btnPrevious
             // 
             this.btnPrevious.Image = null;
-            this.btnPrevious.Location = new System.Drawing.Point(224, 248);
+            this.btnPrevious.Location = new System.Drawing.Point(224, 271);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(75, 23);
             this.btnPrevious.TabIndex = 0;
@@ -1185,7 +1203,7 @@ namespace PowerSDR
             // 
             // SetupWizard
             // 
-            this.ClientSize = new System.Drawing.Size(488, 286);
+            this.ClientSize = new System.Drawing.Size(488, 306);
             this.Controls.Add(this.grpModel);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.comboBox3);
@@ -1806,6 +1824,7 @@ namespace PowerSDR
 				case Model.FLEX3000:
                     break;
                 case Model.HERMES:
+                case Model.HERMESLITE:
                     console.SetupForm.PennyLanePresent = pennylane_present;
                     console.SetupForm.MercuryPresent = mercury_present;
                     console.SetupForm.AlexPresent = alex_present;
@@ -2449,6 +2468,11 @@ namespace PowerSDR
                 radMetis.Text = "ANAN";
                 radOzy.Enabled = false;
             }
+
+        }
+
+        private void radioButtonTS1_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
 
