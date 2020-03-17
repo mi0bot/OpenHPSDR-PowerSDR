@@ -170,6 +170,7 @@ namespace PowerSDR
         FLEX3000,
         HPSDR,
         HERMES,
+        HERMESLITE,
         ANAN10,
         ANAN10E,
         ANAN100,
@@ -186,6 +187,7 @@ namespace PowerSDR
         FIRST = -1,
         HPSDR,
         HERMES,
+        HERMESLITE,
         ANAN10,
         ANAN10E,
         ANAN100,
@@ -13665,7 +13667,8 @@ namespace PowerSDR
                 }
             }
 
-            if (current_hpsdr_model == HPSDRModel.HERMES)
+            if ((current_hpsdr_model == HPSDRModel.HERMES) ||
+               (current_hpsdr_model == HPSDRModel.HERMESLITE))
             {
                 switch (b)
                 {
@@ -14170,6 +14173,7 @@ namespace PowerSDR
                     break;
                 case HPSDRModel.ANAN10:
                 case HPSDRModel.ANAN10E:
+                case HPSDRModel.HERMESLITE:
                     interval = 1.0f;
                     break;
                 default:
@@ -21933,6 +21937,7 @@ namespace PowerSDR
                 {
                     case HPSDRModel.HPSDR:
                     case HPSDRModel.HERMES:
+                    case HPSDRModel.HERMESLITE:
                         chkDX.Checked = false;
                         chkDX.Visible = false;
                         break;
@@ -26519,6 +26524,16 @@ namespace PowerSDR
             }
         }
 
+        private bool hermeslitepresent = false;
+        public bool HERMESLITEPresent
+        {
+            get { return hermeslitepresent; }
+            set
+            {
+                hermeslitepresent = value;
+            }
+        }
+
         private bool mkiibpfpresent = false;
         public bool MKIIBPFPresent
         {
@@ -29102,7 +29117,7 @@ namespace PowerSDR
                                     case 96:
                                         if (collapsedDisplay)
                                         {
-                                            if (anan10present || anan10Epresent)
+                                            if (anan10present || anan10Epresent || hermeslitepresent)
                                             {
                                                 if (num <= 1.0f)
                                                     pixel_x = (int)(0 + num * 16);
@@ -29194,7 +29209,7 @@ namespace PowerSDR
                                         }
                                         else
                                         {
-                                            if (anan10present || anan10Epresent)
+                                            if (anan10present || anan10Epresent || hermeslitepresent)
                                             {
                                                 if (num <= 1.0f)
                                                     pixel_x = (int)(0 + num * 2);
@@ -29764,7 +29779,7 @@ namespace PowerSDR
                                 break;
                             case MeterTXMode.FORWARD_POWER:
                             case MeterTXMode.REVERSE_POWER:
-                                if (alexpresent || apollopresent) num = Math.Round(num);
+                                if ((alexpresent || apollopresent) && !hermeslitepresent) num = Math.Round(num);
 
                                 if (alexpresent && ((orionmkiipresent || anan8000dpresent) && tx_xvtr_index < 0) )
                                 {
@@ -29821,7 +29836,7 @@ namespace PowerSDR
                                     }
                                 }
 
-                                else if ((alexpresent || pa_present) && (!anan10present && !anan10Epresent && !apollopresent && !anan8000dpresent))
+                                else if ((alexpresent || pa_present) && (!anan10present && !anan10Epresent && !hermeslitepresent && !apollopresent && !anan8000dpresent))
                                 {
                                     g.FillRectangle(low_brush, 0, H - 4, (int)(W * 0.75), 2);
                                     g.FillRectangle(high_brush, (int)(W * 0.75), H - 4, (int)(W * 0.25) - 10, 2);
@@ -29879,7 +29894,7 @@ namespace PowerSDR
                                             pixel_x = (int)(W * 0.75 + spacing + (num - 120.0) / 60.0 * spacing);
                                     }
                                 }
-                                else if (anan10present || anan10Epresent)// || apollopresent)
+                                else if (anan10present || anan10Epresent || hermeslitepresent)// || apollopresent)
                                 {
                                     g.FillRectangle(low_brush, 0, H - 4, (int)(W * 0.75), 2);
                                     g.FillRectangle(high_brush, (int)(W * 0.75), H - 4, (int)(W * 0.25) - 10, 2);
@@ -30197,7 +30212,7 @@ namespace PowerSDR
                                     }
                                 }
 
-                                else if ((alexpresent || pa_present) && (!anan10present && !anan10Epresent && !apollopresent))
+                                else if ((alexpresent || pa_present) && (!anan10present && !anan10Epresent && !hermeslitepresent && !apollopresent))
                                 {
                                     g.FillRectangle(high_brush, (int)(W * 0.75), (H / 2) - 1, (int)(W * 0.25) - 4, 2);
                                     g.FillRectangle(low_brush, 0, (H / 2) - 1, (int)(W * 0.75), 4); // horizontal white line
@@ -30339,7 +30354,7 @@ namespace PowerSDR
                                     }
                                 }
 
-                                else if (anan10present || anan10Epresent)
+                                else if (anan10present || anan10Epresent || hermeslitepresent)
                                 {
                                     g.FillRectangle(high_brush, (int)(W * 0.75), (H / 2) - 1, (int)(W * 0.25) - 4, 2);
                                     g.FillRectangle(low_brush, 0, (H / 2) - 1, (int)(W * 0.75), 4); // horizontal white line
@@ -30985,7 +31000,7 @@ namespace PowerSDR
                                 case MeterTXMode.FORWARD_POWER:
                                 case MeterTXMode.REVERSE_POWER:
                                 case MeterTXMode.SWR_POWER:
-                                    if (anan10present || anan10Epresent || apollopresent) output = num.ToString(format) + " W";
+                                    if (anan10present || anan10Epresent || hermeslitepresent || apollopresent) output = num.ToString(format) + " W";
                                     else if ((alexpresent || pa_present))
                                     {
                                         if (anan8000dpresent && tx_xvtr_index >= 0)
@@ -32526,6 +32541,13 @@ namespace PowerSDR
                     refvoltage = 5.0f;
                     adc_cal_offset = 16;
                     break;
+                case HPSDRModel.HERMESLITE:
+                    bridge_volt = 1.8f;
+                    if (tx_band == Band.B6M)
+                        bridge_volt = 1.8f;
+                    refvoltage = 3.3f;
+                    adc_cal_offset = 6;
+                    break;
                 default:
                     bridge_volt = 0.09f;
                     if (tx_band == Band.B6M) 
@@ -32598,6 +32620,11 @@ namespace PowerSDR
                     bridge_volt = 0.08f;
                     refvoltage = 5.0f;
                     adc_cal_offset = 18;
+                    break;
+                case HPSDRModel.HERMESLITE:
+                    bridge_volt = 1.8f;
+                    refvoltage = 3.3f;
+                    adc_cal_offset = 6;
                     break;
                 default:
                     bridge_volt = 0.09f;
@@ -37581,7 +37608,7 @@ namespace PowerSDR
                         case MeterTXMode.FORWARD_POWER:
                         case MeterTXMode.REVERSE_POWER:
                         case MeterTXMode.SWR_POWER:
-                            if (anan10present || anan10Epresent)
+                            if (anan10present || anan10Epresent || hermeslitepresent)
                                 lblMultiSMeter.Text = "    1              5             10            15            20            25+";
                             else if (apollopresent)
                                 lblMultiSMeter.Text = "    1              5             10            15            30            50+";
@@ -37625,7 +37652,7 @@ namespace PowerSDR
                         case MeterTXMode.FORWARD_POWER:
                         case MeterTXMode.REVERSE_POWER:
                         case MeterTXMode.SWR_POWER:
-                            if (anan10present || anan10Epresent)
+                            if (anan10present || anan10Epresent || hermeslitepresent)
                                 lblMultiSMeter.Text = "1      5     10    15   20    25+";
                             else if (apollopresent)
                                 lblMultiSMeter.Text = "1      5     10    15   30    50+";
@@ -50545,6 +50572,7 @@ namespace PowerSDR
 
                     break;
                 case HPSDRModel.HERMES:
+                case HPSDRModel.HERMESLITE:
                     if (alexpresent)
                     {
                         comboPreamp.Items.AddRange(on_off_preamp_settings);

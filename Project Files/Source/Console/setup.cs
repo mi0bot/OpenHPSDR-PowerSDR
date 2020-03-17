@@ -4718,6 +4718,10 @@ namespace PowerSDR
                         force_model = true;
                         radGenModelHermes.Checked = true;
                         break;
+                    case Model.HERMESLITE:
+                        force_model = true;
+                        radGenModelHermesLite.Checked = true;
+                        break;
                     case Model.ANAN10:
                         force_model = true;
                         radGenModelANAN10.Checked = true;
@@ -6558,6 +6562,7 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
+                    case HPSDRModel.HERMESLITE:
                      rv = (float)ud10PA1W.Value; 
                        break;
                     case HPSDRModel.ANAN8000D:
@@ -6578,6 +6583,7 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
+                    case HPSDRModel.HERMESLITE:
                     rv = (float)ud10PA2W.Value;
                         break;
                     case HPSDRModel.ANAN8000D:
@@ -6597,7 +6603,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                     rv = (float)ud10PA3W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA3W.Value;
                        break;
                     case HPSDRModel.ANAN8000D:
                     rv = (float)ud200PA60W.Value;
@@ -6616,7 +6623,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                    rv = (float)ud10PA4W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA4W.Value;
                         break;
                     case HPSDRModel.ANAN8000D:
                     rv = (float)ud200PA80W.Value;
@@ -6635,7 +6643,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                    rv = (float)ud10PA5W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA5W.Value;
                         break;
                     case HPSDRModel.ANAN8000D:
                     rv = (float)ud200PA100W.Value;
@@ -6654,7 +6663,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                    rv = (float)ud10PA6W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA6W.Value;
                         break;
                     case HPSDRModel.ANAN8000D:
                      rv = (float)ud200PA120W.Value;
@@ -6673,7 +6683,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                    rv = (float)ud10PA7W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA7W.Value;
                         break;
                     case HPSDRModel.ANAN8000D:
                     rv = (float)ud200PA140W.Value;
@@ -6692,7 +6703,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                    rv = (float)ud10PA8W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA8W.Value;
                          break;
                     case HPSDRModel.ANAN8000D:
                     rv = (float)ud200PA160W.Value;
@@ -6711,7 +6723,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                    rv = (float)ud10PA9W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA9W.Value;
                         break;
                     case HPSDRModel.ANAN8000D:
                     rv = (float)ud200PA180W.Value;
@@ -6730,7 +6743,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                    rv = (float)ud10PA10W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA10W.Value;
                         break;
                     case HPSDRModel.ANAN8000D:
                     rv = (float)ud200PA200W.Value;
@@ -6749,7 +6763,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                    rv = (float)ud10PA11W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA11W.Value;
                         break;
                     case HPSDRModel.ANAN8000D:
                     rv = (float)ud200PA220W.Value;
@@ -6768,7 +6783,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                   rv = (float)ud10PA12W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA12W.Value;
                          break;
                     case HPSDRModel.ANAN8000D:
                      rv = (float)ud200PA240W.Value;
@@ -6787,7 +6803,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                   rv = (float)ud10PA13W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA13W.Value;
                         break;
                     case HPSDRModel.ANAN8000D:
                      rv = (float)ud200PA260W.Value;
@@ -6806,7 +6823,8 @@ namespace PowerSDR
                 {
                     case HPSDRModel.ANAN10:
                     case HPSDRModel.ANAN10E:
-                     rv = (float)ud10PA14W.Value;
+                    case HPSDRModel.HERMESLITE:
+                        rv = (float)ud10PA14W.Value;
                        break;
                     case HPSDRModel.ANAN8000D:
                      rv = (float)ud200PA280W.Value;
@@ -8400,7 +8418,7 @@ namespace PowerSDR
         {
             HPSDRModel old_model = console.CurrentHPSDRModel;
 
-            if (radGenModelHermes.Checked)
+            if (radGenModelHermes.Checked || radGenModelHermesLite.Checked) 
             {
                 JanusAudio.fwVersionsChecked = false;
                 console.CurrentModel = Model.HERMES;
@@ -8458,10 +8476,19 @@ namespace PowerSDR
                 chkEXT2OutOnTx.Text = "RX 1 IN on Tx";
                 groupBoxHPSDRHW.Visible = true;
                 JanusAudio.SetAIN4Voltage(33);
+
+                chkMercDither.Text = "Dither Enabled";
+
             }
+
+            if (radGenModelHermesLite.Checked)
+            {
+                console.CurrentHPSDRModel = HPSDRModel.HERMESLITE;
+            }
+
             radGenModelHPSDR_or_Hermes_CheckedChanged(sender, e, true);
 
-            if (radGenModelHermes.Checked)
+            if (radGenModelHermes.Checked || radGenModelHermesLite.Checked)
             {
                 int nr;
                 bool pwr_cycled = false;
@@ -8500,6 +8527,12 @@ namespace PowerSDR
                     }
                 }
             }
+        }
+
+        private void radGenModelHermesLite_CheckedChanged(object sender, EventArgs e)
+        {
+            console.HERMESLITEPresent = radGenModelHermesLite.Checked;
+            radGenModelHermes_CheckedChanged(sender, e);
         }
 
         private void radGenModelHPSDR_CheckedChanged(object sender, System.EventArgs e)
@@ -8558,6 +8591,8 @@ namespace PowerSDR
                 chkEXT1OutOnTx.Text = "RX 2 IN on Tx";
                 chkEXT2OutOnTx.Text = "RX 1 IN on Tx";
                 groupBoxHPSDRHW.Visible = true;
+
+                chkMercDither.Text = "Dither Enabled";
             }
             radGenModelHPSDR_or_Hermes_CheckedChanged(sender, e, false);
             if (chkHermesStepAttenuator.Checked) chkHermesStepAttenuator.Checked = false;
@@ -8702,6 +8737,97 @@ namespace PowerSDR
                 radMetis.Checked = true;
                 grpMetisAddr.Visible = true;
                 radOzyUSB.Enabled = false;
+
+                if (radGenModelHermesLite.Checked)
+                {
+                    //chkPennyPresent.Enabled = false;
+                    //chkPennyPresent.Visible = false;
+                    //chkPennyLane.Enabled = false;
+                    //chkPennyLane.Visible = false;
+                    //chkMercuryPresent.Enabled = false;
+                    //chkMercuryPresent.Visible = false;
+                    //chkJanusPresent.Enabled = false;
+                    //chkJanusPresent.Visible = false;
+                    //chkExcaliburPresent.Enabled = false;
+                    //chkExcaliburPresent.Visible = false;
+                    chkAlexPresent.Enabled = false;
+                    chkAlexPresent.Visible = false;
+
+                    groupBoxRXOptions.Text = "Hermes Lite Options";
+                    radMetis.Text = "Hermes Lite";
+                    grpMetisAddr.Text = "Hermes Lite Address";
+                    grpHermesStepAttenuator.Text = "Hermes Lite Attenuator";
+                    grpHermesPAGainByBand.Text = "Gain By Band (dB) Hermes Lite";
+                    chkMercDither.Text = "Disable PS Sync";
+                    chkHermesStepAttenuator.Checked = true;
+                    chkApolloPresent.Enabled = true;
+                    chkApolloPresent.Visible = true;
+                    chkApolloPresent.Text = "PA Control";
+                    chkApolloPresent.Checked = true;
+                    tpApolloControl.Text = "PA Control";
+                    grpApolloCtrl.Text = "PA Control";
+                    chkApolloTuner.Text = "Enable PA";
+                    chkApolloFilter.Text = "Enable Full Duplex";
+                    udMaxFreq.Value = 38.40M;
+                    chkPennyExtCtrl.Checked = true;
+                    chkPenOCrcv1601.Checked = true;
+                    chkPenOCrcv802.Checked = true;
+                    chkPenOCrcv807.Checked = true;
+                    chkPenOCrcv603.Checked = true;
+                    chkPenOCrcv607.Checked = true;
+                    chkPenOCrcv403.Checked = true;
+                    chkPenOCrcv407.Checked = true;
+                    chkPenOCrcv304.Checked = true;
+                    chkPenOCrcv307.Checked = true;
+                    chkPenOCrcv204.Checked = true;
+                    chkPenOCrcv207.Checked = true;
+                    chkPenOCrcv175.Checked = true;
+                    chkPenOCrcv177.Checked = true;
+                    chkPenOCrcv155.Checked = true;
+                    chkPenOCrcv157.Checked = true;
+                    chkPenOCrcv126.Checked = true;
+                    chkPenOCrcv127.Checked = true;
+                    chkPenOCrcv106.Checked = true;
+                    chkPenOCrcv107.Checked = true;
+                    btnPAGainReset_Click(sender, e);
+                }
+                else
+                {
+                    chkAlexPresent.Enabled = true;
+                    chkAlexPresent.Visible = true;
+                    groupBoxRXOptions.Text = "Hermes Options";
+                    radMetis.Text = "Hermes";
+                    grpMetisAddr.Text = "Hermes Address";
+                    grpHermesStepAttenuator.Text = "Hermes Attenuator";
+                    chkMercDither.Text = "Dither Enabled";
+                    chkApolloPresent.Text = "Apollo";
+                    chkApolloPresent.Checked = false;
+                    tpApolloControl.Text = "Apollo";
+                    grpApolloCtrl.Text = "Apollo Control";
+                    chkApolloTuner.Text = "Enable Tuner";
+                    chkApolloFilter.Text = "Enable Filters";
+                    udMaxFreq.Value = 61.44M;
+                    chkPennyExtCtrl.Checked = false;
+                    chkPenOCrcv1601.Checked = false;
+                    chkPenOCrcv802.Checked = false;
+                    chkPenOCrcv807.Checked = false;
+                    chkPenOCrcv603.Checked = false;
+                    chkPenOCrcv607.Checked = false;
+                    chkPenOCrcv403.Checked = false;
+                    chkPenOCrcv407.Checked = false;
+                    chkPenOCrcv304.Checked = false;
+                    chkPenOCrcv307.Checked = false;
+                    chkPenOCrcv204.Checked = false;
+                    chkPenOCrcv207.Checked = false;
+                    chkPenOCrcv175.Checked = false;
+                    chkPenOCrcv177.Checked = false;
+                    chkPenOCrcv155.Checked = false;
+                    chkPenOCrcv157.Checked = false;
+                    chkPenOCrcv126.Checked = false;
+                    chkPenOCrcv127.Checked = false;
+                    chkPenOCrcv106.Checked = false;
+                    chkPenOCrcv107.Checked = false;
+                }
             }
             else
             {
@@ -8812,10 +8938,17 @@ namespace PowerSDR
             //    grp10WattMeterTrim.Visible = false;
              //   grp100WattMeterTrim.Visible = true;
              //   grp200WattMeterTrim.Visible = false;
-                grp100WattMeterTrim.BringToFront();
+                if (radGenModelHermesLite.Checked)
+                {
+                    grp10WattMeterTrim.BringToFront();
+                }
+                else
+                {
+                    grp100WattMeterTrim.BringToFront();
+                }
             }
 
-            if (radGenModelHermes.Checked || radGenModelHPSDR.Checked)
+            if (radGenModelHermes.Checked || radGenModelHPSDR.Checked || radGenModelHermesLite.Checked)
             {
                 tpAlexControl.Text = "Alex";
                 chkHFTRRelay.Checked = false;
@@ -8865,6 +8998,7 @@ namespace PowerSDR
 
             if (radGenModelHPSDR.Checked) tpPennyCtrl.Text = "Penny Ctrl";
             else if (radGenModelHermes.Checked) tpPennyCtrl.Text = "Hermes Ctrl";
+            else if (radGenModelHermesLite.Checked) tpPennyCtrl.Text = "Hermes Lite Ctrl";
             else tpPennyCtrl.Text = "ANAN Ctrl";
 
             if (radGenModelANAN8000D.Checked || radGenModelANAN7000D.Checked)
@@ -8986,7 +9120,7 @@ namespace PowerSDR
                 }
             }
 
-            if (radGenModelANAN200D.Checked || radGenModelHermes.Checked || radGenModelANAN100D.Checked)
+            if (radGenModelANAN200D.Checked || radGenModelHermes.Checked || radGenModelHermesLite.Checked || radGenModelANAN100D.Checked)
             {
                 if (!tcGeneral.TabPages.Contains(tpApolloControl))
                 {
@@ -13473,6 +13607,36 @@ namespace PowerSDR
                 udHermesPAGainVHF12.Value = 56.2M;
                 udHermesPAGainVHF13.Value = 56.2M;
             }
+
+            if (radGenModelHermesLite.Checked)
+            {
+                HermesPAGain160 = 38.8f;
+                HermesPAGain80 = 38.8f;
+                HermesPAGain60 = 38.8f;
+                HermesPAGain40 = 38.8f;
+                HermesPAGain30 = 38.8f;
+                HermesPAGain20 = 38.8f;
+                HermesPAGain17 = 38.8f;
+                HermesPAGain15 = 38.8f;
+                HermesPAGain12 = 38.8f;
+                HermesPAGain10 = 38.8f;
+                HermesPAGain6 = 38.8f;
+
+                udHermesPAGainVHF0.Value = 56.2M;
+                udHermesPAGainVHF1.Value = 56.2M;
+                udHermesPAGainVHF2.Value = 56.2M;
+                udHermesPAGainVHF3.Value = 56.2M;
+                udHermesPAGainVHF4.Value = 56.2M;
+                udHermesPAGainVHF5.Value = 56.2M;
+                udHermesPAGainVHF6.Value = 56.2M;
+                udHermesPAGainVHF7.Value = 56.2M;
+                udHermesPAGainVHF8.Value = 56.2M;
+                udHermesPAGainVHF9.Value = 56.2M;
+                udHermesPAGainVHF10.Value = 56.2M;
+                udHermesPAGainVHF11.Value = 56.2M;
+                udHermesPAGainVHF12.Value = 56.2M;
+                udHermesPAGainVHF13.Value = 56.2M;
+            }
         }
 
         #endregion
@@ -16773,7 +16937,7 @@ namespace PowerSDR
                 // if (console.RX2PreampPresent && !radGenModelANAN100D.Checked) console.comboRX2Preamp.Visible = false;
                 if (chkApolloPresent.Checked) chkApolloPresent.Checked = false;
                 if (radGenModelHermes.Checked || radGenModelANAN10.Checked || radGenModelANAN10E.Checked || radGenModelANAN100.Checked ||
-                     radGenModelANAN100D.Checked || radGenModelANAN200D.Checked) JanusAudio.SetHermesFilter(0);
+                    radGenModelHermesLite.Checked || radGenModelANAN100D.Checked || radGenModelANAN200D.Checked) JanusAudio.SetHermesFilter(0);
             }
             else
             {
@@ -18111,7 +18275,7 @@ namespace PowerSDR
                */
             }
 
-            if (console.PowerOn && radGenModelHermes.Checked)
+            if (console.PowerOn && (radGenModelHermes.Checked || radGenModelHermesLite.Checked))
             {
                 // byte[] ver_bytes = new byte[1];
                 // JanusAudio.GetMetisCodeVersion(ver_bytes);
@@ -19778,6 +19942,7 @@ namespace PowerSDR
             switch (console.CurrentHPSDRModel)
             {
                 case HPSDRModel.HERMES:
+                case HPSDRModel.HERMESLITE:
                     radGenModelHermes_CheckedChanged(this, EventArgs.Empty);
                     break;
                 case HPSDRModel.ANAN10:
@@ -19969,6 +20134,7 @@ namespace PowerSDR
             {
                 case HPSDRModel.ANAN10:
                 case HPSDRModel.ANAN10E:
+                case HPSDRModel.HERMESLITE:
                 ud10PA1W.Value = 1;
                 ud10PA2W.Value = 2;
                 ud10PA3W.Value = 3;
@@ -20052,6 +20218,7 @@ namespace PowerSDR
                     nr = 2;
                     break;
                 case HPSDRModel.HERMES:
+                case HPSDRModel.HERMESLITE:
                     if (chkLimitRX.Checked) nr = 2;
                     else nr = 4;
                     break;

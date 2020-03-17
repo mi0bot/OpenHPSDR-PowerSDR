@@ -706,6 +706,7 @@ namespace PowerSDR
             switch (model)
             {
                 case HPSDRModel.HERMES:
+                case HPSDRModel.HERMESLITE:
                     rxRCVR = 3;
                     txRCVR = 4;
                     break;
@@ -753,6 +754,7 @@ namespace PowerSDR
             switch (model)
             {
                 case HPSDRModel.HERMES:
+                case HPSDRModel.HERMESLITE:
                     newnr = Math.Max(4, nr);
                     break;
                 case HPSDRModel.ANAN10:
@@ -807,6 +809,7 @@ namespace PowerSDR
                 switch (console.CurrentHPSDRModel)
                 {
                     case HPSDRModel.HERMES:
+                    case HPSDRModel.HERMESLITE:
                         SetRXFreq(rxRCVR, txfreq, false);
                         SetRXFreq(txRCVR, txfreq, false);
                         break;
