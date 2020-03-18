@@ -32434,6 +32434,8 @@ namespace PowerSDR
 
         private float MKIIPAVolts = 0.0f;
         private float MKIIPAAmps = 0.0f;
+        private float HermesLitePAAmps = 0.0f;
+        private float HermesLiteTemp = 0.0f;
 
         private void displayMKIIPAVoltsAmps()
         {
@@ -32444,6 +32446,17 @@ namespace PowerSDR
                 Thread.Sleep(600);
             }
         }
+
+        private void displayHermesLiteTempPAAmps()
+        {
+            while (chkPower.Checked && hermeslitepresent)
+            {
+                computeHermesLiteTemp();
+                computeHermesLitePAAmps();
+                Thread.Sleep(600);
+            }
+        }
+
         public void computeMKIIPAVolts()
         {
             float adc = 0;
@@ -32491,6 +32504,40 @@ namespace PowerSDR
             MKIIPAAmps = amps;
 
             //txtDisplayOrionMKIIPAAmps.Text = "Id " + amps.ToString("N1") + "A";
+        }
+
+        public void computeHermesLiteTemp()
+        {
+            float adc = 0;
+            float addadc = 0;
+
+            for (int count = 0; count < 100; count++)
+            {
+                adc = JanusAudio.getFwdPower(); // This method returns temp for HL2
+                addadc += adc;
+                Thread.Sleep(1);
+            }
+
+            adc = addadc / 100.0f;
+
+            HermesLiteTemp = (3.26f * (adc / 4096.0f) - 0.5f) / 0.01f;
+        }
+
+        public void computeHermesLitePAAmps()
+        {
+            float adc = 0;
+            float addadc = 0;
+            
+            for (int count = 0; count < 100; count++)
+            {
+                adc = JanusAudio.getAIN3(); // This method returns PA current for HL2
+                addadc += adc;
+                Thread.Sleep(1);
+            }
+
+            adc = addadc / 100.0f;
+
+            HermesLitePAAmps = ((3.26f * (adc / 4096.0f)) / 50.0f) / 0.04f * 1.270f;
         }
 
         public float computeRefPower()
@@ -34029,7 +34076,18 @@ namespace PowerSDR
             // txtCPUMeter.Text = "CPU %: " + CpuUsage.ToString("f1");
             if (PowerOn)
             {
-                if ((anan7000dpresent || anan8000dpresent) && ANAN8000DLEDisplayVoltsAmps)
+                if (hermeslitepresent && ANAN8000DLEDisplayVoltsAmps)
+                {
+                    if(mox)
+                    {
+                        txtCPUMeter.Text = String.Format("{0:#0.0}C {1:#0.00}A", HermesLiteTemp, HermesLitePAAmps);
+                    }
+                    else
+                    {
+                        txtCPUMeter.Text = String.Format("{0:#0.0}C Ver {1:#00}", HermesLiteTemp, JanusAudio.getOzyFWVersion());
+                    }
+                }
+                else if ((anan7000dpresent || anan8000dpresent) && ANAN8000DLEDisplayVoltsAmps)
                 {
                     txtCPUMeter.Text = String.Format("{0:#0.0}V {1:#0.0}A", MKIIPAVolts, MKIIPAAmps);
                 }
@@ -35683,6 +35741,14 @@ namespace PowerSDR
                     display_volts_amps_thead.Start();
                 }
 
+                if ((display_volts_amps_thead == null || !display_volts_amps_thead.IsAlive) && hermeslitepresent)
+                {
+                    display_volts_amps_thead = new Thread(new ThreadStart(displayHermesLiteTempPAAmps));
+                    display_volts_amps_thead.Name = "Update Temp Amps Thread";
+                    display_volts_amps_thead.Priority = ThreadPriority.Normal;
+                    display_volts_amps_thead.IsBackground = true;
+                    display_volts_amps_thead.Start();
+                }
 
                 if (!rx_only)
                 {
