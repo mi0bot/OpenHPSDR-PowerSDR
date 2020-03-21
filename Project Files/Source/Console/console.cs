@@ -64,6 +64,7 @@ namespace PowerSDR
     using System.Xml;
     using System.Xml.Linq;
     using System.Timers;
+    using System.Security.Principal;
 
 
     #region Enums
@@ -7727,125 +7728,158 @@ namespace PowerSDR
         [STAThread]
         static void Main(string[] args)
         {
-            string app_data_path = "";
-            foreach (string s in args)
+            var wi = WindowsIdentity.GetCurrent();
+            var wp = new WindowsPrincipal(wi);
+ 
+            bool runAsAdmin = wp.IsInRole(WindowsBuiltInRole.Administrator);
+
+            if (!runAsAdmin)
             {
-                if (s.StartsWith("-datapath:"))
-                {
-                    string path = s.Trim().Substring(s.Trim().IndexOf(":") + 1);
-                    if (path.EndsWith("\"")) path = path.Substring(0, path.Length - 1);
-                    if (!path.EndsWith("\\")) path += "\\";
-#if(DEBUG)
-                    path += "Debug\\";
-#endif
-                    if (Directory.Exists(path))
-                        app_data_path = path;
-                    else
-                    {
-                        DialogResult dr = MessageBox.Show("-datapath: command line option found, but the folder specified was not found.\n" +
-                            "Would you like to create this folder?  If not, the default folder will be used.\n\n" +
-                            "(" + s + ")",
-                            "Command Line Option: Create Folder?",
-                            MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Question);
+                // It is not possible to launch a ClickOnce app as administrator directly,
+                // so instead we launch the app as administrator in a new process.
+                var processInfo = new ProcessStartInfo(Assembly.GetExecutingAssembly().CodeBase);
 
-                        if (dr == DialogResult.Yes)
-                        {
-                            Directory.CreateDirectory(path);
-                            app_data_path = path;
-                        }
-                    }
-                }
-            }
+                // The following properties run the new process as administrator
+                processInfo.UseShellExecute = true;
+                processInfo.Verb = "runas";
 
-            if (app_data_path == "")
-            {
-                Assembly assembly = Assembly.GetExecutingAssembly();
-                FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
-                string version = fvi.FileVersion.Substring(0, fvi.FileVersion.LastIndexOf("."));
-                app_data_path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
-                    + "\\FlexRadio Systems\\PowerSDR mRX PS\\";
-#if(DEBUG)
-                app_data_path += "Debug\\";
-#endif
-            }
-
-            try
-            {
-                // if (!File.Exists(app_data_path + "wisdom"))
-                {
-                    // Need to create the directory in %appdata% before we go run wisdom
-                    if (!Directory.Exists(app_data_path))
-                        Directory.CreateDirectory(app_data_path);
-                    //Process p = Process.Start(Application.StartupPath + "\\fftw_wisdom.exe", "\"" + app_data_path);
-                    /*  MessageBox.Show("Running DttSP optimization.  Please wait patiently for " +
-                          "this process to finish.\nTypically the optimization takes no more than 3-5 minutes.",
-                          "Optimizing...",
-                          MessageBoxButtons.OK,
-                          MessageBoxIcon.Information); */
-                    //p.WaitForExit();
-                }
-
-                /*  if (!File.Exists(app_data_path + "specWisdom"))
-                  {
-                      appdatapath = app_data_path;
-                      // Need to create the directory in %appdata% before we go run wisdom
-                      if (!Directory.Exists(app_data_path))
-                          Directory.CreateDirectory(app_data_path);
-                      //  Process p = Process.Start(Application.StartupPath + "\\fftw_specWisdom.exe", "\"" + app_data_path);
-                      // MessageBox.Show("Running specHPSDR optimization.  Please wait patiently for " +
-                      //   "this process to finish.\nTypically the optimization takes no more than 15-20 minutes.",
-                      //  "Optimizing...",
-                      //  MessageBoxButtons.OK,
-                      //  MessageBoxIcon.Information);
-                      //  p.WaitForExit();
-                  } */
-
-                int rc = 0;
-                SpecHPSDRDLL.XCreateAnalyzer(0, ref rc, 262144, 1, 3, app_data_path + "specWisdom");
-                SpecHPSDRDLL.XCreateAnalyzer(1, ref rc, 262144, 1, 1, app_data_path + "specWisdom");
-
+                // Start the new process
                 try
                 {
-                    if (!CheckForOpenProcesses())
-                        return;
+                    Process.Start(processInfo);
                 }
                 catch (Exception)
                 {
-
+                    // The user did not allow the application to run as administrator
+                    MessageBox.Show("Sorry, but I don't seem to be able to start " +
+                       "this program with administrator rights!");
                 }
 
-                SpecHPSDRDLL.create_anbEXT(0, 1, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
-                SpecHPSDRDLL.create_anbEXT(1, 1, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
-                SpecHPSDRDLL.create_anbEXT(2, 1, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
-                SpecHPSDRDLL.create_anbEXT(3, 1, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
-                SpecHPSDRDLL.create_nobEXT(0, 1, 0, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
-                SpecHPSDRDLL.create_nobEXT(1, 1, 0, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
-                SpecHPSDRDLL.create_nobEXT(2, 1, 0, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
-                SpecHPSDRDLL.create_nobEXT(3, 1, 0, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
-
-                Win32.TimeBeginPeriod(1); // set timer resolution to 1ms => freq=1000Hz
-
-                Application.EnableVisualStyles();
-                Application.DoEvents();
-
-                //Application.Run(new Console(args));
-                // wjt hacked
-
-                theConsole = new Console(args);
-
-                if (theConsole.resetForAutoMerge)
-                {
-                    Application.Exit();
-                }
-                else Application.Run(theConsole);
+                // Shut down the current process
+                Application.Exit();
             }
-            catch (Exception ex)
+            else
             {
-                string msg = ex.Message + "\n\n" + ex.StackTrace.ToString();
-                if (ex.InnerException != null) msg += "\n\n" + ex.InnerException.Message;
-                MessageBox.Show(msg, "Fatal Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string app_data_path = "";
+                foreach (string s in args)
+                {
+                    if (s.StartsWith("-datapath:"))
+                    {
+                        string path = s.Trim().Substring(s.Trim().IndexOf(":") + 1);
+                        if (path.EndsWith("\"")) path = path.Substring(0, path.Length - 1);
+                        if (!path.EndsWith("\\")) path += "\\";
+#if(DEBUG)
+                        path += "Debug\\";
+#endif
+                        if (Directory.Exists(path))
+                            app_data_path = path;
+                        else
+                        {
+                            DialogResult dr = MessageBox.Show("-datapath: command line option found, but the folder specified was not found.\n" +
+                                "Would you like to create this folder?  If not, the default folder will be used.\n\n" +
+                                "(" + s + ")",
+                                "Command Line Option: Create Folder?",
+                                MessageBoxButtons.YesNo,
+                                MessageBoxIcon.Question);
+
+                            if (dr == DialogResult.Yes)
+                            {
+                                Directory.CreateDirectory(path);
+                                app_data_path = path;
+                            }
+                        }
+                    }
+                }
+
+                if (app_data_path == "")
+                {
+                    Assembly assembly = Assembly.GetExecutingAssembly();
+                    FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
+                    string version = fvi.FileVersion.Substring(0, fvi.FileVersion.LastIndexOf("."));
+                    app_data_path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
+                        + "\\FlexRadio Systems\\PowerSDR mRX PS\\";
+#if(DEBUG)
+                    app_data_path += "Debug\\";
+#endif
+                }
+
+                try
+                {
+                    // if (!File.Exists(app_data_path + "wisdom"))
+                    {
+                        // Need to create the directory in %appdata% before we go run wisdom
+                        if (!Directory.Exists(app_data_path))
+                            Directory.CreateDirectory(app_data_path);
+                        //Process p = Process.Start(Application.StartupPath + "\\fftw_wisdom.exe", "\"" + app_data_path);
+                        /*  MessageBox.Show("Running DttSP optimization.  Please wait patiently for " +
+                              "this process to finish.\nTypically the optimization takes no more than 3-5 minutes.",
+                              "Optimizing...",
+                              MessageBoxButtons.OK,
+                              MessageBoxIcon.Information); */
+                        //p.WaitForExit();
+                    }
+
+                    /*  if (!File.Exists(app_data_path + "specWisdom"))
+                      {
+                          appdatapath = app_data_path;
+                          // Need to create the directory in %appdata% before we go run wisdom
+                          if (!Directory.Exists(app_data_path))
+                              Directory.CreateDirectory(app_data_path);
+                          //  Process p = Process.Start(Application.StartupPath + "\\fftw_specWisdom.exe", "\"" + app_data_path);
+                          // MessageBox.Show("Running specHPSDR optimization.  Please wait patiently for " +
+                          //   "this process to finish.\nTypically the optimization takes no more than 15-20 minutes.",
+                          //  "Optimizing...",
+                          //  MessageBoxButtons.OK,
+                          //  MessageBoxIcon.Information);
+                          //  p.WaitForExit();
+                      } */
+
+                    int rc = 0;
+                    SpecHPSDRDLL.XCreateAnalyzer(0, ref rc, 262144, 1, 3, app_data_path + "specWisdom");
+                    SpecHPSDRDLL.XCreateAnalyzer(1, ref rc, 262144, 1, 1, app_data_path + "specWisdom");
+
+                    try
+                    {
+                        if (!CheckForOpenProcesses())
+                            return;
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+
+                    SpecHPSDRDLL.create_anbEXT(0, 1, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
+                    SpecHPSDRDLL.create_anbEXT(1, 1, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
+                    SpecHPSDRDLL.create_anbEXT(2, 1, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
+                    SpecHPSDRDLL.create_anbEXT(3, 1, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
+                    SpecHPSDRDLL.create_nobEXT(0, 1, 0, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
+                    SpecHPSDRDLL.create_nobEXT(1, 1, 0, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
+                    SpecHPSDRDLL.create_nobEXT(2, 1, 0, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
+                    SpecHPSDRDLL.create_nobEXT(3, 1, 0, 1024, 192000, 0.0001, 0.0001, 0.0001, 0.05, 20);
+
+                    Win32.TimeBeginPeriod(1); // set timer resolution to 1ms => freq=1000Hz
+
+                    Application.EnableVisualStyles();
+                    Application.DoEvents();
+
+                    //Application.Run(new Console(args));
+                    // wjt hacked
+
+                    theConsole = new Console(args);
+
+                    if (theConsole.resetForAutoMerge)
+                    {
+                        Application.Exit();
+                    }
+                    else Application.Run(theConsole);
+                }
+                catch (Exception ex)
+                {
+                    string msg = ex.Message + "\n\n" + ex.StackTrace.ToString();
+                    if (ex.InnerException != null) msg += "\n\n" + ex.InnerException.Message;
+                    MessageBox.Show(msg, "Fatal Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
         }

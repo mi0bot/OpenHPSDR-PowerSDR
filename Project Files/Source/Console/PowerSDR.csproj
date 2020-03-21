@@ -28,15 +28,15 @@
     </UpgradeBackupLocation>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <ManifestCertificateThumbprint>AEF2072BFD4E1723668C4A72938E707A73AAFB8B</ManifestCertificateThumbprint>
-    <ManifestKeyFile>PowerSDR_TemporaryKey.pfx</ManifestKeyFile>
-    <GenerateManifests>false</GenerateManifests>
-    <SignManifests>false</SignManifests>
+    <ManifestCertificateThumbprint>F093267C3D204395C0F181DAC30AB4A559FE8EC5</ManifestCertificateThumbprint>
+    <ManifestKeyFile>PowerSDR_1_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
     <TargetZone>LocalIntranet</TargetZone>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <UICulture>en-US</UICulture>
-    <PublishUrl>C:\Documents and Settings\w5wc\Desktop\PowerSDR 1.19.3\publish\</PublishUrl>
+    <PublishUrl>C:\Users\reid\Documents\OpenHPSDR-PowerSDR\Publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -46,9 +46,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -1020,6 +1021,8 @@
     <EmbeddedResource Include="xvtr.zh-Hant.resx">
       <DependentUpon>xvtr.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="PowerSDR_1_TemporaryKey.pfx" />
     <None Include="Resources\grabbing.cur" />
     <None Include="Resources\grab.cur" />
     <EmbeddedResource Include="alphawarnform.resx">
@@ -1226,7 +1229,9 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="PowerSDR_TemporaryKey.pfx" />
-    <None Include="Properties\app.manifest" />
+    <None Include="Properties\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Midi2Cat\Midi2Cat.csproj">
@@ -1244,6 +1249,38 @@
     <XliffResource Include="MultilingualResources\PowerSDR.ru.xlf" />
     <XliffResource Include="MultilingualResources\PowerSDR.zh-Hans.xlf" />
     <XliffResource Include="MultilingualResources\PowerSDR.zh-Hant.xlf" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="images\hpsdr.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="images\hpsdr5.png">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="images\openhpsdr_splash.png">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets" Label="MultilingualAppToolkit" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets')" />

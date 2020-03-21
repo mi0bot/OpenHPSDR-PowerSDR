@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>C:\Documents and Settings\w5wc\Desktop\PowerSDR 1.19.3\publish\</PublishUrlHistory>
+    <PublishUrlHistory>C:\Users\reid\Documents\OpenHPSDR-PowerSDR\Publish\|C:\Documents and Settings\w5wc\Desktop\PowerSDR 1.19.3\publish\</PublishUrlHistory>
     <InstallUrlHistory>
     </InstallUrlHistory>
     <SupportUrlHistory>

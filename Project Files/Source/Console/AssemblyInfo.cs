@@ -40,7 +40,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("OpenHPSDR")]
 [assembly: AssemblyProduct("PowerSDR")]
-[assembly: AssemblyCopyright("2017")]
+[assembly: AssemblyCopyright("2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 //In order to begin building localizable applications, set 

@@ -33,3 +33,6 @@ Project Files/Source/PowerSDR_vs2013.opensdf
 Project Files/Source/PowerSDR_vs2013.sdf
 Project Files/Source/JanusAudio/JanusAudio.exp
 Project Files/Source/JanusAudio/JanusAudio.lib
+Publish/
+Project Files/bin/Release/
+Project Files/bin/Debug/
