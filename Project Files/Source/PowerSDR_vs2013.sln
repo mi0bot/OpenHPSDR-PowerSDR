@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerSDR", "Console\PowerSDR.csproj", "{831AEB2F-CA78-4057-85D7-32B4816ED6AE}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -56,6 +56,7 @@ Global
 		{501522F9-17B4-4259-973D-0CEB6341A64B}.Debug|Any CPU.Build.0 = Release|Win32
 		{501522F9-17B4-4259-973D-0CEB6341A64B}.Debug|Any CPU.Deploy.0 = Release|Win32
 		{501522F9-17B4-4259-973D-0CEB6341A64B}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{501522F9-17B4-4259-973D-0CEB6341A64B}.Debug|Mixed Platforms.Build.0 = Debug|Win32
 		{501522F9-17B4-4259-973D-0CEB6341A64B}.Debug|Win32.ActiveCfg = Release|Win32
 		{501522F9-17B4-4259-973D-0CEB6341A64B}.Debug|Win32.Build.0 = Release|Win32
 		{501522F9-17B4-4259-973D-0CEB6341A64B}.Debug|x86.ActiveCfg = Release|Win32
@@ -71,6 +72,7 @@ Global
 		{7889761C-C21D-4DDD-95D7-86E11EFA9005}.Debug|Any CPU.Build.0 = Release|Win32
 		{7889761C-C21D-4DDD-95D7-86E11EFA9005}.Debug|Any CPU.Deploy.0 = Release|Win32
 		{7889761C-C21D-4DDD-95D7-86E11EFA9005}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{7889761C-C21D-4DDD-95D7-86E11EFA9005}.Debug|Mixed Platforms.Build.0 = Debug|Win32
 		{7889761C-C21D-4DDD-95D7-86E11EFA9005}.Debug|Win32.ActiveCfg = Release|Win32
 		{7889761C-C21D-4DDD-95D7-86E11EFA9005}.Debug|Win32.Build.0 = Release|Win32
 		{7889761C-C21D-4DDD-95D7-86E11EFA9005}.Debug|x86.ActiveCfg = Release|Win32
@@ -86,6 +88,7 @@ Global
 		{0A18A071-125E-442F-AFF7-A3F68ABECF99}.Debug|Any CPU.Build.0 = Release|Win32
 		{0A18A071-125E-442F-AFF7-A3F68ABECF99}.Debug|Any CPU.Deploy.0 = Release|Win32
 		{0A18A071-125E-442F-AFF7-A3F68ABECF99}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{0A18A071-125E-442F-AFF7-A3F68ABECF99}.Debug|Mixed Platforms.Build.0 = Debug|Win32
 		{0A18A071-125E-442F-AFF7-A3F68ABECF99}.Debug|Win32.ActiveCfg = Release|Win32
 		{0A18A071-125E-442F-AFF7-A3F68ABECF99}.Debug|Win32.Build.0 = Release|Win32
 		{0A18A071-125E-442F-AFF7-A3F68ABECF99}.Debug|x86.ActiveCfg = Release|Win32
@@ -127,5 +130,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C414311-7B83-4546-B968-6349C7A0E1D2}
 	EndGlobalSection
 EndGlobal
