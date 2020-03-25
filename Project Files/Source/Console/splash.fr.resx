@@ -12,7 +12,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing">
+  <data name="$this.BackgroundImage" xml:space="preserve" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAE9CAYAAAAlPTT8AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAAd0SU1FB90EDQ8NBasGFrMAAKZrSURBVHhe7V0HeFNVGw5l7yV7ikxRQJQhKCAO
@@ -728,7 +728,7 @@
         I+QpHo4UL6wW7/9yJMsUghyF96Dyhw/Qvguw2fUCfAMSwP8B8mL9jmy/AgcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing">
+  <data name="$this.Icon" xml:space="preserve" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAMAAAAUAAAALAAAACgAAAAfAAAALQAAAB0AAAAQAAAAMQAAACcAAAAWAAAAHgAA
@@ -804,7 +804,7 @@
         AAGAAAABgAAAAYAAAAGAAAABgAAAAeAAAAM=
 </value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timer1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
 </root>
