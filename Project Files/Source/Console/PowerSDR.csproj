@@ -1291,6 +1291,6 @@
     <PreBuildEvent>
     </PreBuildEvent>
     <PostBuildEvent>copy "$(ProjectDir)CAT\CATStructs.xml" "$(OutDir)";
-</PostBuildEvent>
+copy "$(ProjectDir)..\..\bin\Pre-built\*.*" "$(OutDir)";</PostBuildEvent>
   </PropertyGroup>
 </Project>

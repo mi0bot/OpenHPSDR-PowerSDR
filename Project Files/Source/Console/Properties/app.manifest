@@ -19,8 +19,8 @@
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
       <applicationRequestMinimum>
-        <defaultAssemblyRequest permissionSetReference="Custom" />
         <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
     </security>
   </trustInfo>
