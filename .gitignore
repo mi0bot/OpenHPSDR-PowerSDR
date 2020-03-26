@@ -13,22 +13,6 @@ Project Files/lib/portaudio_VS2008/build/msvc/Win32
 Project Files/lib/fftw_wisdom/temp
 Project Files/lib/pthread/Win32
 Project Files/Source/*.bak
-Project Files/bin/Release/JanusAudio.dll
-Project Files/bin/Release/Midi2Cat.dll
-Project Files/bin/Release/Midi2Cat.pdb
-Project Files/bin/Release/PA19.dll
-Project Files/bin/Release/PowerSDR.exe
-Project Files/bin/Release/PowerSDR.pdb
-Project Files/bin/Release/pthreadVC.dll
-Project Files/bin/Release/de/PowerSDR.resources.dll
-Project Files/bin/Release/es/PowerSDR.resources.dll
-Project Files/bin/Release/fr/PowerSDR.resources.dll
-Project Files/bin/Release/it/PowerSDR.resources.dll
-Project Files/bin/Release/ja/PowerSDR.resources.dll
-Project Files/bin/Release/ko/PowerSDR.resources.dll
-Project Files/bin/Release/ru/PowerSDR.resources.dll
-Project Files/bin/Release/zh-Hans/PowerSDR.resources.dll
-Project Files/bin/Release/zh-Hant/PowerSDR.resources.dll
 Project Files/Source/PowerSDR_vs2013.opensdf
 Project Files/Source/PowerSDR_vs2013.sdf
 Project Files/Source/JanusAudio/JanusAudio.exp
@@ -36,3 +20,5 @@ Project Files/Source/JanusAudio/JanusAudio.lib
 Publish/
 Project Files/bin/Release/
 Project Files/bin/Debug/
+Project Files/Source/.vs
+Project Files/bin/Release

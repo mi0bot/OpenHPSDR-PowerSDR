@@ -1288,9 +1288,8 @@
     <Warning Text="$(MSBuildProjectFile) is Multilingual build enabled, but the Multilingual App Toolkit is unavailable during the build. If building with Visual Studio, please check to ensure that toolkit is properly installed." />
   </Target>
   <PropertyGroup>
-    <PreBuildEvent>
-    </PreBuildEvent>
+    <PreBuildEvent>copy "$(ProjectDir)..\..\bin\Pre-built\*.*" "$(OutDir)";</PreBuildEvent>
     <PostBuildEvent>copy "$(ProjectDir)CAT\CATStructs.xml" "$(OutDir)";
-copy "$(ProjectDir)..\..\bin\Pre-built\*.*" "$(OutDir)";</PostBuildEvent>
+</PostBuildEvent>
   </PropertyGroup>
 </Project>
