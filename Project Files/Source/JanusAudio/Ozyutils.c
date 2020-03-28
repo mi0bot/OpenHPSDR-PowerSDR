@@ -73,8 +73,9 @@ int Load_Firmware(struct usb_dev_handle *hdev, const char *filename)
     unsigned int b;
     int i;
 	
-    FILE *f = fopen(filename, "ra");
-    if (f == 0) {
+    FILE* f;
+    if(EINVAL == fopen_s(&f, filename, "ra"))
+    {
 #ifdef debug_str
 		printf("error, could not find file %s\n",filename);	 // ***** JJA
 #else
@@ -100,19 +101,19 @@ int Load_Firmware(struct usb_dev_handle *hdev, const char *filename)
             fclose(f);
             return -1;
         }
-        sscanf(s+1, "%02x", &length);
-        sscanf(s+3, "%04x", &addr);
-        sscanf(s+7, "%02x", &type);
+        sscanf_s(s+1, "%02x", &length);
+        sscanf_s(s+3, "%04x", &addr);
+        sscanf_s(s+7, "%02x", &type);
         
         if (type == 0) {
             a = length + (addr & 0xff) + (addr>>8) + type;
             for (i=0; i<length; i++) {
-                sscanf(s+9+i*2, "%02x", &b);
+                sscanf_s(s+9+i*2, "%02x", &b);
                 data[i] = b;
                 a = a + data[i];
             }
             
-            sscanf(s+9+length*2, "%02x", &b);
+            sscanf_s(s+9+length*2, "%02x", &b);
             checksum = b;
             if (((a + checksum) & 0xff) != 0x00) {
                 printf("checksum failed\n");
@@ -167,8 +168,9 @@ int Load_Fpga_Rbf(usb_dev_handle *hdev, const char *filename)
     unsigned char buffer[MAX_EP0_PACKET_SIZE];
     int n;
 
-    FILE *f = fopen(filename, "rb");
-    if (f == 0) {
+    FILE* f;
+    if(EINVAL == fopen_s(&f, filename, "rb"))
+    {
 #ifdef debug_str
 		printf("error, coould not find file %s\n", filename);
 #else
