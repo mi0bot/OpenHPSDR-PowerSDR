@@ -377,7 +377,7 @@ namespace PowerSDR
             this.radGenModelHermesLite.TabIndex = 17;
             this.radGenModelHermesLite.Text = "HERMES-LITE";
             this.radGenModelHermesLite.UseVisualStyleBackColor = true;
-            this.radGenModelHermesLite.CheckedChanged += new System.EventHandler(this.radioButtonTS1_CheckedChanged);
+            this.radGenModelHermesLite.CheckedChanged += new System.EventHandler(this.radGenModelHermes_CheckedChanged);
             // 
             // radGenModelANAN7000D
             // 
@@ -2468,11 +2468,6 @@ namespace PowerSDR
                 radMetis.Text = "ANAN";
                 radOzy.Enabled = false;
             }
-
-        }
-
-        private void radioButtonTS1_CheckedChanged(object sender, EventArgs e)
-        {
 
         }
 
