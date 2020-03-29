@@ -8532,6 +8532,18 @@ namespace PowerSDR
         private void radGenModelHermesLite_CheckedChanged(object sender, EventArgs e)
         {
             console.HERMESLITEPresent = radGenModelHermesLite.Checked;
+
+            if(radGenModelHermesLite.Checked)
+            {
+                grpDisplay8000DLE.Text = "Hermes-Lite";
+                chkANAN8000DLEDisplayVoltsAmps.Text = "Show Temp/Ver/Current";
+            }
+            else
+            {
+                grpDisplay8000DLE.Text = "7000DLE/8000DLE";
+                chkANAN8000DLEDisplayVoltsAmps.Text = "Show Volts/Amps";
+            }
+
             radGenModelHermes_CheckedChanged(sender, e);
         }
 

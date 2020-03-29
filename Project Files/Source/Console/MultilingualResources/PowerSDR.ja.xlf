@@ -25037,8 +25037,9 @@ POWER EXCEEDING THE RATING OF YOUR RADIO!
           <target state="needs-review-translation" state-qualifier="mt-suggestion">スピーカーのオン/オフの sidetone を有効に</target>
         </trans-unit>
         <trans-unit id="udRX1StepAttData.Location" translate="yes" extype="System.Drawing.Point, System.Drawing" xml:space="preserve">
-          <source>56, 249</source>
+          <source>56, 248</source>
           <target state="needs-review-translation">56, 249</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="udRX1StepAttData.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>55, 20</source>
@@ -25297,12 +25298,12 @@ POWER EXCEEDING THE RATING OF YOUR RADIO!
           <target state="new">Reset to Defaults</target>
         </trans-unit>
         <trans-unit id="contextMenuStripNotch.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>149, 120</source>
+          <source>150, 120</source>
           <target state="needs-review-translation">150, 120</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStripNotchDelete.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>148, 22</source>
+          <source>149, 22</source>
           <target state="needs-review-translation">149, 22</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -25311,7 +25312,7 @@ POWER EXCEEDING THE RATING OF YOUR RADIO!
           <target state="new">Delete</target>
         </trans-unit>
         <trans-unit id="toolStripNotchRemember.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>148, 22</source>
+          <source>149, 22</source>
           <target state="needs-review-translation">149, 22</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -25320,12 +25321,12 @@ POWER EXCEEDING THE RATING OF YOUR RADIO!
           <target state="new">Remember</target>
         </trans-unit>
         <trans-unit id="toolStripSeparator1.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>145, 6</source>
+          <source>146, 6</source>
           <target state="needs-review-translation">146, 6</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStripNotchNormal.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>148, 22</source>
+          <source>149, 22</source>
           <target state="needs-review-translation">149, 22</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -25334,7 +25335,7 @@ POWER EXCEEDING THE RATING OF YOUR RADIO!
           <target state="new">Normal (x1)</target>
         </trans-unit>
         <trans-unit id="toolStripNotchDeep.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>148, 22</source>
+          <source>149, 22</source>
           <target state="needs-review-translation">149, 22</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -25343,7 +25344,7 @@ POWER EXCEEDING THE RATING OF YOUR RADIO!
           <target state="new">Deep (x2)</target>
         </trans-unit>
         <trans-unit id="toolStripNotchVeryDeep.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>148, 22</source>
+          <source>149, 22</source>
           <target state="needs-review-translation">149, 22</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -25400,8 +25401,9 @@ POWER EXCEEDING THE RATING OF YOUR RADIO!
           <target state="new">Equalizer</target>
         </trans-unit>
         <trans-unit id="xVTRsToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>52, 20</source>
+          <source>51, 20</source>
           <target state="needs-review-translation">52, 20</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="xVTRsToolStripMenuItem.Text" translate="yes" xml:space="preserve">
           <source>XVTRs</source>
