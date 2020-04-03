@@ -377,7 +377,7 @@ namespace PowerSDR
             this.radGenModelHermesLite.TabIndex = 17;
             this.radGenModelHermesLite.Text = "HERMES-LITE";
             this.radGenModelHermesLite.UseVisualStyleBackColor = true;
-            this.radGenModelHermesLite.CheckedChanged += new System.EventHandler(this.radGenModelHermes_CheckedChanged);
+            this.radGenModelHermesLite.CheckedChanged += new System.EventHandler(this.radGenModelHermesLite_CheckedChanged);
             // 
             // radGenModelANAN7000D
             // 
@@ -1592,7 +1592,8 @@ namespace PowerSDR
 							break;
 						case Model.FLEX5000:
 						case Model.FLEX3000:
-							CurPage = Page.FINISHED;
+                        case Model.HERMESLITE:
+                            CurPage = Page.FINISHED;
 							btnFinished.Focus();
 							break;
                         case Model.HPSDR:
@@ -1824,6 +1825,11 @@ namespace PowerSDR
 				case Model.FLEX3000:
                     break;
                 case Model.HERMES:
+                    console.SetupForm.PennyLanePresent = pennylane_present;
+                    console.SetupForm.MercuryPresent = mercury_present;
+                    console.SetupForm.AlexPresent = alex_present;
+                    console.SetupForm.forceAudioSampleRate1("192000");
+                    break;
                 case Model.HERMESLITE:
                     console.SetupForm.PennyLanePresent = pennylane_present;
                     console.SetupForm.MercuryPresent = mercury_present;
@@ -2229,6 +2235,32 @@ namespace PowerSDR
                 radMetis.Enabled = false;
                 radMetis.Enabled = false;
                 radMetis.Text = "Hermes";
+                radOzy.Enabled = false;
+            }
+        }
+
+        private void radGenModelHermesLite_CheckedChanged(object sender, System.EventArgs e)
+        {
+            if (radGenModelHermesLite.Checked)
+            {
+                model = Model.HERMESLITE;
+                //if (grpModel.Visible)
+                pictureBox1.Image = null;
+                pictureBox1.Visible = false;
+                //pictureBox1.Image = new Bitmap(GetResource("PowerSDR.images.hpsdr.jpg"));
+                chkMercury.Checked = radGenModelHermesLite.Checked;
+                chkPennyLane.Checked = radGenModelHermesLite.Checked;
+                chkMercury.Enabled = false;
+                chkPennyLane.Enabled = false;
+                chkPenny.Enabled = false;
+                chkPenny.Checked = false;
+                chkExcalibur.Enabled = false;
+                chkExcalibur.Checked = false;
+                chkAlex.Checked = true;
+                radMetis.Checked = true;
+                radMetis.Enabled = false;
+                radMetis.Enabled = false;
+                radMetis.Text = "HermesLite";
                 radOzy.Enabled = false;
             }
         }
