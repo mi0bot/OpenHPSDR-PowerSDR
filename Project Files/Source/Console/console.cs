@@ -28407,6 +28407,9 @@ namespace PowerSDR
         private int change_overload_color_count = 0;
         private int oload_select = 0;                   // selection of which overload to display this time
         private const int num_oloads = 2;               // number of possible overload displays
+        private int attn_loop = 0;                       // Delay timer to increase gain
+        private Band current_band = Band.FIRST;
+        private bool search = true;
         private void UpdatePeakText()
         {
             int NWSeqError = JanusAudio.getSeqError();
@@ -28439,7 +28442,11 @@ namespace PowerSDR
                                     txtOverload.Text = "ADC1 Overload!";
                                 else
                                     if (udRX1StepAttData.Value < udRX1StepAttData.Maximum)
+                                    { 
                                         udRX1StepAttData.Value++;
+                                        attn_loop = 10;
+                                        search = false;
+                                    }
                                 break;
                             case 2:
                                 txtOverload.Text = "ADC2 Overload!";
@@ -28465,8 +28472,27 @@ namespace PowerSDR
                 change_overload_color_count = 0;
 
                 if (lblPreamp.Tag != null)
-                    if (udRX1StepAttData.Value > udRX1StepAttData.Minimum)
-                        udRX1StepAttData.Value--;
+                {
+                    if (current_band == RX1Band)
+                    {
+                        if (0 >= attn_loop || search)
+                        {
+                            if (udRX1StepAttData.Value > udRX1StepAttData.Minimum)
+                                udRX1StepAttData.Value--;
+                            
+                            attn_loop = 10;
+                        }
+                        else
+                        {
+                            attn_loop--;
+                        }
+                    }
+                    else
+                    {
+                        search = true;
+                        current_band = RX1Band;
+                    }
+                }
             }
             switch (change_overload_color_count)
             {
