@@ -4779,6 +4779,7 @@ namespace PowerSDR
             0,
             0});
             this.udRX1StepAttData.Name = "udRX1StepAttData";
+            this.udRX1StepAttData.Tag = "-1";
             this.toolTip1.SetToolTip(this.udRX1StepAttData, resources.GetString("udRX1StepAttData.ToolTip"));
             this.udRX1StepAttData.Value = new decimal(new int[] {
             0,
@@ -28434,7 +28435,11 @@ namespace PowerSDR
                         switch (adc_oload_num)
                         {
                             case 1:
-                                txtOverload.Text = "ADC1 Overload!";
+                                if (lblPreamp.Tag == null)
+                                    txtOverload.Text = "ADC1 Overload!";
+                                else
+                                    if (udRX1StepAttData.Value < udRX1StepAttData.Maximum)
+                                        udRX1StepAttData.Value++;
                                 break;
                             case 2:
                                 txtOverload.Text = "ADC2 Overload!";
@@ -28458,6 +28463,10 @@ namespace PowerSDR
                 if (tx_inhibit) txtOverload.Text = "TX Inhibit";
                 else txtOverload.Text = "";
                 change_overload_color_count = 0;
+
+                if (lblPreamp.Tag != null)
+                    if (udRX1StepAttData.Value > udRX1StepAttData.Minimum)
+                        udRX1StepAttData.Value--;
             }
             switch (change_overload_color_count)
             {
@@ -52654,15 +52663,9 @@ namespace PowerSDR
                     SetupForm.ATTOnTX = (int)udRX1StepAttData.Value;
                 }
 
-                if (HERMESLITEPresent)
-                {
-                    SetupForm.HermesAttenuatorData = (int)(udRX1StepAttData.Value);
-                }
-                else
-                {
-                    SetupForm.HermesAttenuatorData = (int)udRX1StepAttData.Value;
-                }
+                SetupForm.HermesAttenuatorData = (int)udRX1StepAttData.Value;
             }
+
             if (udRX1StepAttData.Focused) btnHidden.Focus();
         }
 
@@ -52674,7 +52677,20 @@ namespace PowerSDR
 
         private void lblPreamp_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (current_model != Model.HPSDR)
+            if (current_hpsdr_model == HPSDRModel.HERMESLITE)
+            {
+                if (lblPreamp.Tag == null)
+                {
+                    lblPreamp.Tag = 1;
+                    lblPreamp.Text = "A-ATT";
+                }
+                else
+                {
+                    lblPreamp.Tag = null;
+                    lblPreamp.Text = "S-ATT";
+                }
+            }
+            else if (current_model != Model.HPSDR)
                 SetupForm.HermesEnableAttenuator = !SetupForm.HermesEnableAttenuator;
         }
 
