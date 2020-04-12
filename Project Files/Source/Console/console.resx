@@ -3283,7 +3283,7 @@
     <value>panelSoundControls</value>
   </data>
   <data name="&gt;&gt;comboPreamp.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="lblRF.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -7375,7 +7375,7 @@
     <value>panelSoundControls</value>
   </data>
   <data name="&gt;&gt;udRX1StepAttData.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="comboRX2Preamp.ItemHeight" type="System.Int32, mscorlib">
     <value>13</value>
@@ -11182,7 +11182,7 @@
     <value>panelSoundControls</value>
   </data>
   <data name="&gt;&gt;lblPreamp.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="panelSoundControls.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 175</value>

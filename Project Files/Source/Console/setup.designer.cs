@@ -309,8 +309,8 @@
             this.udHWKeyDownDelay = new System.Windows.Forms.NumericUpDownTS();
             this.chkRX2StepAtt = new System.Windows.Forms.CheckBoxTS();
             this.grpHermesStepAttenuator = new System.Windows.Forms.GroupBoxTS();
-            this.udHermesStepAttenuatorData = new System.Windows.Forms.NumericUpDownTS();
             this.chkHermesStepAttenuator = new System.Windows.Forms.CheckBoxTS();
+            this.udHermesStepAttenuatorData = new System.Windows.Forms.NumericUpDownTS();
             this.grpGenCustomTitleText = new System.Windows.Forms.GroupBoxTS();
             this.txtGenCustomTitle = new System.Windows.Forms.TextBoxTS();
             this.grpOptMisc = new System.Windows.Forms.GroupBoxTS();
@@ -7929,14 +7929,26 @@
             // 
             // grpHermesStepAttenuator
             // 
-            this.grpHermesStepAttenuator.Controls.Add(this.udHermesStepAttenuatorData);
             this.grpHermesStepAttenuator.Controls.Add(this.chkHermesStepAttenuator);
+            this.grpHermesStepAttenuator.Controls.Add(this.udHermesStepAttenuatorData);
             this.grpHermesStepAttenuator.Location = new System.Drawing.Point(416, 72);
             this.grpHermesStepAttenuator.Name = "grpHermesStepAttenuator";
             this.grpHermesStepAttenuator.Size = new System.Drawing.Size(144, 56);
             this.grpHermesStepAttenuator.TabIndex = 30;
             this.grpHermesStepAttenuator.TabStop = false;
             this.grpHermesStepAttenuator.Text = "Hermes Attenuator";
+            this.grpHermesStepAttenuator.Enter += new System.EventHandler(this.grpHermesStepAttenuator_Enter);
+            // 
+            // chkHermesStepAttenuator
+            // 
+            this.chkHermesStepAttenuator.Image = null;
+            this.chkHermesStepAttenuator.Location = new System.Drawing.Point(6, 23);
+            this.chkHermesStepAttenuator.Name = "chkHermesStepAttenuator";
+            this.chkHermesStepAttenuator.Size = new System.Drawing.Size(68, 16);
+            this.chkHermesStepAttenuator.TabIndex = 2;
+            this.chkHermesStepAttenuator.Text = "Enable";
+            this.toolTip1.SetToolTip(this.chkHermesStepAttenuator, "Enable the step attenuator.");
+            this.chkHermesStepAttenuator.CheckedChanged += new System.EventHandler(this.chkHermesStepAttenuator_CheckedChanged);
             // 
             // udHermesStepAttenuatorData
             // 
@@ -7966,17 +7978,6 @@
             0,
             0});
             this.udHermesStepAttenuatorData.ValueChanged += new System.EventHandler(this.udHermesStepAttenuatorData_ValueChanged);
-            // 
-            // chkHermesStepAttenuator
-            // 
-            this.chkHermesStepAttenuator.Image = null;
-            this.chkHermesStepAttenuator.Location = new System.Drawing.Point(6, 23);
-            this.chkHermesStepAttenuator.Name = "chkHermesStepAttenuator";
-            this.chkHermesStepAttenuator.Size = new System.Drawing.Size(68, 16);
-            this.chkHermesStepAttenuator.TabIndex = 2;
-            this.chkHermesStepAttenuator.Text = "Enable";
-            this.toolTip1.SetToolTip(this.chkHermesStepAttenuator, "Enable the step attenuator.");
-            this.chkHermesStepAttenuator.CheckedChanged += new System.EventHandler(this.chkHermesStepAttenuator_CheckedChanged);
             // 
             // grpGenCustomTitleText
             // 

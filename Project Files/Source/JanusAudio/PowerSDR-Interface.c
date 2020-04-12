@@ -1148,16 +1148,17 @@ KD5TFDVK6APHAUDIO_API void SetUserOut3(int out) {
 /*
 C4
 0 0 0 0 0 0 0 0
-    | |       |
-    | +-------+------------ Hermes/Angelia/Orion RX1 Input Attenuator (0 – 31dB) [4:0]
-    +---------------------- Hermes/Angelia/Orion RX1 Attenuator enable (0 = disable, 1 = enable)
-                             If disabled then Preamp On/Off bit is used.
+  | | |       |
+  | | +-------+------------ Hermes/Angelia/Orion RX1 Input Attenuator (0 – 31dB) [4:0]
+  | +---------------------- Hermes/Angelia/Orion RX1 Attenuator enable (0 = disable, 1 = enable)
+  |                         If disabled then Preamp On/Off bit is used.
+  +-------------------------HermseLite full LNA enable (0 = disable, 1 = enable)
 */
 
-KD5TFDVK6APHAUDIO_API void SetADC1StepAttenData(int bits) { 
-		adc1_step_att_data = bits & 0x1f; 
-		if (diversitymode2) adc2_step_att_data = adc1_step_att_data;
-    	return;
+KD5TFDVK6APHAUDIO_API void SetADC1StepAttenData(int bits) {
+    adc1_step_att_data = (bits & 0x1f) | enable_ADC1_step_att;
+    if (diversitymode2) adc2_step_att_data = adc1_step_att_data;
+    return;
 }
 
 KD5TFDVK6APHAUDIO_API void EnableADC1StepAtten(int bits) { 
@@ -1170,6 +1171,11 @@ KD5TFDVK6APHAUDIO_API void EnableADC1StepAtten(int bits) {
 	return;
 }
 
+KD5TFDVK6APHAUDIO_API void SetADC1LNAData(int bits) { 
+	adc1_step_att_data = (bits & 0x3f) | 0x40; 
+	adc2_step_att_data = adc1_step_att_data;   
+    return;
+}
 /*
 C0
 0 0 0 1 0 1 1 x  0x16

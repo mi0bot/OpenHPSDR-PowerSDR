@@ -19646,8 +19646,20 @@ namespace PowerSDR
             console.RX1AttenuatorData = (int)udHermesStepAttenuatorData.Value;
 
             if (AlexPresent && !console.ANAN10Present && !console.ANAN10EPresent /* && !console.ANAN100BPresent */)
+            {
                 udHermesStepAttenuatorData.Maximum = (decimal)61;
-            else udHermesStepAttenuatorData.Maximum = (decimal)31;
+                udHermesStepAttenuatorData.Minimum = (decimal)0;
+            }
+            else if (console.HERMESLITEPresent)
+            {
+                udHermesStepAttenuatorData.Maximum = (decimal)32;
+                udHermesStepAttenuatorData.Minimum = (decimal)-28;
+            }
+            else
+            {
+                udHermesStepAttenuatorData.Maximum = (decimal)31;
+                udHermesStepAttenuatorData.Minimum = (decimal)0;
+            }
         }
 
         private void chkRX2StepAtt_CheckedChanged(object sender, EventArgs e)
@@ -22001,6 +22013,11 @@ namespace PowerSDR
         private void chkBPF2HFLNAControl_CheckedChanged(object sender, EventArgs e)
         {
             console.BPF2HFLNA = chkBPF2HFLNAControl.Checked;
+        }
+
+        private void grpHermesStepAttenuator_Enter(object sender, EventArgs e)
+        {
+
         }
 
         //private void chkCTUNScroll_CheckedChanged(object sender, EventArgs e)

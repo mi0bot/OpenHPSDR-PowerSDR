@@ -33,9 +33,6 @@
   <data name="ptbRX2RF.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>118</value>
   </data>
-  <data name="ptbRX2RF.ToolTip" xml:space="preserve">
-    <value>AGC 最大增益的作用类似于传统的射频增益</value>
-  </data>
   <data name="lblRX2RF.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
@@ -53,9 +50,6 @@
   </data>
   <data name="lblRX2RF.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
-  </data>
-  <data name="lblRX2RF.ToolTip" xml:space="preserve">
-    <value>AGC 最大增益/阈值的作用类似于传统的射频增益</value>
   </data>
   <data name="chkRX2Squelch.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -77,9 +71,6 @@
   </data>
   <data name="chkRX2Squelch.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>98</value>
-  </data>
-  <data name="chkRX2Squelch.ToolTip" xml:space="preserve">
-    <value>Squelch 启用</value>
   </data>
   <data name="chkRX2Mute.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -108,9 +99,6 @@
   <data name="chkRX2Mute.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkRX2Mute.ToolTip" xml:space="preserve">
-    <value>静音-静音扬声器的输出。</value>
-  </data>
   <data name="chkRX2NB2.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -137,9 +125,6 @@
   </data>
   <data name="chkRX2NB2.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="chkRX2NB2.ToolTip" xml:space="preserve">
-    <value>插值噪音 Blanker</value>
   </data>
   <data name="chkRX2NR.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -168,9 +153,6 @@
   <data name="chkRX2NR.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkRX2NR.ToolTip" xml:space="preserve">
-    <value>降噪</value>
-  </data>
   <data name="chkRX2NB.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -198,9 +180,6 @@
   <data name="chkRX2NB.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkRX2NB.ToolTip" xml:space="preserve">
-    <value>Blanker 的噪音</value>
-  </data>
   <data name="lblRX2AGC.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
@@ -218,9 +197,6 @@
   </data>
   <data name="lblRX2AGC.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
-  </data>
-  <data name="lblRX2AGC.ToolTip" xml:space="preserve">
-    <value>AGC 模式</value>
   </data>
   <data name="chkRX2ANF.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -249,9 +225,6 @@
   <data name="chkRX2ANF.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkRX2ANF.ToolTip" xml:space="preserve">
-    <value>凹槽的自动筛选器</value>
-  </data>
   <data name="comboRX2AGC.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -263,9 +236,6 @@
   </data>
   <data name="comboRX2AGC.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>94</value>
-  </data>
-  <data name="comboRX2AGC.ToolTip" xml:space="preserve">
-    <value>自动增益控制模式设置</value>
   </data>
   <data name="chkRX2BIN.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -293,9 +263,6 @@
   </data>
   <data name="chkRX2BIN.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="chkRX2BIN.ToolTip" xml:space="preserve">
-    <value>双耳-输出 I 和 Q 在左侧和右侧音频通道。</value>
   </data>
   <data name="ckQuickPlay.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -327,8 +294,77 @@
   <data name="ckQuickPlay.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="ckQuickPlay.ToolTip" xml:space="preserve">
-    <value>信号的快速播放录制"关闭空气"</value>
+  <data name="ckQuickRec.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="ckQuickRec.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ckQuickRec.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="ckQuickRec.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="ckQuickRec.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="ckQuickRec.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>8, 76</value>
+  </data>
+  <data name="ckQuickRec.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="ckQuickRec.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="ckQuickRec.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="chkSR.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="chkSR.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="chkSR.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chkSR.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="chkSR.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkSR.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>59, 30</value>
+  </data>
+  <data name="chkSR.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="chkSR.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="chkSR.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="comboTuneMode.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="comboTuneMode.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="comboTuneMode.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>59, 30</value>
+  </data>
+  <data name="comboTuneMode.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>50, 21</value>
+  </data>
+  <data name="comboTuneMode.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="comboTuneMode.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="chkMON.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -357,39 +393,6 @@
   <data name="chkMON.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkMON.ToolTip" xml:space="preserve">
-    <value>监视器-启用 TX 音频通过扬声器传出。</value>
-  </data>
-  <data name="ckQuickRec.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="ckQuickRec.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="ckQuickRec.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="ckQuickRec.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value></value>
-  </data>
-  <data name="ckQuickRec.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Off</value>
-  </data>
-  <data name="ckQuickRec.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>8, 76</value>
-  </data>
-  <data name="ckQuickRec.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
-  </data>
-  <data name="ckQuickRec.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="ckQuickRec.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="ckQuickRec.ToolTip" xml:space="preserve">
-    <value>"关闭无线"快速记录信号</value>
-  </data>
   <data name="chkRX2SR.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -416,9 +419,6 @@
   </data>
   <data name="chkRX2SR.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="chkRX2SR.ToolTip" xml:space="preserve">
-    <value>接收上 MOX 的显示。</value>
   </data>
   <data name="chkMOX.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -450,9 +450,6 @@
   <data name="chkMOX.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkMOX.ToolTip" xml:space="preserve">
-    <value>传送-按循环到 RX 或得克萨斯州模式。</value>
-  </data>
   <data name="chkTUN.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -483,60 +480,6 @@
   <data name="chkTUN.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkTUN.ToolTip" xml:space="preserve">
-    <value>此控件输出使用设置 (仅 TUN 处于活动状态时可调整) 保存的 PWR 稳定音。</value>
-  </data>
-  <data name="chkSR.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="chkSR.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="chkSR.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="chkSR.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value></value>
-  </data>
-  <data name="chkSR.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkSR.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>59, 30</value>
-  </data>
-  <data name="chkSR.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
-  </data>
-  <data name="chkSR.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="chkSR.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="chkSR.ToolTip" xml:space="preserve">
-    <value>Alex 自动/手动控制</value>
-  </data>
-  <data name="comboTuneMode.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboTuneMode.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="comboTuneMode.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>59, 30</value>
-  </data>
-  <data name="comboTuneMode.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>50, 21</value>
-  </data>
-  <data name="comboTuneMode.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="comboTuneMode.ToolTip" xml:space="preserve">
-    <value>ATU 操作模式</value>
-  </data>
-  <data name="comboTuneMode.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="chkX2TR.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -563,9 +506,6 @@
   </data>
   <data name="chkX2TR.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkX2TR.ToolTip" xml:space="preserve">
-    <value>允许单击 RX2 的调谐拖</value>
   </data>
   <data name="chkFWCATUBypass.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -594,9 +534,6 @@
   <data name="chkFWCATUBypass.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkFWCATUBypass.ToolTip" xml:space="preserve">
-    <value>单击以跳过 ATU</value>
-  </data>
   <data name="chkFWCATU.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -624,9 +561,6 @@
   <data name="chkFWCATU.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkFWCATU.ToolTip" xml:space="preserve">
-    <value>允许单击调谐拖动为 RX1 Tunig</value>
-  </data>
   <data name="comboRX2Band.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -641,9 +575,6 @@
   </data>
   <data name="comboRX2Band.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>110</value>
-  </data>
-  <data name="comboRX2Band.ToolTip" xml:space="preserve">
-    <value>显示模式选择</value>
   </data>
   <data name="chkRX2Preamp.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -668,9 +599,6 @@
   </data>
   <data name="chkRX2Preamp.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkRX2Preamp.ToolTip" xml:space="preserve">
-    <value>打开/关闭 RX2 衰减器</value>
   </data>
   <data name="chkRX2Preamp.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -699,9 +627,6 @@
   <data name="chkPower.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkPower.ToolTip" xml:space="preserve">
-    <value>打开或关闭无线电。</value>
-  </data>
   <data name="ptbFilterShift.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -722,9 +647,6 @@
   </data>
   <data name="ptbFilterShift.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>108</value>
-  </data>
-  <data name="ptbFilterShift.ToolTip" xml:space="preserve">
-    <value>向上或向下的带滑块移动该筛选器。</value>
   </data>
   <data name="ptbFilterWidth.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -747,9 +669,6 @@
   <data name="ptbFilterWidth.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>114</value>
   </data>
-  <data name="ptbFilterWidth.ToolTip" xml:space="preserve">
-    <value>扩展/合同与滑块的筛选器宽度。</value>
-  </data>
   <data name="btnFilterShiftReset.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -771,9 +690,6 @@
   <data name="btnFilterShiftReset.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="btnFilterShiftReset.ToolTip" xml:space="preserve">
-    <value>重置如果 shift 键来中心 (0) 的位置。</value>
-  </data>
   <data name="udFilterHigh.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -792,9 +708,6 @@
   <data name="udFilterHigh.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
   </data>
-  <data name="udFilterHigh.ToolTip" xml:space="preserve">
-    <value>高的筛选器</value>
-  </data>
   <data name="udFilterLow.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -812,9 +725,6 @@
   </data>
   <data name="udFilterLow.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
-  </data>
-  <data name="udFilterLow.ToolTip" xml:space="preserve">
-    <value>较低的筛选器</value>
   </data>
   <data name="ptbCWSpeed.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -837,9 +747,6 @@
   <data name="ptbCWSpeed.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>115</value>
   </data>
-  <data name="ptbCWSpeed.ToolTip" xml:space="preserve">
-    <value>设置在 WPM CW 速度</value>
-  </data>
   <data name="udCWPitch.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>265, 138</value>
   </data>
@@ -849,11 +756,8 @@
   <data name="udCWPitch.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="udCWPitch.ToolTip" xml:space="preserve">
-    <value>选择首选的 CW 音调频率。</value>
-  </data>
   <data name="udCWBreakInDelay.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>147, 16</value>
+    <value>163, 16</value>
   </data>
   <data name="udCWBreakInDelay.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>48, 20</value>
@@ -863,9 +767,6 @@
   </data>
   <data name="udCWBreakInDelay.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
-  </data>
-  <data name="udCWBreakInDelay.ToolTip" xml:space="preserve">
-    <value>上次检测到的 CW 信号后在得克萨斯州停留的时间量。</value>
   </data>
   <data name="chkCWBreakInEnabled.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -880,13 +781,10 @@
     <value>11, 18</value>
   </data>
   <data name="chkCWBreakInEnabled.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>80, 16</value>
+    <value>96, 16</value>
   </data>
   <data name="chkCWBreakInEnabled.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>36</value>
-  </data>
-  <data name="chkCWBreakInEnabled.ToolTip" xml:space="preserve">
-    <value>使得半中断中操作。</value>
   </data>
   <data name="chkShowTXCWFreq.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -902,9 +800,6 @@
   </data>
   <data name="chkShowTXCWFreq.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>76</value>
-  </data>
-  <data name="chkShowTXCWFreq.ToolTip" xml:space="preserve">
-    <value>显示在 Panadapter 模式下显示上的 TX 筛选器</value>
   </data>
   <data name="chkCWIambic.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -924,9 +819,6 @@
   <data name="chkCWIambic.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>72</value>
   </data>
-  <data name="chkCWIambic.ToolTip" xml:space="preserve">
-    <value>五音或外部/错误键?</value>
-  </data>
   <data name="udRX2FilterHigh.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -939,9 +831,6 @@
   <data name="udRX2FilterHigh.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
-  <data name="udRX2FilterHigh.ToolTip" xml:space="preserve">
-    <value>高筛选截止</value>
-  </data>
   <data name="udRX2FilterLow.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -953,9 +842,6 @@
   </data>
   <data name="udRX2FilterLow.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>26</value>
-  </data>
-  <data name="udRX2FilterLow.ToolTip" xml:space="preserve">
-    <value>低滤波器截止</value>
   </data>
   <data name="radRX2ModeAM.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -984,9 +870,6 @@
   <data name="radRX2ModeAM.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radRX2ModeAM.ToolTip" xml:space="preserve">
-    <value>调幅</value>
-  </data>
   <data name="radRX2ModeLSB.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1013,9 +896,6 @@
   </data>
   <data name="radRX2ModeLSB.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="radRX2ModeLSB.ToolTip" xml:space="preserve">
-    <value>更低的旁带</value>
   </data>
   <data name="radRX2ModeSAM.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1044,9 +924,6 @@
   <data name="radRX2ModeSAM.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radRX2ModeSAM.ToolTip" xml:space="preserve">
-    <value>同步调幅 (RX 仅同步)</value>
-  </data>
   <data name="radRX2ModeCWL.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1073,9 +950,6 @@
   </data>
   <data name="radRX2ModeCWL.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="radRX2ModeCWL.ToolTip" xml:space="preserve">
-    <value>CW 低旁带</value>
   </data>
   <data name="radRX2ModeDSB.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1104,9 +978,6 @@
   <data name="radRX2ModeDSB.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radRX2ModeDSB.ToolTip" xml:space="preserve">
-    <value>双旁带</value>
-  </data>
   <data name="radRX2ModeUSB.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1133,9 +1004,6 @@
   </data>
   <data name="radRX2ModeUSB.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="radRX2ModeUSB.ToolTip" xml:space="preserve">
-    <value>上部的旁带</value>
   </data>
   <data name="radRX2ModeCWU.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1164,9 +1032,6 @@
   <data name="radRX2ModeCWU.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radRX2ModeCWU.ToolTip" xml:space="preserve">
-    <value>CW 左上旁带</value>
-  </data>
   <data name="radRX2ModeFMN.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1193,9 +1058,6 @@
   </data>
   <data name="radRX2ModeFMN.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="radRX2ModeFMN.ToolTip" xml:space="preserve">
-    <value>调频窄</value>
   </data>
   <data name="radRX2ModeDIGU.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1224,9 +1086,6 @@
   <data name="radRX2ModeDIGU.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radRX2ModeDIGU.ToolTip" xml:space="preserve">
-    <value>数字模式上部旁带</value>
-  </data>
   <data name="radRX2ModeDRM.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1254,9 +1113,6 @@
   <data name="radRX2ModeDRM.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radRX2ModeDRM.ToolTip" xml:space="preserve">
-    <value>数字无线电 Mondiale (筛选仅-所需的外部软件)</value>
-  </data>
   <data name="radRX2ModeDIGL.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1283,9 +1139,6 @@
   </data>
   <data name="radRX2ModeDIGL.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="radRX2ModeDIGL.ToolTip" xml:space="preserve">
-    <value>数字模式更低的旁带</value>
   </data>
   <data name="radRX2ModeSPEC.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1317,9 +1170,6 @@
   <data name="radRX2ModeSPEC.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radRX2ModeSPEC.ToolTip" xml:space="preserve">
-    <value>色谱模式 (完全未经筛选的示例率视图)</value>
-  </data>
   <data name="chkRX2DisplayPeak.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1347,9 +1197,6 @@
   <data name="chkRX2DisplayPeak.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkRX2DisplayPeak.ToolTip" xml:space="preserve">
-    <value>峰值保留 — 显示每箱时此函数的最大信号上。</value>
-  </data>
   <data name="comboRX2DisplayMode.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -1361,9 +1208,6 @@
   </data>
   <data name="comboRX2DisplayMode.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
-  </data>
-  <data name="comboRX2DisplayMode.ToolTip" xml:space="preserve">
-    <value>显示模式选择</value>
   </data>
   <data name="chkPanSwap.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1392,9 +1236,6 @@
   <data name="chkPanSwap.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkPanSwap.ToolTip" xml:space="preserve">
-    <value>换到 R 意义上的平移控制 L。</value>
-  </data>
   <data name="chkEnableMultiRX.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1422,9 +1263,6 @@
   <data name="chkEnableMultiRX.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkEnableMultiRX.ToolTip" xml:space="preserve">
-    <value>使受 VFO B.子接收器</value>
-  </data>
   <data name="chkDisplayPeak.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1449,9 +1287,6 @@
   <data name="chkDisplayPeak.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkDisplayPeak.ToolTip" xml:space="preserve">
-    <value>峰值保留 — 显示每箱时此函数的最大信号上。</value>
-  </data>
   <data name="comboDisplayMode.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
@@ -1469,9 +1304,6 @@
   </data>
   <data name="comboDisplayMode.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
-  </data>
-  <data name="comboDisplayMode.ToolTip" xml:space="preserve">
-    <value>显示模式选择</value>
   </data>
   <data name="chkDisplayAVG.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1496,9 +1328,6 @@
   </data>
   <data name="chkDisplayAVG.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkDisplayAVG.ToolTip" xml:space="preserve">
-    <value>平均-显示信号段时间的平均值。</value>
   </data>
   <data name="chkNR.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1526,9 +1355,6 @@
   </data>
   <data name="chkNR.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkNR.ToolTip" xml:space="preserve">
-    <value>降噪</value>
   </data>
   <data name="chkDSPNB2.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1560,9 +1386,6 @@
   <data name="chkDSPNB2.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkDSPNB2.ToolTip" xml:space="preserve">
-    <value>插值噪音 Blanker</value>
-  </data>
   <data name="chkBIN.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1589,9 +1412,6 @@
   </data>
   <data name="chkBIN.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkBIN.ToolTip" xml:space="preserve">
-    <value>双耳-输出 I 和 Q 在左侧和右侧音频通道。</value>
   </data>
   <data name="chkNB.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1620,9 +1440,6 @@
   <data name="chkNB.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkNB.ToolTip" xml:space="preserve">
-    <value>Blanker 的噪音</value>
-  </data>
   <data name="chkANF.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1650,9 +1467,6 @@
   <data name="chkANF.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkANF.ToolTip" xml:space="preserve">
-    <value>凹槽的自动筛选器</value>
-  </data>
   <data name="btnZeroBeat.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1666,16 +1480,13 @@
     <value>Off</value>
   </data>
   <data name="btnZeroBeat.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>22, 30</value>
+    <value>18, 28</value>
   </data>
   <data name="btnZeroBeat.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
   </data>
   <data name="btnZeroBeat.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>63</value>
-  </data>
-  <data name="btnZeroBeat.ToolTip" xml:space="preserve">
-    <value>移动到 0 VFO 中显示击败最大信号。 需要显示平均模式。</value>
   </data>
   <data name="chkVFOSplit.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1693,7 +1504,7 @@
     <value>Off</value>
   </data>
   <data name="chkVFOSplit.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>22, 7</value>
+    <value>18, 5</value>
   </data>
   <data name="chkVFOSplit.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
@@ -1703,9 +1514,6 @@
   </data>
   <data name="chkVFOSplit.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkVFOSplit.ToolTip" xml:space="preserve">
-    <value>拆分模式-使用 VFO B TX 频率。</value>
   </data>
   <data name="btnRITReset.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1717,16 +1525,13 @@
     <value>Off</value>
   </data>
   <data name="btnRITReset.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>108, 83</value>
+    <value>44, 76</value>
   </data>
   <data name="btnRITReset.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>16, 20</value>
   </data>
   <data name="btnRITReset.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>62</value>
-  </data>
-  <data name="btnRITReset.ToolTip" xml:space="preserve">
-    <value>RIT 清除</value>
   </data>
   <data name="btnXITReset.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1738,7 +1543,7 @@
     <value>Off</value>
   </data>
   <data name="btnXITReset.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>52, 83</value>
+    <value>105, 76</value>
   </data>
   <data name="btnXITReset.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>16, 20</value>
@@ -1746,20 +1551,14 @@
   <data name="btnXITReset.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>61</value>
   </data>
-  <data name="btnXITReset.ToolTip" xml:space="preserve">
-    <value>XIT 清除</value>
-  </data>
   <data name="udRIT.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>76, 103</value>
+    <value>12, 96</value>
   </data>
   <data name="udRIT.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>56, 20</value>
   </data>
   <data name="udRIT.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>35</value>
-  </data>
-  <data name="udRIT.ToolTip" xml:space="preserve">
-    <value>RIT 值偏移接收频率以赫兹按钮上方时处于活动状态。</value>
   </data>
   <data name="btnIFtoVFO.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1774,16 +1573,13 @@
     <value>Off</value>
   </data>
   <data name="btnIFtoVFO.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>22, 53</value>
+    <value>18, 51</value>
   </data>
   <data name="btnIFtoVFO.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
   </data>
   <data name="btnIFtoVFO.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="btnIFtoVFO.ToolTip" xml:space="preserve">
-    <value>将当前如果复制到 VFO</value>
   </data>
   <data name="chkRIT.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1798,7 +1594,7 @@
     <value>Off</value>
   </data>
   <data name="chkRIT.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>76, 83</value>
+    <value>12, 76</value>
   </data>
   <data name="chkRIT.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>32, 20</value>
@@ -1808,9 +1604,6 @@
   </data>
   <data name="chkRIT.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkRIT.ToolTip" xml:space="preserve">
-    <value>接收增量调整-按下 hz 值偏移 RX 频率。</value>
   </data>
   <data name="btnVFOSwap.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1825,16 +1618,13 @@
     <value>Off</value>
   </data>
   <data name="btnVFOSwap.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>73, 53</value>
+    <value>69, 51</value>
   </data>
   <data name="btnVFOSwap.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
   </data>
   <data name="btnVFOSwap.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="btnVFOSwap.ToolTip" xml:space="preserve">
-    <value>换 VFO 与 VFO B A</value>
   </data>
   <data name="chkXIT.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1849,7 +1639,7 @@
     <value>Off</value>
   </data>
   <data name="chkXIT.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>20, 83</value>
+    <value>73, 76</value>
   </data>
   <data name="chkXIT.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>32, 20</value>
@@ -1859,9 +1649,6 @@
   </data>
   <data name="chkXIT.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkXIT.ToolTip" xml:space="preserve">
-    <value>传输增量调整-由 hz 以下值的偏移 TX 频率。</value>
   </data>
   <data name="btnVFOBtoA.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1876,7 +1663,7 @@
     <value>Off</value>
   </data>
   <data name="btnVFOBtoA.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>73, 30</value>
+    <value>69, 28</value>
   </data>
   <data name="btnVFOBtoA.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
@@ -1884,20 +1671,14 @@
   <data name="btnVFOBtoA.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="btnVFOBtoA.ToolTip" xml:space="preserve">
-    <value>复制到 VFO VFO B A</value>
-  </data>
   <data name="udXIT.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>12, 103</value>
+    <value>73, 96</value>
   </data>
   <data name="udXIT.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>56, 20</value>
   </data>
   <data name="udXIT.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>29</value>
-  </data>
-  <data name="udXIT.ToolTip" xml:space="preserve">
-    <value>XIT 值偏移传输频率以赫兹按钮上方时处于活动状态。</value>
   </data>
   <data name="btnVFOAtoB.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1912,16 +1693,13 @@
     <value>Off</value>
   </data>
   <data name="btnVFOAtoB.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>73, 7</value>
+    <value>69, 5</value>
   </data>
   <data name="btnVFOAtoB.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
   </data>
   <data name="btnVFOAtoB.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="btnVFOAtoB.ToolTip" xml:space="preserve">
-    <value>复制 VFO VFO b A</value>
   </data>
   <data name="chkRX1Preamp.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -1950,9 +1728,6 @@
   <data name="chkRX1Preamp.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkRX1Preamp.ToolTip" xml:space="preserve">
-    <value>打开/关闭 RX1 Preamp</value>
-  </data>
   <data name="chkRX1Preamp.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -1967,9 +1742,6 @@
   </data>
   <data name="comboAGC.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>31</value>
-  </data>
-  <data name="comboAGC.ToolTip" xml:space="preserve">
-    <value>自动增益控制模式设置</value>
   </data>
   <data name="lblAGC.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -1989,9 +1761,6 @@
   <data name="lblAGC.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="lblAGC.ToolTip" xml:space="preserve">
-    <value>AGC 模式</value>
-  </data>
   <data name="comboPreamp.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -2003,9 +1772,6 @@
   </data>
   <data name="comboPreamp.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>39</value>
-  </data>
-  <data name="comboPreamp.ToolTip" xml:space="preserve">
-    <value>衰减器设置</value>
   </data>
   <data name="lblRF.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -2024,9 +1790,6 @@
   </data>
   <data name="lblRF.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
-  </data>
-  <data name="lblRF.ToolTip" xml:space="preserve">
-    <value>AGC 最大增益/阈值的作用类似于传统的射频增益</value>
   </data>
   <data name="chkShowTXFilter.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2055,9 +1818,6 @@
   <data name="chkShowTXFilter.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkShowTXFilter.ToolTip" xml:space="preserve">
-    <value>显示在 Panadapter 模式下显示上的 TX 筛选器</value>
-  </data>
   <data name="chkDX.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2084,9 +1844,6 @@
   </data>
   <data name="chkDX.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkDX.ToolTip" xml:space="preserve">
-    <value>使立体声的多样性</value>
   </data>
   <data name="chkDX.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2118,9 +1875,6 @@
   <data name="chkTXEQ.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkTXEQ.ToolTip" xml:space="preserve">
-    <value>启用 TX EQ</value>
-  </data>
   <data name="comboTXProfile.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -2132,9 +1886,6 @@
   </data>
   <data name="comboTXProfile.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="comboTXProfile.ToolTip" xml:space="preserve">
-    <value>设置传输配置文件 (PWR、 EQ、 麦克风、 CPDR 等)</value>
   </data>
   <data name="chkRXEQ.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2163,9 +1914,6 @@
   <data name="chkRXEQ.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkRXEQ.ToolTip" xml:space="preserve">
-    <value>启用 RX EQ</value>
-  </data>
   <data name="chkCPDR.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2193,9 +1941,6 @@
   <data name="chkCPDR.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkCPDR.ToolTip" xml:space="preserve">
-    <value>压缩程序启用</value>
-  </data>
   <data name="chkVAC1.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2212,7 +1957,7 @@
     <value>Off</value>
   </data>
   <data name="chkVAC1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>18, 127</value>
+    <value>18, 141</value>
   </data>
   <data name="chkVAC1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
@@ -2222,9 +1967,6 @@
   </data>
   <data name="chkVAC1.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkVAC1.ToolTip" xml:space="preserve">
-    <value>启用 VAC1</value>
   </data>
   <data name="chkVOX.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2253,9 +1995,6 @@
   <data name="chkVOX.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkVOX.ToolTip" xml:space="preserve">
-    <value>音色启用</value>
-  </data>
   <data name="chkNoiseGate.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2283,9 +2022,6 @@
   <data name="chkNoiseGate.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkNoiseGate.ToolTip" xml:space="preserve">
-    <value>向下扩展-类似于噪声门但平滑器</value>
-  </data>
   <data name="comboDigTXProfile.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -2297,9 +2033,6 @@
   </data>
   <data name="comboDigTXProfile.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>79</value>
-  </data>
-  <data name="comboDigTXProfile.ToolTip" xml:space="preserve">
-    <value>设置传输配置文件 (PWR、 EQ、 麦克风、 CPDR 等)</value>
   </data>
   <data name="chkVACStereo.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -2316,9 +2049,6 @@
   <data name="chkVACStereo.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="chkVACStereo.ToolTip" xml:space="preserve">
-    <value>如果第三方软件将在 2 通道 (立体声) 模式中打开虚拟的音频电缆，请单击此按钮。</value>
-  </data>
   <data name="comboVACSampleRate.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -2330,9 +2060,6 @@
   </data>
   <data name="comboVACSampleRate.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>60</value>
-  </data>
-  <data name="comboVACSampleRate.ToolTip" xml:space="preserve">
-    <value>每秒的样本。 设置相匹配的第三方软件程序。</value>
   </data>
   <data name="btnDisplayPanCenter.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2357,9 +2084,6 @@
   </data>
   <data name="btnDisplayPanCenter.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="btnDisplayPanCenter.ToolTip" xml:space="preserve">
-    <value>中心全景控件</value>
   </data>
   <data name="radModeAM.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2388,9 +2112,6 @@
   <data name="radModeAM.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radModeAM.ToolTip" xml:space="preserve">
-    <value>调幅</value>
-  </data>
   <data name="radModeLSB.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2417,9 +2138,6 @@
   </data>
   <data name="radModeLSB.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radModeLSB.ToolTip" xml:space="preserve">
-    <value>更低的旁带</value>
   </data>
   <data name="radModeSAM.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2448,9 +2166,6 @@
   <data name="radModeSAM.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radModeSAM.ToolTip" xml:space="preserve">
-    <value>同步调幅 (RX 仅同步)</value>
-  </data>
   <data name="radModeCWL.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2477,9 +2192,6 @@
   </data>
   <data name="radModeCWL.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radModeCWL.ToolTip" xml:space="preserve">
-    <value>CW 低旁带</value>
   </data>
   <data name="radModeDSB.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2508,9 +2220,6 @@
   <data name="radModeDSB.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radModeDSB.ToolTip" xml:space="preserve">
-    <value>双旁带</value>
-  </data>
   <data name="radModeUSB.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2537,9 +2246,6 @@
   </data>
   <data name="radModeUSB.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radModeUSB.ToolTip" xml:space="preserve">
-    <value>上部的旁带</value>
   </data>
   <data name="radModeCWU.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2568,9 +2274,6 @@
   <data name="radModeCWU.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radModeCWU.ToolTip" xml:space="preserve">
-    <value>CW 左上旁带</value>
-  </data>
   <data name="radModeFMN.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2597,9 +2300,6 @@
   </data>
   <data name="radModeFMN.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radModeFMN.ToolTip" xml:space="preserve">
-    <value>调频窄</value>
   </data>
   <data name="radModeDIGU.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2628,9 +2328,6 @@
   <data name="radModeDIGU.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radModeDIGU.ToolTip" xml:space="preserve">
-    <value>数字模式上部旁带</value>
-  </data>
   <data name="radModeDRM.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2657,9 +2354,6 @@
   </data>
   <data name="radModeDRM.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radModeDRM.ToolTip" xml:space="preserve">
-    <value>数字无线电 Mondiale (筛选仅-所需的外部软件)</value>
   </data>
   <data name="radModeDIGL.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2688,9 +2382,6 @@
   <data name="radModeDIGL.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radModeDIGL.ToolTip" xml:space="preserve">
-    <value>数字模式更低的旁带</value>
-  </data>
   <data name="radModeSPEC.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2718,9 +2409,6 @@
   <data name="radModeSPEC.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radModeSPEC.ToolTip" xml:space="preserve">
-    <value>色谱模式 (完全未经筛选的示例率视图)</value>
-  </data>
   <data name="btnBandVHF.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -2741,9 +2429,6 @@
   </data>
   <data name="btnBandVHF.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>27</value>
-  </data>
-  <data name="btnBandVHF.ToolTip" xml:space="preserve">
-    <value>切换到甚高频 + 带区 (XVTR 窗体中定义)</value>
   </data>
   <data name="chkVFOATX.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2769,23 +2454,17 @@
   <data name="chkVFOATX.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>120</value>
   </data>
-  <data name="chkVFOATX.ToolTip" xml:space="preserve">
-    <value>VFO 一个频率传输</value>
-  </data>
   <data name="txtWheelTune.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="txtWheelTune.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>168, 24</value>
+    <value>168, 18</value>
   </data>
   <data name="txtWheelTune.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>48, 20</value>
   </data>
   <data name="txtWheelTune.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>15</value>
-  </data>
-  <data name="txtWheelTune.ToolTip" xml:space="preserve">
-    <value>若要调整旋转鼠标滚轮时的金额。</value>
   </data>
   <data name="chkVFOBTX.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2811,9 +2490,6 @@
   <data name="chkVFOBTX.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>119</value>
   </data>
-  <data name="chkVFOBTX.ToolTip" xml:space="preserve">
-    <value>VFO B 频率传输</value>
-  </data>
   <data name="comboMeterTXMode.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -2829,9 +2505,6 @@
   <data name="comboMeterTXMode.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
-  <data name="comboMeterTXMode.ToolTip" xml:space="preserve">
-    <value>Multimeter 模式选择</value>
-  </data>
   <data name="comboMeterRXMode.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -2843,9 +2516,6 @@
   </data>
   <data name="comboMeterRXMode.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="comboMeterRXMode.ToolTip" xml:space="preserve">
-    <value>Multimeter 模式选择</value>
   </data>
   <data name="chkSquelch.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2871,9 +2541,6 @@
   <data name="chkSquelch.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>61</value>
   </data>
-  <data name="chkSquelch.ToolTip" xml:space="preserve">
-    <value>Squelch 启用</value>
-  </data>
   <data name="btnMemoryQuickRestore.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -2887,16 +2554,16 @@
     <value>Off</value>
   </data>
   <data name="btnMemoryQuickRestore.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>156, 56</value>
+    <value>170, 63</value>
   </data>
   <data name="btnMemoryQuickRestore.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>64, 23</value>
+    <value>60, 20</value>
   </data>
   <data name="btnMemoryQuickRestore.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>76</value>
   </data>
-  <data name="btnMemoryQuickRestore.ToolTip" xml:space="preserve">
-    <value>快速恢复 (频率，筛选器模式)</value>
+  <data name="btnMemoryQuickRestore.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
   <data name="btnMemoryQuickSave.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2911,10 +2578,10 @@
     <value>Off</value>
   </data>
   <data name="btnMemoryQuickSave.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>104, 56</value>
+    <value>110, 63</value>
   </data>
   <data name="btnMemoryQuickSave.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
+    <value>60, 20</value>
   </data>
   <data name="btnMemoryQuickSave.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>75</value>
@@ -2922,20 +2589,14 @@
   <data name="btnMemoryQuickSave.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="btnMemoryQuickSave.ToolTip" xml:space="preserve">
-    <value>快速保存 (频率，筛选器模式)</value>
-  </data>
   <data name="txtMemoryQuick.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>16, 61</value>
+    <value>134, 41</value>
   </data>
   <data name="txtMemoryQuick.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>72, 20</value>
   </data>
   <data name="txtMemoryQuick.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>74</value>
-  </data>
-  <data name="txtMemoryQuick.ToolTip" xml:space="preserve">
-    <value>快速保存频率</value>
   </data>
   <data name="chkVFOLock.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2956,19 +2617,16 @@
     <value>Off</value>
   </data>
   <data name="chkVFOLock.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>12, 35</value>
+    <value>46, 34</value>
   </data>
   <data name="chkVFOLock.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>80, 23</value>
+    <value>23, 23</value>
   </data>
   <data name="chkVFOLock.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="chkVFOLock.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="chkVFOLock.ToolTip" xml:space="preserve">
-    <value>防止 VFO 更改中途 QSO。</value>
   </data>
   <data name="chkVFOSync.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -2997,9 +2655,6 @@
   <data name="chkVFOSync.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkVFOSync.ToolTip" xml:space="preserve">
-    <value>同步的 VFO A 和 B VFO 频率组合在一起 (更改一个更改其他自动)</value>
-  </data>
   <data name="chkFullDuplex.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -3027,9 +2682,6 @@
   <data name="chkFullDuplex.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkFullDuplex.ToolTip" xml:space="preserve">
-    <value>在全双工模式下的硬件的操作</value>
-  </data>
   <data name="chkFullDuplex.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -3046,16 +2698,13 @@
     <value>Off</value>
   </data>
   <data name="btnTuneStepChangeLarger.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>216, 24</value>
+    <value>216, 18</value>
   </data>
   <data name="btnTuneStepChangeLarger.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>16, 20</value>
   </data>
   <data name="btnTuneStepChangeLarger.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>78</value>
-  </data>
-  <data name="btnTuneStepChangeLarger.ToolTip" xml:space="preserve">
-    <value>更改到下一步更大调整步骤</value>
   </data>
   <data name="btnTuneStepChangeSmaller.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3070,16 +2719,13 @@
     <value>Off</value>
   </data>
   <data name="btnTuneStepChangeSmaller.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>152, 24</value>
+    <value>152, 18</value>
   </data>
   <data name="btnTuneStepChangeSmaller.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>16, 20</value>
   </data>
   <data name="btnTuneStepChangeSmaller.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>77</value>
-  </data>
-  <data name="btnTuneStepChangeSmaller.ToolTip" xml:space="preserve">
-    <value>更改为较小调整下来</value>
   </data>
   <data name="chkSplitDisplay.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3102,9 +2748,6 @@
   <data name="chkSplitDisplay.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkSplitDisplay.ToolTip" xml:space="preserve">
-    <value>拆分模式-使用 VFO B TX 频率。</value>
-  </data>
   <data name="comboDisplayModeTop.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -3116,9 +2759,6 @@
   </data>
   <data name="comboDisplayModeTop.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>79</value>
-  </data>
-  <data name="comboDisplayModeTop.ToolTip" xml:space="preserve">
-    <value>显示模式选择</value>
   </data>
   <data name="comboDisplayModeBottom.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
@@ -3132,9 +2772,6 @@
   <data name="comboDisplayModeBottom.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>80</value>
   </data>
-  <data name="comboDisplayModeBottom.ToolTip" xml:space="preserve">
-    <value>显示模式选择</value>
-  </data>
   <data name="comboRX2MeterMode.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -3146,9 +2783,6 @@
   </data>
   <data name="comboRX2MeterMode.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="comboRX2MeterMode.ToolTip" xml:space="preserve">
-    <value>Multimeter 模式选择</value>
   </data>
   <data name="chkRX2DisplayAVG.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3177,9 +2811,6 @@
   <data name="chkRX2DisplayAVG.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkRX2DisplayAVG.ToolTip" xml:space="preserve">
-    <value>平均-显示信号段时间的平均值。</value>
-  </data>
   <data name="radBand160.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -3206,9 +2837,6 @@
   </data>
   <data name="radBand160.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radBand160.ToolTip" xml:space="preserve">
-    <value>160 米 (1.8-2.0 MHz)</value>
   </data>
   <data name="radBandGEN.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3237,9 +2865,6 @@
   <data name="radBandGEN.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radBandGEN.ToolTip" xml:space="preserve">
-    <value>在其他模式中未涉及的所有频率。</value>
-  </data>
   <data name="radBandWWV.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -3266,9 +2891,6 @@
   </data>
   <data name="radBandWWV.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radBandWWV.ToolTip" xml:space="preserve">
-    <value>WWV (2.5，5、 10、 15 和 20 MHz)</value>
   </data>
   <data name="radBand2.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3300,9 +2922,6 @@
   <data name="radBand2.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radBand2.ToolTip" xml:space="preserve">
-    <value>2 米 (144-148 MHz) 注意华文 FlexRadio 转销至 146 MHz 只盖</value>
-  </data>
   <data name="radBand6.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -3329,9 +2948,6 @@
   </data>
   <data name="radBand6.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radBand6.ToolTip" xml:space="preserve">
-    <value>6 米 (英寸 50.0-54.0 MHz)</value>
   </data>
   <data name="radBand10.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3360,9 +2976,6 @@
   <data name="radBand10.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radBand10.ToolTip" xml:space="preserve">
-    <value>10 米 (28.0-29.7 MHz)</value>
-  </data>
   <data name="radBand12.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -3389,9 +3002,6 @@
   </data>
   <data name="radBand12.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radBand12.ToolTip" xml:space="preserve">
-    <value>12 米 (24.89-24.99 MHz)</value>
   </data>
   <data name="radBand15.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3420,9 +3030,6 @@
   <data name="radBand15.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radBand15.ToolTip" xml:space="preserve">
-    <value>15 米 (21.0-21.45 MHz)</value>
-  </data>
   <data name="radBand17.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -3449,9 +3056,6 @@
   </data>
   <data name="radBand17.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radBand17.ToolTip" xml:space="preserve">
-    <value>17 米 (18.068-18.168 MHz)</value>
   </data>
   <data name="radBand20.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3480,9 +3084,6 @@
   <data name="radBand20.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radBand20.ToolTip" xml:space="preserve">
-    <value>20 米 (14.0-14.35 MHz)</value>
-  </data>
   <data name="radBand30.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -3509,9 +3110,6 @@
   </data>
   <data name="radBand30.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radBand30.ToolTip" xml:space="preserve">
-    <value>30 米 (10.1-10.15 MHz)</value>
   </data>
   <data name="radBand40.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3540,9 +3138,6 @@
   <data name="radBand40.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radBand40.ToolTip" xml:space="preserve">
-    <value>40 米 (7.0-7.3 MHz)</value>
-  </data>
   <data name="radBand60.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -3569,9 +3164,6 @@
   </data>
   <data name="radBand60.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="radBand60.ToolTip" xml:space="preserve">
-    <value>信道化 60 米</value>
   </data>
   <data name="radBand80.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3600,9 +3192,6 @@
   <data name="radBand80.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="radBand80.ToolTip" xml:space="preserve">
-    <value>80 米 (3.5-4.0 MHz)</value>
-  </data>
   <data name="ptbDisplayZoom.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -3621,9 +3210,6 @@
   <data name="ptbDisplayZoom.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>63</value>
   </data>
-  <data name="ptbDisplayZoom.ToolTip" xml:space="preserve">
-    <value>扩展/合同滑块显示的频率宽度。</value>
-  </data>
   <data name="ptbDisplayPan.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -3641,9 +3227,6 @@
   </data>
   <data name="ptbDisplayPan.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>62</value>
-  </data>
-  <data name="ptbDisplayPan.ToolTip" xml:space="preserve">
-    <value>移动滑块的显示的频率。</value>
   </data>
   <data name="ptbPWR.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3666,9 +3249,6 @@
   <data name="ptbPWR.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>105</value>
   </data>
-  <data name="ptbPWR.ToolTip" xml:space="preserve">
-    <value>传输的驱动器-这是一个相对的值，并不意味着两者瓦。</value>
-  </data>
   <data name="ptbRF.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -3689,9 +3269,6 @@
   </data>
   <data name="ptbRF.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>104</value>
-  </data>
-  <data name="ptbRF.ToolTip" xml:space="preserve">
-    <value>AGC 最大增益的作用类似于传统的射频增益</value>
   </data>
   <data name="ptbAF.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3714,9 +3291,6 @@
   <data name="ptbAF.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>64</value>
   </data>
-  <data name="ptbAF.ToolTip" xml:space="preserve">
-    <value>AF 增益-RX/TX 的监视器音量</value>
-  </data>
   <data name="ptbPanMainRX.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -3737,9 +3311,6 @@
   </data>
   <data name="ptbPanMainRX.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>116</value>
-  </data>
-  <data name="ptbPanMainRX.ToolTip" xml:space="preserve">
-    <value>设置主接收机立体字段从左到右</value>
   </data>
   <data name="ptbPanSubRX.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3762,9 +3333,6 @@
   <data name="ptbPanSubRX.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>117</value>
   </data>
-  <data name="ptbPanSubRX.ToolTip" xml:space="preserve">
-    <value>设置子接收器立体声字段从左到右</value>
-  </data>
   <data name="ptbRX2Gain.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -3782,9 +3350,6 @@
   </data>
   <data name="ptbRX2Gain.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>64</value>
-  </data>
-  <data name="ptbRX2Gain.ToolTip" xml:space="preserve">
-    <value>RX2 主接收器的音频增益</value>
   </data>
   <data name="ptbRX2Pan.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3804,9 +3369,6 @@
   <data name="ptbRX2Pan.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>65</value>
   </data>
-  <data name="ptbRX2Pan.ToolTip" xml:space="preserve">
-    <value>设置主 RX2 接收器立体声字段从左到右</value>
-  </data>
   <data name="ptbRX0Gain.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -3824,9 +3386,6 @@
   </data>
   <data name="ptbRX0Gain.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>65</value>
-  </data>
-  <data name="ptbRX0Gain.ToolTip" xml:space="preserve">
-    <value>RX1 主要接收方的音频增益</value>
   </data>
   <data name="ptbRX1Gain.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3846,9 +3405,6 @@
   <data name="ptbRX1Gain.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>66</value>
   </data>
-  <data name="ptbRX1Gain.ToolTip" xml:space="preserve">
-    <value>RX1 子接收器的音频增益</value>
-  </data>
   <data name="ptbVACRXGain.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -3867,9 +3423,6 @@
   <data name="ptbVACRXGain.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>64</value>
   </data>
-  <data name="ptbVACRXGain.ToolTip" xml:space="preserve">
-    <value>控制之前将其发送到第三方应用程序应用于 RX 音频增益。</value>
-  </data>
   <data name="ptbVACTXGain.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -3887,9 +3440,6 @@
   </data>
   <data name="ptbVACTXGain.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>65</value>
-  </data>
-  <data name="ptbVACTXGain.ToolTip" xml:space="preserve">
-    <value>控制对来自第三方应用程序的音频增益。</value>
   </data>
   <data name="radDisplayZoom05.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3918,9 +3468,6 @@
   <data name="radDisplayZoom05.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radDisplayZoom05.ToolTip" xml:space="preserve">
-    <value>缩放至 0.5 x</value>
-  </data>
   <data name="radDisplayZoom4x.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -3947,9 +3494,6 @@
   </data>
   <data name="radDisplayZoom4x.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="radDisplayZoom4x.ToolTip" xml:space="preserve">
-    <value>缩放至 4 倍</value>
   </data>
   <data name="radDisplayZoom2x.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -3978,9 +3522,6 @@
   <data name="radDisplayZoom2x.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radDisplayZoom2x.ToolTip" xml:space="preserve">
-    <value>2 倍的比例显示</value>
-  </data>
   <data name="radDisplayZoom1x.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -4007,9 +3548,6 @@
   </data>
   <data name="radDisplayZoom1x.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="radDisplayZoom1x.ToolTip" xml:space="preserve">
-    <value>缩放到 1x</value>
   </data>
   <data name="chkMicMute.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -4038,9 +3576,6 @@
   <data name="chkMicMute.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkMicMute.ToolTip" xml:space="preserve">
-    <value>启用麦克风</value>
-  </data>
   <data name="chkMUT.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -4068,9 +3603,6 @@
   <data name="chkMUT.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkMUT.ToolTip" xml:space="preserve">
-    <value>静音-静音扬声器的输出。</value>
-  </data>
   <data name="chkCWFWKeyer.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
@@ -4085,9 +3617,6 @@
   </data>
   <data name="chkCWFWKeyer.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>118</value>
-  </data>
-  <data name="chkCWFWKeyer.ToolTip" xml:space="preserve">
-    <value>使 CW 抠在 FPGA 中。</value>
   </data>
   <data name="chkCWFWKeyer.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -4109,9 +3638,6 @@
   </data>
   <data name="chkShowCWZero.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>117</value>
-  </data>
-  <data name="chkShowCWZero.ToolTip" xml:space="preserve">
-    <value>显示 CW 零行</value>
   </data>
   <data name="radFMDeviation5kHz.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -4140,9 +3666,6 @@
   <data name="radFMDeviation5kHz.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radFMDeviation5kHz.ToolTip" xml:space="preserve">
-    <value>集到 5khz 的 FM 偏差</value>
-  </data>
   <data name="comboFMTXProfile.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -4155,9 +3678,6 @@
   <data name="comboFMTXProfile.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>118</value>
   </data>
-  <data name="comboFMTXProfile.ToolTip" xml:space="preserve">
-    <value>设置传输配置文件 (PWR、 EQ、 麦克风、 CPDR 等)</value>
-  </data>
   <data name="udFMOffset.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>217, 62</value>
   </data>
@@ -4166,9 +3686,6 @@
   </data>
   <data name="udFMOffset.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>121</value>
-  </data>
-  <data name="udFMOffset.ToolTip" xml:space="preserve">
-    <value>转发器偏移量以 MHz 为 FM 发射器 — 注意: 单工模式中不使用</value>
   </data>
   <data name="chkFMTXSimplex.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -4197,9 +3714,6 @@
   <data name="chkFMTXSimplex.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkFMTXSimplex.ToolTip" xml:space="preserve">
-    <value>FM 单工</value>
-  </data>
   <data name="comboFMCTCSS.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>90, 67</value>
   </data>
@@ -4208,9 +3722,6 @@
   </data>
   <data name="comboFMCTCSS.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>124</value>
-  </data>
-  <data name="comboFMCTCSS.ToolTip" xml:space="preserve">
-    <value>设置频率 FM CTCSS</value>
   </data>
   <data name="btnFMMemory.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4232,9 +3743,6 @@
   </data>
   <data name="btnFMMemory.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>126</value>
-  </data>
-  <data name="btnFMMemory.ToolTip" xml:space="preserve">
-    <value>打开内存窗体</value>
   </data>
   <data name="chkFMCTCSS.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -4263,9 +3771,6 @@
   <data name="chkFMCTCSS.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkFMCTCSS.ToolTip" xml:space="preserve">
-    <value>启用 CTCSS 色调</value>
-  </data>
   <data name="btnFMMemoryUp.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -4290,9 +3795,6 @@
   <data name="btnFMMemoryUp.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="btnFMMemoryUp.ToolTip" xml:space="preserve">
-    <value>选择内存窗体列表上的下一个通道</value>
-  </data>
   <data name="btnFMMemoryDown.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -4316,9 +3818,6 @@
   </data>
   <data name="btnFMMemoryDown.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="btnFMMemoryDown.ToolTip" xml:space="preserve">
-    <value>选择内存窗体列表中的上一个通道</value>
   </data>
   <data name="radFMDeviation2kHz.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -4347,9 +3846,6 @@
   <data name="radFMDeviation2kHz.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="radFMDeviation2kHz.ToolTip" xml:space="preserve">
-    <value>集到 2.5 kHz 的 FM 偏差</value>
-  </data>
   <data name="chkFMTXLow.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -4377,9 +3873,6 @@
   <data name="chkFMTXLow.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkFMTXLow.ToolTip" xml:space="preserve">
-    <value>FM 传输低</value>
-  </data>
   <data name="chkFMTXHigh.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -4406,9 +3899,6 @@
   </data>
   <data name="chkFMTXHigh.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="chkFMTXHigh.ToolTip" xml:space="preserve">
-    <value>FM 传输高</value>
   </data>
   <data name="chkFMTXRev.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -4440,9 +3930,6 @@
   <data name="chkFMTXRev.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkFMTXRev.ToolTip" xml:space="preserve">
-    <value>反转的 TX 和 RX 频率</value>
-  </data>
   <data name="chkTNF.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -4470,29 +3957,35 @@
   <data name="chkTNF.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="chkTNF.ToolTip" xml:space="preserve">
-    <value>启用手动跟踪槽口筛选器开/关</value>
-  </data>
-  <data name="btnTNFAdd.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnTNFAddOld.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnTNFAdd.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+  <data name="btnTNFAddOld.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="btnTNFAdd.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="btnTNFAddOld.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
-  <data name="btnTNFAdd.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>60, 69</value>
+  <data name="btnTNFAddOld.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
   </data>
-  <data name="btnTNFAdd.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
+  <data name="btnTNFAddOld.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>59, 70</value>
   </data>
-  <data name="btnTNFAdd.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+  <data name="btnTNFAddOld.RightToLeft" xml:space="preserve" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="btnTNFAddOld.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <data name="btnTNFAddOld.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>64</value>
   </data>
-  <data name="btnTNFAdd.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnTNFAddOld.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
+  </data>
+  <data name="btnTNFAddOld.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="ptbRX2AF.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4515,9 +4008,6 @@
   <data name="ptbRX2AF.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>109</value>
   </data>
-  <data name="ptbRX2AF.ToolTip" xml:space="preserve">
-    <value>AF 增益-RX2 监视器音量</value>
-  </data>
   <data name="ptbRX1AF.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -4539,9 +4029,6 @@
   <data name="ptbRX1AF.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>107</value>
   </data>
-  <data name="ptbRX1AF.ToolTip" xml:space="preserve">
-    <value>AF 增益-RX 的监视器音量</value>
-  </data>
   <data name="chkVAC2.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -4555,7 +4042,7 @@
     <value>Off</value>
   </data>
   <data name="chkVAC2.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>73, 127</value>
+    <value>73, 141</value>
   </data>
   <data name="chkVAC2.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
@@ -4565,9 +4052,6 @@
   </data>
   <data name="chkVAC2.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
-  </data>
-  <data name="chkVAC2.ToolTip" xml:space="preserve">
-    <value>启用 2 伏</value>
   </data>
   <data name="chkCWSidetone.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -4584,11 +4068,8 @@
   <data name="chkCWSidetone.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="chkCWSidetone.ToolTip" xml:space="preserve">
-    <value>打开/关闭 sidetone 音箱</value>
-  </data>
   <data name="udRX1StepAttData.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>56, 249</value>
+    <value>56, 248</value>
   </data>
   <data name="udRX1StepAttData.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>55, 20</value>
@@ -4598,9 +4079,6 @@
   </data>
   <data name="udRX1StepAttData.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
-  </data>
-  <data name="udRX1StepAttData.ToolTip" xml:space="preserve">
-    <value>RX1 步骤衰减器</value>
   </data>
   <data name="comboRX2Preamp.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
     <value>13</value>
@@ -4614,9 +4092,6 @@
   <data name="comboRX2Preamp.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>113</value>
   </data>
-  <data name="comboRX2Preamp.ToolTip" xml:space="preserve">
-    <value>RX2 衰减器设置</value>
-  </data>
   <data name="udRX2StepAttData.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>8, 79</value>
   </data>
@@ -4628,9 +4103,6 @@
   </data>
   <data name="udRX2StepAttData.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
-  </data>
-  <data name="udRX2StepAttData.ToolTip" xml:space="preserve">
-    <value>RX2 步衰减器</value>
   </data>
   <data name="chkCWAPFEnabled.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -4659,9 +4131,6 @@
   <data name="chkCWAPFEnabled.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="chkCWAPFEnabled.ToolTip" xml:space="preserve">
-    <value>使 APF</value>
-  </data>
   <data name="ptbCWAPFGain.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -4682,9 +4151,6 @@
   </data>
   <data name="ptbCWAPFGain.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>125</value>
-  </data>
-  <data name="ptbCWAPFGain.ToolTip" xml:space="preserve">
-    <value>设置 CW APF 增益。</value>
   </data>
   <data name="ptbCWAPFBandwidth.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4707,9 +4173,6 @@
   <data name="ptbCWAPFBandwidth.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>120</value>
   </data>
-  <data name="ptbCWAPFBandwidth.ToolTip" xml:space="preserve">
-    <value>设置 CW APF 带宽。</value>
-  </data>
   <data name="ptbCWAPFFreq.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -4731,8 +4194,116 @@
   <data name="ptbCWAPFFreq.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>119</value>
   </data>
-  <data name="ptbCWAPFFreq.ToolTip" xml:space="preserve">
-    <value>设置 CW APF 频率。</value>
+  <data name="chkSyncIT.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="chkSyncIT.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="chkSyncIT.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>45, 121</value>
+  </data>
+  <data name="chkSyncIT.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>54, 17</value>
+  </data>
+  <data name="chkSyncIT.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="grpSemiBreakIn.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>117, 89</value>
+  </data>
+  <data name="grpSemiBreakIn.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>218, 44</value>
+  </data>
+  <data name="grpSemiBreakIn.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="lblCWBreakInDelay.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="lblCWBreakInDelay.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="lblCWBreakInDelay.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>105, 16</value>
+  </data>
+  <data name="lblCWBreakInDelay.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>64, 16</value>
+  </data>
+  <data name="lblCWBreakInDelay.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="lblCWBreakInDelay.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="comboAMTXProfile.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="comboAMTXProfile.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>217, 26</value>
+  </data>
+  <data name="comboAMTXProfile.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>96, 21</value>
+  </data>
+  <data name="comboAMTXProfile.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="btnTNFAdd.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="btnTNFAdd.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnTNFAdd.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnTNFAdd.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="btnTNFAdd.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="btnTNFAdd.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>12, 60</value>
+  </data>
+  <data name="btnTNFAdd.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="btnTNFAdd.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="btnTNFAdd.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="chkVFOBLock.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="chkVFOBLock.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="chkVFOBLock.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="chkVFOBLock.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chkVFOBLock.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="chkVFOBLock.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="chkVFOBLock.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>69, 34</value>
+  </data>
+  <data name="chkVFOBLock.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="chkVFOBLock.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="chkVFOBLock.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="picSquelch.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Off</value>
@@ -4807,7 +4378,7 @@
     <value>66, 20</value>
   </data>
   <data name="xVTRsToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>52, 20</value>
+    <value>51, 20</value>
   </data>
   <data name="cWXToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>45, 20</value>
@@ -4842,6 +4413,9 @@
   <data name="NRToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>121, 22</value>
   </data>
+  <data name="NR2ToolStripMenuItem1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
   <data name="ANFToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>121, 22</value>
   </data>
@@ -4849,6 +4423,9 @@
     <value>121, 22</value>
   </data>
   <data name="NB2ToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="SNBtoolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>121, 22</value>
   </data>
   <data name="BINToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
@@ -5100,6 +4677,9 @@
   <data name="nR2ToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>99, 22</value>
   </data>
+  <data name="NR2StripMenuItem2.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>99, 22</value>
+  </data>
   <data name="aNF2ToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>99, 22</value>
   </data>
@@ -5107,6 +4687,9 @@
     <value>99, 22</value>
   </data>
   <data name="nBRX2ToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>99, 22</value>
+  </data>
+  <data name="SNBtoolStripMenuItem1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>99, 22</value>
   </data>
   <data name="bIN2ToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
@@ -5123,9 +4706,6 @@
   </data>
   <data name="RAtoolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>34, 20</value>
-  </data>
-  <data name="RAtoolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>无线电天文学数据采集</value>
   </data>
   <data name="picRX2Squelch.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Off</value>
@@ -5772,11 +5352,14 @@
   <data name="panelModeSpecificCW.AutoScrollMinSize" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="panelModeSpecificCW.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="panelModeSpecificCW.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>504, 424</value>
   </data>
   <data name="panelModeSpecificCW.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>336, 160</value>
+    <value>338, 161</value>
   </data>
   <data name="panelModeSpecificCW.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>124</value>
@@ -5849,30 +5432,6 @@
   </data>
   <data name="lblCWSpeed.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>64</value>
-  </data>
-  <data name="grpSemiBreakIn.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>117, 89</value>
-  </data>
-  <data name="grpSemiBreakIn.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>218, 44</value>
-  </data>
-  <data name="grpSemiBreakIn.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>77</value>
-  </data>
-  <data name="lblCWBreakInDelay.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value></value>
-  </data>
-  <data name="lblCWBreakInDelay.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Off</value>
-  </data>
-  <data name="lblCWBreakInDelay.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>83, 18</value>
-  </data>
-  <data name="lblCWBreakInDelay.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>64, 16</value>
-  </data>
-  <data name="lblCWBreakInDelay.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>34</value>
   </data>
   <data name="lblCWPitchFreq.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -6367,7 +5926,7 @@
     <value>120, 420</value>
   </data>
   <data name="panelVFO.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>136, 161</value>
+    <value>136, 168</value>
   </data>
   <data name="panelVFO.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>120</value>
@@ -6399,21 +5958,6 @@
   <data name="panelDateTime.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>119</value>
   </data>
-  <data name="txtTime.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="txtTime.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>8, 30</value>
-  </data>
-  <data name="txtTime.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>88, 20</value>
-  </data>
-  <data name="txtTime.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>63</value>
-  </data>
-  <data name="txtTime.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
   <data name="txtDate.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
@@ -6427,6 +5971,21 @@
     <value>62</value>
   </data>
   <data name="txtDate.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="txtTime.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="txtTime.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>8, 30</value>
+  </data>
+  <data name="txtTime.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="txtTime.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="txtTime.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
   <data name="panelSoundControls.AutoScrollMargin" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
@@ -7020,21 +6579,6 @@
   <data name="txtDisplayPeakOffset.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="txtDisplayCursorOffset.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt</value>
-  </data>
-  <data name="txtDisplayCursorOffset.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>9, 252</value>
-  </data>
-  <data name="txtDisplayCursorOffset.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>88, 15</value>
-  </data>
-  <data name="txtDisplayCursorOffset.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="txtDisplayCursorOffset.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
   <data name="txtOverload.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
   </data>
@@ -7048,21 +6592,6 @@
     <value>7</value>
   </data>
   <data name="txtOverload.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="txtDisplayCursorPower.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt</value>
-  </data>
-  <data name="txtDisplayCursorPower.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>97, 252</value>
-  </data>
-  <data name="txtDisplayCursorPower.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>88, 15</value>
-  </data>
-  <data name="txtDisplayCursorPower.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="txtDisplayCursorPower.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
   <data name="lblDisplayZoom.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -7082,21 +6611,6 @@
   </data>
   <data name="lblDisplayZoom.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
-  </data>
-  <data name="txtDisplayCursorFreq.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt</value>
-  </data>
-  <data name="txtDisplayCursorFreq.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>185, 252</value>
-  </data>
-  <data name="txtDisplayCursorFreq.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>112, 15</value>
-  </data>
-  <data name="txtDisplayCursorFreq.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="txtDisplayCursorFreq.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
   </data>
   <data name="txtDisplayPeakPower.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
@@ -7173,6 +6687,96 @@
   <data name="picWaterfall.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>68</value>
   </data>
+  <data name="txtDisplayCursorOffset.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="txtDisplayCursorOffset.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>9, 252</value>
+  </data>
+  <data name="txtDisplayCursorOffset.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>88, 15</value>
+  </data>
+  <data name="txtDisplayCursorOffset.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="txtDisplayCursorOffset.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="txtDisplayOrionMKIIPAVolts.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="txtDisplayOrionMKIIPAVolts.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>9, 252</value>
+  </data>
+  <data name="txtDisplayOrionMKIIPAVolts.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>88, 15</value>
+  </data>
+  <data name="txtDisplayOrionMKIIPAVolts.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="txtDisplayOrionMKIIPAVolts.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="txtDisplayCursorPower.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="txtDisplayCursorPower.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>97, 252</value>
+  </data>
+  <data name="txtDisplayCursorPower.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>88, 15</value>
+  </data>
+  <data name="txtDisplayCursorPower.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="txtDisplayCursorPower.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="txtDisplayOrionMKIIPAAmps.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="txtDisplayOrionMKIIPAAmps.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>97, 252</value>
+  </data>
+  <data name="txtDisplayOrionMKIIPAAmps.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>88, 15</value>
+  </data>
+  <data name="txtDisplayOrionMKIIPAAmps.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="txtDisplayOrionMKIIPAAmps.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="txtDisplayCursorFreq.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="txtDisplayCursorFreq.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>185, 252</value>
+  </data>
+  <data name="txtDisplayCursorFreq.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>112, 15</value>
+  </data>
+  <data name="txtDisplayCursorFreq.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="txtDisplayCursorFreq.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="txtDisplayOrionMKIIBlank.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="txtDisplayOrionMKIIBlank.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>185, 252</value>
+  </data>
+  <data name="txtDisplayOrionMKIIBlank.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>112, 15</value>
+  </data>
+  <data name="txtDisplayOrionMKIIBlank.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="txtDisplayOrionMKIIBlank.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
   <data name="panelMode.AutoScrollMargin" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -7238,30 +6842,6 @@
   </data>
   <data name="grpVFOA.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="lblRX1APF.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt, style=Bold</value>
-  </data>
-  <data name="lblRX1APF.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value></value>
-  </data>
-  <data name="lblRX1APF.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Off</value>
-  </data>
-  <data name="lblRX1APF.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>45, 20</value>
-  </data>
-  <data name="lblRX1APF.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>35, 11</value>
-  </data>
-  <data name="lblRX1APF.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>126</value>
-  </data>
-  <data name="lblRX1APF.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="lblRX1APF.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="lblRX1MuteVFOA.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 6.75pt, style=Bold</value>
@@ -7353,21 +6933,6 @@
   <data name="txtVFOALSD.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
   </data>
-  <data name="txtVFOAMSD.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20.25pt</value>
-  </data>
-  <data name="txtVFOAMSD.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="txtVFOAMSD.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>216, 38</value>
-  </data>
-  <data name="txtVFOAMSD.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>116</value>
-  </data>
-  <data name="txtVFOAMSD.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
   <data name="panelVFOASubHover.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>92, 80</value>
   </data>
@@ -7403,6 +6968,45 @@
   </data>
   <data name="txtVFOABand.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
+  </data>
+  <data name="lblRX1APF.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt, style=Bold</value>
+  </data>
+  <data name="lblRX1APF.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="lblRX1APF.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="lblRX1APF.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="lblRX1APF.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>35, 11</value>
+  </data>
+  <data name="lblRX1APF.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="lblRX1APF.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lblRX1APF.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtVFOAMSD.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20.25pt</value>
+  </data>
+  <data name="txtVFOAMSD.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="txtVFOAMSD.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>216, 38</value>
+  </data>
+  <data name="txtVFOAMSD.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="txtVFOAMSD.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
   </data>
   <data name="btnHidden.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -7708,7 +7312,7 @@
     <value>Off</value>
   </data>
   <data name="lblTuneStep.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>112, 16</value>
+    <value>112, 10</value>
   </data>
   <data name="lblTuneStep.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
@@ -7724,6 +7328,21 @@
   </data>
   <data name="grpVFOBetween.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>67</value>
+  </data>
+  <data name="labelTS1.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="labelTS1.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="labelTS1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>12, 33</value>
+  </data>
+  <data name="labelTS1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>34, 28</value>
+  </data>
+  <data name="labelTS1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>83</value>
   </data>
   <data name="lblDisplayModeTop.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
@@ -7835,36 +7454,6 @@
   </data>
   <data name="panelBandVHF.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>114</value>
-  </data>
-  <data name="radBandVHF13.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="radBandVHF13.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="radBandVHF13.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="radBandVHF13.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="radBandVHF13.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value></value>
-  </data>
-  <data name="radBandVHF13.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Off</value>
-  </data>
-  <data name="radBandVHF13.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>112, 100</value>
-  </data>
-  <data name="radBandVHF13.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
-  </data>
-  <data name="radBandVHF13.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>76</value>
-  </data>
-  <data name="radBandVHF13.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="radBandVHF12.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -8256,6 +7845,36 @@
   <data name="radBandVHF0.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
+  <data name="radBandVHF13.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="radBandVHF13.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radBandVHF13.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="radBandVHF13.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="radBandVHF13.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="radBandVHF13.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="radBandVHF13.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>112, 100</value>
+  </data>
+  <data name="radBandVHF13.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="radBandVHF13.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="radBandVHF13.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="ptbSquelch.BackgroundImageLayout" xml:space="preserve" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -8551,178 +8170,4 @@
   <metadata name="$this.TrayHeight" xml:space="preserve" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>101</value>
   </metadata>
-  <data name="NR2ToolStripMenuItem1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="NR2StripMenuItem2.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>99, 22</value>
-  </data>
-  <data name="SNBtoolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
-  </data>
-  <data name="SNBtoolStripMenuItem1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>99, 22</value>
-  </data>
-  <data name="txtDisplayOrionMKIIPAVolts.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt</value>
-  </data>
-  <data name="txtDisplayOrionMKIIPAVolts.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>9, 252</value>
-  </data>
-  <data name="txtDisplayOrionMKIIPAVolts.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>88, 15</value>
-  </data>
-  <data name="txtDisplayOrionMKIIPAVolts.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>69</value>
-  </data>
-  <data name="txtDisplayOrionMKIIPAVolts.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="txtDisplayOrionMKIIPAAmps.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt</value>
-  </data>
-  <data name="txtDisplayOrionMKIIPAAmps.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>97, 252</value>
-  </data>
-  <data name="txtDisplayOrionMKIIPAAmps.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>88, 15</value>
-  </data>
-  <data name="txtDisplayOrionMKIIPAAmps.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="txtDisplayOrionMKIIPAAmps.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="txtDisplayOrionMKIIBlank.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt</value>
-  </data>
-  <data name="txtDisplayOrionMKIIBlank.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>185, 252</value>
-  </data>
-  <data name="txtDisplayOrionMKIIBlank.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>112, 15</value>
-  </data>
-  <data name="txtDisplayOrionMKIIBlank.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>71</value>
-  </data>
-  <data name="txtDisplayOrionMKIIBlank.TextAlign" xml:space="preserve" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="chkSyncIT.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Off</value>
-  </data>
-  <data name="chkSyncIT.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>45, 121</value>
-  </data>
-  <data name="chkSyncIT.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>54, 17</value>
-  </data>
-  <data name="chkSyncIT.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>146</value>
-  </data>
-  <data name="panelModeSpecificCW.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblCWBreakInDelay.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnMemoryQuickRestore.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="btnTNFAddOld.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnTNFAddOld.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btnTNFAddOld.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value></value>
-  </data>
-  <data name="btnTNFAddOld.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Off</value>
-  </data>
-  <data name="btnTNFAddOld.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>59, 70</value>
-  </data>
-  <data name="btnTNFAddOld.RightToLeft" xml:space="preserve" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="btnTNFAddOld.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>56, 20</value>
-  </data>
-  <data name="btnTNFAddOld.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="btnTNFAddOld.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="btnTNFAddOld.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnTNFAdd.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="btnTNFAdd.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Off</value>
-  </data>
-  <data name="comboAMTXProfile.ItemHeight" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="comboAMTXProfile.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>217, 26</value>
-  </data>
-  <data name="comboAMTXProfile.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>96, 21</value>
-  </data>
-  <data name="comboAMTXProfile.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>115</value>
-  </data>
-  <data name="chkSyncIT.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value></value>
-  </data>
-  <data name="labelTS1.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value></value>
-  </data>
-  <data name="labelTS1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>2, 33</value>
-  </data>
-  <data name="labelTS1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>35, 28</value>
-  </data>
-  <data name="labelTS1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>83</value>
-  </data>
-  <data name="chkVFOBLock.Appearance" xml:space="preserve" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="chkVFOBLock.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="chkVFOBLock.FlatStyle" xml:space="preserve" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="chkVFOBLock.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="chkVFOBLock.Image" xml:space="preserve" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value></value>
-  </data>
-  <data name="chkVFOBLock.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Off</value>
-  </data>
-  <data name="chkVFOBLock.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>58, 38</value>
-  </data>
-  <data name="chkVFOBLock.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="chkVFOBLock.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="chkVFOBLock.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="labelTS1.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Off</value>
-  </data>
 </root>

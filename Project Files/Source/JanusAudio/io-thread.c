@@ -1505,9 +1505,9 @@ void IOThreadMainLoop(void) {
 						break;
 					case 8:
 						if (diversitymode2)
-							FPGAWriteBufp[writebufpos] = (enable_ADC1_step_att | adc1_step_att_data) & 0x3f;
+							FPGAWriteBufp[writebufpos] = adc1_step_att_data & 0x7f;
 						else
-							FPGAWriteBufp[writebufpos] = (enable_ADC2_step_att | adc2_step_att_data) & 0x3f;
+							FPGAWriteBufp[writebufpos] = adc2_step_att_data & 0x7f;
 						break;
 					case 9:
 						FPGAWriteBufp[writebufpos] = 0;
@@ -1746,7 +1746,7 @@ void IOThreadMainLoop(void) {
 						FPGAWriteBufp[writebufpos] = AlexLPFMask & 0x7f;
 						break;
 					case 7:
-						FPGAWriteBufp[writebufpos] = (enable_ADC1_step_att | adc1_step_att_data) & 0x3f;
+						FPGAWriteBufp[writebufpos] = adc1_step_att_data & 0x7f;
 						break;
 					case 8:
 						FPGAWriteBufp[writebufpos] = (cw_weight | enable_cw_spacing) & 0xff;

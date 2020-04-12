@@ -215,6 +215,9 @@ namespace PowerSDR
         public static extern void SetADC3StepAttenData(int bits);
 
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void SetADC1LNAData(int bits);
+
+        [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern void SetMicTipRing(int bits);
 
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]

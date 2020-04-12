@@ -6450,9 +6450,9 @@ namespace PowerSDR
             this.panelSoundControls.Controls.Add(this.lblAGC);
             this.panelSoundControls.Controls.Add(this.lblRF);
             this.panelSoundControls.Controls.Add(this.lblPWR);
-            this.panelSoundControls.Controls.Add(this.lblPreamp);
             this.panelSoundControls.Controls.Add(this.udRX1StepAttData);
             this.panelSoundControls.Controls.Add(this.comboPreamp);
+            this.panelSoundControls.Controls.Add(this.lblPreamp);
             this.panelSoundControls.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.panelSoundControls.Name = "panelSoundControls";
             // 
@@ -6485,6 +6485,7 @@ namespace PowerSDR
             this.lblPreamp.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.lblPreamp, "lblPreamp");
             this.lblPreamp.Name = "lblPreamp";
+            this.lblPreamp.Click += new System.EventHandler(this.lblPreamp_Click);
             this.lblPreamp.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lblPreamp_MouseDoubleClick);
             // 
             // lblAF2
@@ -18716,8 +18717,20 @@ namespace PowerSDR
                 if (initializing) return;
                 if (AlexPresent && !ANAN10Present && !ANAN10EPresent
                                 && !ANAN7000DPresent && !ANAN8000DPresent)
+                {
                     udRX1StepAttData.Maximum = (decimal)61;
-                else udRX1StepAttData.Maximum = (decimal)31;
+                    udRX1StepAttData.Minimum = (decimal)0;
+                }
+                else if (HERMESLITEPresent)
+                {
+                    udRX1StepAttData.Maximum = (decimal)32;
+                    udRX1StepAttData.Minimum = (decimal)-28;
+                }
+                else
+                {
+                    udRX1StepAttData.Maximum = (decimal)31;
+                    udRX1StepAttData.Minimum = (decimal)0;
+                }
 
                 if (rx1_step_att_present)
                 {
@@ -18734,6 +18747,11 @@ namespace PowerSDR
                             JanusAudio.SetAlexAtten(3); // -30dB Alex Attenuator
                             JanusAudio.SetADC1StepAttenData(rx1_attenuator_data + 2);
                         }
+                    }
+                    else if (HERMESLITEPresent)
+                    {
+                        JanusAudio.SetAlexAtten(0);
+                        JanusAudio.SetADC1LNAData((int)(32 - rx1_attenuator_data));
                     }
                     else
                     {
@@ -52635,7 +52653,15 @@ namespace PowerSDR
                     if (udRX1StepAttData.Value > 31) udRX1StepAttData.Value = 31;
                     SetupForm.ATTOnTX = (int)udRX1StepAttData.Value;
                 }
-                SetupForm.HermesAttenuatorData = (int)udRX1StepAttData.Value;
+
+                if (HERMESLITEPresent)
+                {
+                    SetupForm.HermesAttenuatorData = (int)(udRX1StepAttData.Value);
+                }
+                else
+                {
+                    SetupForm.HermesAttenuatorData = (int)udRX1StepAttData.Value;
+                }
             }
             if (udRX1StepAttData.Focused) btnHidden.Focus();
         }
@@ -53067,7 +53093,11 @@ namespace PowerSDR
            // }
         }
 
-     }
+        private void lblPreamp_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 
     public class DigiMode
     {
