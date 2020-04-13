@@ -4779,7 +4779,7 @@ namespace PowerSDR
             0,
             0});
             this.udRX1StepAttData.Name = "udRX1StepAttData";
-            this.udRX1StepAttData.Tag = "-1";
+            this.udRX1StepAttData.Tag = "1";
             this.toolTip1.SetToolTip(this.udRX1StepAttData, resources.GetString("udRX1StepAttData.ToolTip"));
             this.udRX1StepAttData.Value = new decimal(new int[] {
             0,
@@ -18680,7 +18680,7 @@ namespace PowerSDR
                 rx1_step_att_present = value;
                 if (rx1_step_att_present)
                 {
-                    if (lblPreamp.Tag == null)
+                    if (udRX1StepAttData.Tag == null)
                         lblPreamp.Text = "S-ATT";
                     else
                         lblPreamp.Text = "A-ATT";
@@ -28441,13 +28441,13 @@ namespace PowerSDR
                         switch (adc_oload_num)
                         {
                             case 1:
-                                if (lblPreamp.Tag == null)
+                                if (udRX1StepAttData.Tag == null)
                                     txtOverload.Text = "ADC1 Overload!";
                                 else
                                     if (udRX1StepAttData.Value < udRX1StepAttData.Maximum)
                                     { 
                                         udRX1StepAttData.Value++;
-                                        attn_loop = SetupForm.HermesStepAttenuatorDelay;
+                                        attn_loop = SetupForm.HermesStepAttenuatorDelay*2;
                                         search = false;
                                     }
                                 break;
@@ -28470,11 +28470,14 @@ namespace PowerSDR
             }
             else
             {
-                if (tx_inhibit) txtOverload.Text = "TX Inhibit";
-                else txtOverload.Text = "";
+                if (tx_inhibit)
+                    txtOverload.Text = "TX Inhibit";
+                else 
+                    txtOverload.Text = "";
+
                 change_overload_color_count = 0;
 
-                if (lblPreamp.Tag != null)
+                if (udRX1StepAttData.Tag != null)
                 {
                     if (current_band == RX1Band)
                     {
@@ -28483,7 +28486,7 @@ namespace PowerSDR
                             if (udRX1StepAttData.Value > udRX1StepAttData.Minimum)
                                 udRX1StepAttData.Value--;
                             
-                            attn_loop = SetupForm.HermesStepAttenuatorDelay;
+                            attn_loop = SetupForm.HermesStepAttenuatorDelay*2;
                         }
                         else
                         {
@@ -28496,7 +28499,12 @@ namespace PowerSDR
                         current_band = RX1Band;
                     }
                 }
+                else
+                {
+                    attn_loop = SetupForm.HermesStepAttenuatorDelay*2;
+                }
             }
+
             switch (change_overload_color_count)
             {
                 case 0:
@@ -52708,14 +52716,14 @@ namespace PowerSDR
         {
             if (current_hpsdr_model == HPSDRModel.HERMESLITE)
             {
-                if (lblPreamp.Tag == null)
+                if (udRX1StepAttData.Tag == null)
                 {
-                    lblPreamp.Tag = 1;
+                    udRX1StepAttData.Tag = 1;
                     lblPreamp.Text = "A-ATT";
                 }
                 else
                 {
-                    lblPreamp.Tag = null;
+                    udRX1StepAttData.Tag = null;
                     lblPreamp.Text = "S-ATT";
                 }
             }
