@@ -2979,6 +2979,8 @@
             this.radioButtonTS5 = new System.Windows.Forms.RadioButtonTS();
             this.radioButtonTS6 = new System.Windows.Forms.RadioButtonTS();
             this.timerVACrmatchMonitor = new System.Windows.Forms.Timer(this.components);
+            this.udHermesStepAttenuatorDelay = new System.Windows.Forms.NumericUpDownTS();
+            this.lblAutoAttnDelay = new System.Windows.Forms.LabelTS();
             tpAlexAntCtrl = new System.Windows.Forms.TabPage();
             grpKBCW = new System.Windows.Forms.GroupBoxTS();
             tpAlexAntCtrl.SuspendLayout();
@@ -3950,6 +3952,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTS35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTS36)).BeginInit();
             this.panelTS4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.udHermesStepAttenuatorDelay)).BeginInit();
             this.SuspendLayout();
             // 
             // tpAlexAntCtrl
@@ -7929,11 +7932,13 @@
             // 
             // grpHermesStepAttenuator
             // 
+            this.grpHermesStepAttenuator.Controls.Add(this.lblAutoAttnDelay);
+            this.grpHermesStepAttenuator.Controls.Add(this.udHermesStepAttenuatorDelay);
             this.grpHermesStepAttenuator.Controls.Add(this.chkHermesStepAttenuator);
             this.grpHermesStepAttenuator.Controls.Add(this.udHermesStepAttenuatorData);
             this.grpHermesStepAttenuator.Location = new System.Drawing.Point(416, 72);
             this.grpHermesStepAttenuator.Name = "grpHermesStepAttenuator";
-            this.grpHermesStepAttenuator.Size = new System.Drawing.Size(144, 56);
+            this.grpHermesStepAttenuator.Size = new System.Drawing.Size(144, 72);
             this.grpHermesStepAttenuator.TabIndex = 30;
             this.grpHermesStepAttenuator.TabStop = false;
             this.grpHermesStepAttenuator.Text = "Hermes Attenuator";
@@ -8151,7 +8156,7 @@
             // 
             this.grpOptQuickQSY.Controls.Add(this.chkOptEnableKBShortcuts);
             this.grpOptQuickQSY.Controls.Add(this.chkOptQuickQSY);
-            this.grpOptQuickQSY.Location = new System.Drawing.Point(416, 143);
+            this.grpOptQuickQSY.Location = new System.Drawing.Point(416, 150);
             this.grpOptQuickQSY.Name = "grpOptQuickQSY";
             this.grpOptQuickQSY.Size = new System.Drawing.Size(128, 72);
             this.grpOptQuickQSY.TabIndex = 27;
@@ -8192,9 +8197,9 @@
             this.grpGenTuningOptions.Controls.Add(this.udOptClickTuneOffsetDIGL);
             this.grpGenTuningOptions.Controls.Add(this.lblOptClickTuneDIGU);
             this.grpGenTuningOptions.Controls.Add(this.udOptClickTuneOffsetDIGU);
-            this.grpGenTuningOptions.Location = new System.Drawing.Point(416, 223);
+            this.grpGenTuningOptions.Location = new System.Drawing.Point(416, 228);
             this.grpGenTuningOptions.Name = "grpGenTuningOptions";
-            this.grpGenTuningOptions.Size = new System.Drawing.Size(150, 80);
+            this.grpGenTuningOptions.Size = new System.Drawing.Size(150, 75);
             this.grpGenTuningOptions.TabIndex = 25;
             this.grpGenTuningOptions.TabStop = false;
             this.grpGenTuningOptions.Text = "Click Tune / Filter Offsets";
@@ -50249,6 +50254,45 @@
             this.timerVACrmatchMonitor.Enabled = true;
             this.timerVACrmatchMonitor.Tick += new System.EventHandler(this.timerVACrmatchMonitor_Tick);
             // 
+            // udHermesStepAttenuatorDelay
+            // 
+            this.udHermesStepAttenuatorDelay.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.udHermesStepAttenuatorDelay.Location = new System.Drawing.Point(76, 46);
+            this.udHermesStepAttenuatorDelay.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.udHermesStepAttenuatorDelay.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.udHermesStepAttenuatorDelay.Name = "udHermesStepAttenuatorDelay";
+            this.udHermesStepAttenuatorDelay.Size = new System.Drawing.Size(55, 20);
+            this.udHermesStepAttenuatorDelay.TabIndex = 4;
+            this.udHermesStepAttenuatorDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.udHermesStepAttenuatorDelay.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // lblAutoAttnDelay
+            // 
+            this.lblAutoAttnDelay.Image = null;
+            this.lblAutoAttnDelay.Location = new System.Drawing.Point(8, 43);
+            this.lblAutoAttnDelay.Name = "lblAutoAttnDelay";
+            this.lblAutoAttnDelay.Size = new System.Drawing.Size(64, 23);
+            this.lblAutoAttnDelay.TabIndex = 13;
+            this.lblAutoAttnDelay.Text = "Auto Delay";
+            this.lblAutoAttnDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lblAutoAttnDelay, "Determines the frequency offset for click tuning and ");
+            // 
             // Setup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -51343,6 +51387,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTS36)).EndInit();
             this.panelTS4.ResumeLayout(false);
             this.panelTS4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.udHermesStepAttenuatorDelay)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -52912,6 +52957,7 @@
         private System.Windows.Forms.CheckBoxTS chkBPF1HFLNAControl;
         private System.Windows.Forms.CheckBoxTS chkBPF2HFLNAControl;
         private System.Windows.Forms.RadioButtonTS radGenModelHermesLite;
-
+        private System.Windows.Forms.LabelTS lblAutoAttnDelay;
+        private System.Windows.Forms.NumericUpDownTS udHermesStepAttenuatorDelay;
     }
 }

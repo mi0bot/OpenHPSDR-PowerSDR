@@ -18680,7 +18680,10 @@ namespace PowerSDR
                 rx1_step_att_present = value;
                 if (rx1_step_att_present)
                 {
-                    lblPreamp.Text = "S-ATT";
+                    if (lblPreamp.Tag == null)
+                        lblPreamp.Text = "S-ATT";
+                    else
+                        lblPreamp.Text = "A-ATT";
                     udRX1StepAttData.BringToFront();
                     udRX1StepAttData_ValueChanged(this, EventArgs.Empty);
                     JanusAudio.EnableADC1StepAtten(1);
@@ -28444,7 +28447,7 @@ namespace PowerSDR
                                     if (udRX1StepAttData.Value < udRX1StepAttData.Maximum)
                                     { 
                                         udRX1StepAttData.Value++;
-                                        attn_loop = 10;
+                                        attn_loop = SetupForm.HermesStepAttenuatorDelay;
                                         search = false;
                                     }
                                 break;
@@ -28480,7 +28483,7 @@ namespace PowerSDR
                             if (udRX1StepAttData.Value > udRX1StepAttData.Minimum)
                                 udRX1StepAttData.Value--;
                             
-                            attn_loop = 10;
+                            attn_loop = SetupForm.HermesStepAttenuatorDelay;
                         }
                         else
                         {

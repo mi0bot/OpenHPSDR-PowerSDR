@@ -6552,6 +6552,12 @@ namespace PowerSDR
             set { udRX2DisplayGridMax.Value = (decimal)value; }
         }
 
+        public int HermesStepAttenuatorDelay
+        {
+            get { return (int)udHermesStepAttenuatorDelay.Value; }
+            set { udHermesStepAttenuatorDelay.Value = value; }
+        }
+
         public float PA10W
         {
             get 
