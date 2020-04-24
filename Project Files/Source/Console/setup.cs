@@ -3438,6 +3438,7 @@ namespace PowerSDR
                 if (udATTOnTX != null)
                 {
                     if (value > 31) value = 31;
+                    if (value < 0) value = 0;
                     udATTOnTX.Value = value;
                 }
             }
