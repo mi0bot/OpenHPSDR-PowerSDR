@@ -6,7 +6,7 @@ Read the RealeaseNotes.md for more information.
 
 # 3.5.0 Beta 1 (2020-4-23)
 - Add functionality for Hermes Lite
-  - Added inital setup radio button to do basic setup
+  - Added initial setup radio button to do basic setup
   - Adjusted setup form to reflect Hermes Lite functionality
   - Changes functionality of CPU utilisation to display temp/ver/PA current
   - Adjusted S-Att to utilise full LNA range, gain is shown as negative attenuation
