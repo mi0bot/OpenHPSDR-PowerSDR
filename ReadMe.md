@@ -1,9 +1,18 @@
 # OpenHPSDR-PowerSDR
 
-Latest Release v3.4.9 March 19, 2018
+Latest Release v3.5.0 Beta 1 April 23, 2020
 
 Read the RealeaseNotes.md for more information.
 
+# 3.5.0 Beta 1 (2020-4-23)
+- Add functionality for Hermes Lite
+  - Added initial setup radio button to do basic setup
+  - Adjusted setup form to reflect Hermes Lite functionality
+  - Changes functionality of CPU utilisation to display temp/ver/PA current
+  - Adjusted S-Att to utilise full LNA range, gain is shown as negative attenuation
+  - Auto adjust of S-Att to utilise full range of ADC
+  - Power meter scaled correctly
+  
 # 3.4.9 (2018-3-19)
 - Bug fix for manually entering frequency
 
