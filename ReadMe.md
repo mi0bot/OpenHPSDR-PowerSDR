@@ -1,10 +1,10 @@
 # OpenHPSDR-PowerSDR
 
-Latest Release v3.5.0 Beta 1 April 23, 2020
+Latest Release v3.5.0 Beta 2 April 26, 2020
 
 Read the RealeaseNotes.md for more information.
 
-# 3.5.0 Beta 1 (2020-4-23)
+# 3.5.0 Beta 2 (2020-4-26)
 - Add functionality for Hermes Lite
   - Added initial setup radio button to do basic setup
   - Adjusted setup form to reflect Hermes Lite functionality
