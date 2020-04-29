@@ -276,8 +276,8 @@ namespace PowerSDR
                 btnPSTwoToneGen.BackColor = Color.FromArgb(gcolor);
             fixed (double* ptr = &PShwpeak)
                 puresignal.GetPSHWPeak(txachannel, ptr);
-            PSpeak.Text = PShwpeak.ToString();
-            PSdispRX.Text = dispRCVR.ToString();
+            txtPSpeak.Text = PShwpeak.ToString();
+            txtPSdispRX.Text = dispRCVR.ToString();
             btnPSAdvanced_Click(this, e);
         }
 
@@ -481,7 +481,7 @@ namespace PowerSDR
                 lblDisabled.Visible = false;
             fixed (double* ptr = &GetPSpeakval)
                 puresignal.GetPSMaxTX(txachannel, ptr);
-            GetPSpeak.Text = GetPSpeakval.ToString();
+            txtGetPSpeak.Text = GetPSpeakval.ToString();
         }
 
         private void timer2_Tick(object sender, EventArgs e)    // auto-attenuate loop
@@ -528,19 +528,19 @@ namespace PowerSDR
             }
         }
 
-        private void PSpeak_TextChanged(object sender, EventArgs e)
+        private void txtPSpeak_TextChanged(object sender, EventArgs e)
         {
-            PShwpeak = Convert.ToDouble(PSpeak.Text);
+            PShwpeak = Convert.ToDouble(txtPSpeak.Text);
             puresignal.SetPSHWPeak(txachannel, PShwpeak);
         }
 
-        private void PSdispRX_TextChanged(object sender, EventArgs e)
+        private void txtPSdispRX_TextChanged(object sender, EventArgs e)
         {
             const int max_rcvrs = 5;
             int new_rcvr = dispRCVR;
-            if (PSdispRX.Text != String.Empty)
+            if (txtPSdispRX.Text != String.Empty)
             {
-                new_rcvr = Convert.ToInt32(PSdispRX.Text);
+                new_rcvr = Convert.ToInt32(txtPSdispRX.Text);
                 if (new_rcvr >= 0 && new_rcvr <= max_rcvrs)
                 {
                     dispRCVR = new_rcvr;
@@ -548,7 +548,7 @@ namespace PowerSDR
                 }
                 else
                     dispRCVR = -1;
-                PSdispRX.Text = new_rcvr.ToString();
+                txtPSdispRX.Text = new_rcvr.ToString();
             }
         }
 

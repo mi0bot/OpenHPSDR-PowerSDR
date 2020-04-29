@@ -56,11 +56,11 @@
             this.labelTS12 = new System.Windows.Forms.LabelTS();
             this.lblPSInfo6 = new System.Windows.Forms.LabelTS();
             this.labelTS10 = new System.Windows.Forms.LabelTS();
-            this.PSdispRX = new System.Windows.Forms.TextBoxTS();
+            this.txtPSdispRX = new System.Windows.Forms.TextBoxTS();
             this.labelTS6 = new System.Windows.Forms.LabelTS();
-            this.GetPSpeak = new System.Windows.Forms.TextBoxTS();
+            this.txtGetPSpeak = new System.Windows.Forms.TextBoxTS();
             this.labelTS3 = new System.Windows.Forms.LabelTS();
-            this.PSpeak = new System.Windows.Forms.TextBoxTS();
+            this.txtPSpeak = new System.Windows.Forms.TextBoxTS();
             this.labelTS5 = new System.Windows.Forms.LabelTS();
             this.lblPSfb2 = new System.Windows.Forms.LabelTS();
             this.labelTS1 = new System.Windows.Forms.LabelTS();
@@ -358,11 +358,11 @@
             this.grpPSInfo.Controls.Add(this.labelTS12);
             this.grpPSInfo.Controls.Add(this.lblPSInfo6);
             this.grpPSInfo.Controls.Add(this.labelTS10);
-            this.grpPSInfo.Controls.Add(this.PSdispRX);
+            this.grpPSInfo.Controls.Add(this.txtPSdispRX);
             this.grpPSInfo.Controls.Add(this.labelTS6);
-            this.grpPSInfo.Controls.Add(this.GetPSpeak);
+            this.grpPSInfo.Controls.Add(this.txtGetPSpeak);
             this.grpPSInfo.Controls.Add(this.labelTS3);
-            this.grpPSInfo.Controls.Add(this.PSpeak);
+            this.grpPSInfo.Controls.Add(this.txtPSpeak);
             this.grpPSInfo.Controls.Add(this.labelTS5);
             this.grpPSInfo.Controls.Add(this.lblPSfb2);
             this.grpPSInfo.Controls.Add(this.labelTS1);
@@ -450,14 +450,14 @@
             this.labelTS10.TabIndex = 18;
             this.labelTS10.Text = "sln.chk";
             // 
-            // PSdispRX
+            // txtPSdispRX
             // 
-            this.PSdispRX.BackColor = System.Drawing.Color.Bisque;
-            this.PSdispRX.Location = new System.Drawing.Point(170, 118);
-            this.PSdispRX.Name = "PSdispRX";
-            this.PSdispRX.Size = new System.Drawing.Size(38, 20);
-            this.PSdispRX.TabIndex = 17;
-            this.PSdispRX.TextChanged += new System.EventHandler(this.PSdispRX_TextChanged);
+            this.txtPSdispRX.BackColor = System.Drawing.Color.Bisque;
+            this.txtPSdispRX.Location = new System.Drawing.Point(170, 118);
+            this.txtPSdispRX.Name = "txtPSdispRX";
+            this.txtPSdispRX.Size = new System.Drawing.Size(38, 20);
+            this.txtPSdispRX.TabIndex = 17;
+            this.txtPSdispRX.TextChanged += new System.EventHandler(this.txtPSdispRX_TextChanged);
             // 
             // labelTS6
             // 
@@ -469,13 +469,13 @@
             this.labelTS6.TabIndex = 16;
             this.labelTS6.Text = "Bottom Panadapter Displays RX";
             // 
-            // GetPSpeak
+            // txtGetPSpeak
             // 
-            this.GetPSpeak.BackColor = System.Drawing.Color.Bisque;
-            this.GetPSpeak.Location = new System.Drawing.Point(287, 69);
-            this.GetPSpeak.Name = "GetPSpeak";
-            this.GetPSpeak.Size = new System.Drawing.Size(57, 20);
-            this.GetPSpeak.TabIndex = 15;
+            this.txtGetPSpeak.BackColor = System.Drawing.Color.Bisque;
+            this.txtGetPSpeak.Location = new System.Drawing.Point(287, 69);
+            this.txtGetPSpeak.Name = "txtGetPSpeak";
+            this.txtGetPSpeak.Size = new System.Drawing.Size(57, 20);
+            this.txtGetPSpeak.TabIndex = 15;
             // 
             // labelTS3
             // 
@@ -487,14 +487,14 @@
             this.labelTS3.TabIndex = 14;
             this.labelTS3.Text = "GetPk";
             // 
-            // PSpeak
+            // txtPSpeak
             // 
-            this.PSpeak.BackColor = System.Drawing.Color.Bisque;
-            this.PSpeak.Location = new System.Drawing.Point(287, 93);
-            this.PSpeak.Name = "PSpeak";
-            this.PSpeak.Size = new System.Drawing.Size(57, 20);
-            this.PSpeak.TabIndex = 13;
-            this.PSpeak.TextChanged += new System.EventHandler(this.PSpeak_TextChanged);
+            this.txtPSpeak.BackColor = System.Drawing.Color.Bisque;
+            this.txtPSpeak.Location = new System.Drawing.Point(287, 93);
+            this.txtPSpeak.Name = "txtPSpeak";
+            this.txtPSpeak.Size = new System.Drawing.Size(57, 20);
+            this.txtPSpeak.TabIndex = 13;
+            this.txtPSpeak.TextChanged += new System.EventHandler(this.txtPSpeak_TextChanged);
             // 
             // labelTS5
             // 
@@ -789,10 +789,10 @@
         private System.Windows.Forms.LabelTS labelTS1;
         private System.Windows.Forms.LabelTS lblDisabled;
         private System.Windows.Forms.LabelTS labelTS5;
-        private System.Windows.Forms.TextBoxTS PSpeak;
-        private System.Windows.Forms.TextBoxTS GetPSpeak;
+        private System.Windows.Forms.TextBoxTS txtPSpeak;
+        private System.Windows.Forms.TextBoxTS txtGetPSpeak;
         private System.Windows.Forms.LabelTS labelTS3;
-        private System.Windows.Forms.TextBoxTS PSdispRX;
+        private System.Windows.Forms.TextBoxTS txtPSdispRX;
         private System.Windows.Forms.LabelTS labelTS6;
         private System.Windows.Forms.CheckBoxTS chkPSRelaxPtol;
         private System.Windows.Forms.ButtonTS btnPSAmpView;
