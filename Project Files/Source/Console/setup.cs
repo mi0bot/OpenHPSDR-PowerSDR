@@ -15153,7 +15153,7 @@ namespace PowerSDR
 
             //-W2PA Import more carefully, allowing DBs created by previous versions to retain settings and options
             if (DB.ImportAndMergeDatabase(openFileDialog1.FileName, console.AppDataPath)) { 
-                MessageBox.Show("Database Imported Successfully. OpenSDR-PowerSDR mRX PS will now close.\n\nPlease RE-START.");
+                MessageBox.Show("Database Imported Successfully. OpenSDR-PowerSDR mRX PS HL2 will now close.\n\nPlease RE-START.");
                 success = true;
             }
             else

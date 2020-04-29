@@ -1615,7 +1615,7 @@ namespace PowerSDR
                 //  FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
                 // string version = fvi.FileVersion; //.Substring(0, fvi.FileVersion.LastIndexOf("."));
                 AppDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
-                    + "\\FlexRadio Systems\\PowerSDR mRX PS\\";
+                    + "\\FlexRadio Systems\\PowerSDR mRX PS HL2\\";
             }
 
             foreach (string s in args)
@@ -7823,7 +7823,7 @@ namespace PowerSDR
                     FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
                     string version = fvi.FileVersion.Substring(0, fvi.FileVersion.LastIndexOf("."));
                     app_data_path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
-                        + "\\FlexRadio Systems\\PowerSDR mRX PS\\";
+                        + "\\FlexRadio Systems\\PowerSDR mRX PS HL2\\";
 #if(DEBUG)
                     app_data_path += "Debug\\";
 #endif
