@@ -7607,10 +7607,10 @@ namespace PowerSDR
             this.Controls.Add(this.lblRF2);
             this.Controls.Add(this.panelBandHF);
             this.Controls.Add(this.panelBandVHF);
-            this.Controls.Add(this.panelModeSpecificCW);
             this.Controls.Add(this.panelModeSpecificPhone);
             this.Controls.Add(this.panelModeSpecificFM);
             this.Controls.Add(this.panelModeSpecificDigital);
+            this.Controls.Add(this.panelModeSpecificCW);
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Console";
@@ -28412,7 +28412,7 @@ namespace PowerSDR
         private const int num_oloads = 2;               // number of possible overload displays
         private int attn_loop = 0;                       // Delay timer to increase gain
         private Band current_band = Band.FIRST;
-        private bool search = true;
+        private bool autoAttSearch = true;
         private void UpdatePeakText()
         {
             int NWSeqError = JanusAudio.getSeqError();
@@ -28443,14 +28443,19 @@ namespace PowerSDR
                             case 1:
                                 if (udRX1StepAttData.Tag == null)
                                     txtOverload.Text = "ADC1 Overload!";
-                                else
-                                if (!mox)
+                                else if (!mox)
                                 {
                                     if (udRX1StepAttData.Value < udRX1StepAttData.Maximum)
-                                    { 
+                                    {
                                         udRX1StepAttData.Value++;
-                                        attn_loop = SetupForm.HermesStepAttenuatorDelay*2;
-                                        search = false;
+                                        if (ptbRF.Value < ptbRF.Maximum)
+                                        {
+                                            ptbRF.Value++;
+                                            ptbRF_Scroll(this, EventArgs.Empty);
+                                        }
+
+                                        autoAttSearch = false;
+                                        attn_loop = SetupForm.HermesStepAttenuatorDelay * 2;
                                     }
                                 }
                                 break;
@@ -28486,11 +28491,42 @@ namespace PowerSDR
                     {
                         if (current_band == RX1Band)
                         {
-                            if (0 >= attn_loop || search)
+                            if (autoAttSearch)
+                            {
+                                if ((udRX1StepAttData.Value - 2) >= udRX1StepAttData.Minimum)
+                                {
+                                    udRX1StepAttData.Value -= 2;
+
+                                    if ((ptbRF.Value - 2) >= ptbRF.Minimum)
+                                    {
+                                        ptbRF.Value -= 2;
+                                        ptbRF_Scroll(this, EventArgs.Empty);
+                                    }
+                                }
+                                else if (udRX1StepAttData.Value > udRX1StepAttData.Minimum)
+                                {
+                                   udRX1StepAttData.Value--;
+
+                                   if (ptbRF.Value > ptbRF.Minimum)
+                                   {
+                                        ptbRF.Value--;
+                                        ptbRF_Scroll(this, EventArgs.Empty);
+                                   }
+                                }
+                            }
+                            else if (0 >= attn_loop)
                             {
                                 if (udRX1StepAttData.Value > udRX1StepAttData.Minimum)
+                                {
                                     udRX1StepAttData.Value--;
-                            
+
+                                    if (ptbRF.Value > ptbRF.Minimum)
+                                    {
+                                        ptbRF.Value--;
+                                        ptbRF_Scroll(this, EventArgs.Empty);
+                                    }
+                                }
+
                                 attn_loop = SetupForm.HermesStepAttenuatorDelay*2;
                             }
                             else
@@ -28500,8 +28536,9 @@ namespace PowerSDR
                         }
                         else
                         {
-                            search = true;
+                            autoAttSearch = true;
                             current_band = RX1Band;
+                            attn_loop = SetupForm.HermesStepAttenuatorDelay*2;
                         }
                     }
                     else
@@ -52727,6 +52764,7 @@ namespace PowerSDR
                 {
                     udRX1StepAttData.Tag = 1;
                     lblPreamp.Text = "A-ATT";
+                    autoAttSearch = true;
                 }
                 else
                 {
