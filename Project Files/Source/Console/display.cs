@@ -134,18 +134,18 @@ namespace PowerSDR
 
         public static Mutex render_mutex = new Mutex();
 
-        private static Texture PanadapterTexture = null;
-        private static Sprite Panadapter_Sprite = null;
-        private static Rectangle Panadapter_texture_size;
+        // private static Texture PanadapterTexture = null;
+        // private static Sprite Panadapter_Sprite = null;
+        // private static Rectangle Panadapter_texture_size;
         private static AutoResetEvent Panadapter_Event;
         private static DXRectangle VFOArect;
         private static DXRectangle VFOBrect;
         private static DXRectangle VFOATunerect;
         private static DXRectangle VFOATunerect_bottom;
-        public static DXRectangle Gainrect;
-        public static DXRectangle Hangrect;
-        public static DXRectangle Gainrect_bottom;
-        public static DXRectangle Hangrect_bottom;
+        // public static DXRectangle Gainrect;
+        // public static DXRectangle Hangrect;
+        // public static DXRectangle Gainrect_bottom;
+        // public static DXRectangle Hangrect_bottom;
         // private static VertexBuffer VerLine_vb = null;
         // private static VertexBuffer HorLine_vb = null;
         private static VertexBuffer VerLines_vb = null;
@@ -156,10 +156,10 @@ namespace PowerSDR
         private static VertexBuffer PanLine_vb_fill = null;
         private static VertexBuffer PanLine_bottom_vb = null;
         private static VertexBuffer PanLine_bottom_vb_fill = null;
-        private static VertexBuffer ScopeLine_vb = null;
+        // private static VertexBuffer ScopeLine_vb = null;
         private static Vertex[] PanLine_verts = null;
         private static Vertex[] PanLine_bottom_verts = null;
-        private static Vertex[] ScopeLine_verts = null;
+        // private static Vertex[] ScopeLine_verts = null;
         private static Vertex[] PanLine_verts_fill = null;
         private static Vertex[] PanLine_bottom_verts_fill = null;
         private static Vertex[] Phase_verts = null;
@@ -195,7 +195,7 @@ namespace PowerSDR
         private static float[] waterfall_data;
         private static int waterfall_alpha = 255;
         public static bool DX_reinit = false;
-        private static int h_steps_old = 0;
+        // private static int h_steps_old = 0;
 
         #endregion
 
@@ -2071,7 +2071,7 @@ namespace PowerSDR
                 panadapter_font = new SlimDX.Direct3D9.Font(device, pan_font);
 
 
-                Panadapter_Sprite = null;
+                // Panadapter_Sprite = null;
                 WaterfallTexture = new Texture(waterfall_dx_device, waterfall_target.Width, waterfall_target.Height, 0,
                     Usage.None, Format.X8R8G8B8, Pool.Managed);
                 Waterfall_texture_size.Width = waterfall_target.Width;

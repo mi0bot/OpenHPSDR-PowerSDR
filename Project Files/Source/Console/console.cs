@@ -844,11 +844,11 @@ namespace PowerSDR
         public string[] CmdLineArgs;
 
         private double rx1_avg_last_ddsfreq = 0;				// Used to move the display average when tuning
-        private double rx1_avg_last_dttsp_osc = 0;
+        // private double rx1_avg_last_dttsp_osc = 0;
         private double rx1_last_bin_shift_leftover = 0;
 
         private double rx2_avg_last_ddsfreq = 0;				// Used to move the display average when tuning
-        private double rx2_avg_last_dttsp_osc = 0;
+        // private double rx2_avg_last_dttsp_osc = 0;
         private double rx2_last_bin_shift_leftover = 0;
 
         private HiPerfTimer break_in_timer;
@@ -1194,7 +1194,7 @@ namespace PowerSDR
         private System.Windows.Forms.GroupBoxTS grpDIGSampleRate;
         private System.Windows.Forms.GroupBoxTS grpVACStereo;
         private System.Windows.Forms.CheckBoxTS chkVACStereo;
-        private System.Windows.Forms.CheckBoxTS chkCWDisableMonitor;
+        // private System.Windows.Forms.CheckBoxTS chkCWDisableMonitor;
         private System.Windows.Forms.CheckBoxTS chkCWIambic;
         private System.Windows.Forms.LabelTS lblCWPitchFreq;
         private System.Windows.Forms.NumericUpDownTS udCWPitch;
@@ -22878,12 +22878,12 @@ namespace PowerSDR
         //    return freq;
         //}
 
-        bool rx1_dds_freq_updated = false;
+        // bool rx1_dds_freq_updated = false;
         //uint rx1_dds_freq_tw;
         double rx1_dds_freq_mhz;
         private void UpdateRX1DDSFreq()
         {
-            rx1_dds_freq_updated = false;
+            // rx1_dds_freq_updated = false;
             if (chkPower.Checked)
             {
                 SetAlexHPF(fwc_dds_freq);
@@ -22905,14 +22905,14 @@ namespace PowerSDR
                 psform.RX2freq = rx1_dds_freq_mhz;
         }
 
-        bool rx2_dds_freq_updated = false;
+        // bool rx2_dds_freq_updated = false;
         // uint rx2_dds_freq_tw;
         double rx2_dds_freq_mhz;
         private void UpdateRX2DDSFreq()
         {
             if (chkPower.Checked)
             {
-                rx2_dds_freq_updated = false;
+                // rx2_dds_freq_updated = false;
 
                 if (SetupForm.radAlexManualCntl.Checked)
                 {
@@ -23022,7 +23022,7 @@ namespace PowerSDR
 
                 double f = fwc_dds_freq + vfo_offset;
                 rx1_dds_freq_mhz = f;
-                rx1_dds_freq_updated = true;
+                // rx1_dds_freq_updated = true;
                 // radio.GetDSPRX(0, 0).RXOsc = 0.0;
                 UpdateRX1DDSFreq();
                 // System.Console.WriteLine("rx1dds: " + rx1_dds_freq_mhz);
@@ -23039,7 +23039,7 @@ namespace PowerSDR
 
                 double f = rx2_dds_freq + rx2_vfo_offset;
                 rx2_dds_freq_mhz = f;// (float)f;
-                rx2_dds_freq_updated = true;
+                // rx2_dds_freq_updated = true;
                 //  radio.GetDSPRX(1, 0).RXOsc = 0.0;
                 UpdateRX2DDSFreq();
                 // System.Console.WriteLine("rx2dds: " + rx2_dds_freq_mhz);
@@ -28179,7 +28179,7 @@ namespace PowerSDR
             set { spacebar_last_btn = value; }
         }
 
-        private bool spacebar_ptt_hang = false;
+        // private bool spacebar_ptt_hang = false;
         private bool spacebar_ptt = true;
         public bool SpaceBarPTT
         {
@@ -31694,7 +31694,7 @@ namespace PowerSDR
         private void ResetRX2MeterPeak()
         {
             rx2_meter_peak_count = multimeter_peak_hold_samples;
-            rx2_meter_avg = Display.CLEAR_FLAG;
+            //rx2_meter_avg = Display.CLEAR_FLAG;
         }
 
         private void panelVFOAHover_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -31873,7 +31873,7 @@ namespace PowerSDR
             if (buffer[0] == Display.CLEAR_FLAG)
             {
                 rx1_avg_last_ddsfreq = 0;
-                rx1_avg_last_dttsp_osc = 0;
+                // rx1_avg_last_dttsp_osc = 0;
             }
             else
             {
@@ -32271,7 +32271,7 @@ namespace PowerSDR
         }
 
         private HiPerfTimer meter_timer = new HiPerfTimer();
-        private float multimeter_avg = Display.CLEAR_FLAG;
+        // private float multimeter_avg = Display.CLEAR_FLAG;
         private void UpdateMultimeter()
         {
             meter_timer.Start();
@@ -32463,7 +32463,7 @@ namespace PowerSDR
         }
 
         private HiPerfTimer rx2_meter_timer = new HiPerfTimer();
-        private float rx2_meter_avg = Display.CLEAR_FLAG;
+        // private float rx2_meter_avg = Display.CLEAR_FLAG;
         private void UpdateRX2MeterData()
         {
             rx2_meter_timer.Start();
@@ -37294,8 +37294,8 @@ namespace PowerSDR
         }
 
         // private HiPerfTimer t1 = new HiPerfTimer();
-        //  private double timer1 = 0.0;
-        private bool is_tune = false;
+        // private double timer1 = 0.0;
+        // private bool is_tune = false;
         private bool mox = false;
         private PreampMode temp_mode = PreampMode.HPSDR_OFF; // HPSDR preamp mode
         private PreampMode temp_mode2 = PreampMode.HPSDR_OFF; // HPSDR preamp mode
@@ -37686,7 +37686,7 @@ namespace PowerSDR
                         mode = MeterRXMode.SIGNAL_STRENGTH;
                         break;
                     case "Sig Avg":
-                        multimeter_avg = Display.CLEAR_FLAG;
+                        // multimeter_avg = Display.CLEAR_FLAG;
                         mode = MeterRXMode.SIGNAL_AVERAGE;
                         break;
                     case "ADC L":
@@ -38104,7 +38104,7 @@ namespace PowerSDR
                 if (apollopresent && apollo_tuner_enabled)
                     JanusAudio.EnableApolloAutoTune(1);
 
-                is_tune = true;
+                //is_tune = true;
             }
             else
             {
@@ -38277,7 +38277,7 @@ namespace PowerSDR
                 if (apollopresent && apollo_tuner_enabled)
                     JanusAudio.EnableApolloAutoTune(1);
 
-                is_tune = true;
+                // is_tune = true;
 
                 /*if(atu_present && tx_band != Band.B2M &&
                     (ATUTuneMode)comboTuneMode.SelectedIndex != ATUTuneMode.BYPASS)
@@ -39741,7 +39741,7 @@ namespace PowerSDR
 
         }
 
-        private static double tuned_freq;
+//        private static double tuned_freq;
         private void txtVFOAFreq_KeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
         {
             string separator = System.Globalization.CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
@@ -40754,8 +40754,8 @@ namespace PowerSDR
         private bool tx1_grid_adjust = false;
         private bool tx2_grid_adjust = false;
         private bool gridmaxadjust = false;
-        private bool wfmaxadjust = false;
-        private bool wfminadjust = false;
+        // private bool wfmaxadjust = false;
+        // private bool wfminadjust = false;
         private bool gridminmaxadjust = false;
 
         private Point grid_minmax_drag_start_point = new Point(0, 0);
@@ -48434,7 +48434,7 @@ namespace PowerSDR
                         mode = MeterRXMode.SIGNAL_STRENGTH;
                         break;
                     case "Sig Avg":
-                        rx2_meter_avg = Display.CLEAR_FLAG;
+                        // rx2_meter_avg = Display.CLEAR_FLAG;
                         mode = MeterRXMode.SIGNAL_AVERAGE;
                         break;
                     case "ADC L":
@@ -50015,8 +50015,8 @@ namespace PowerSDR
             }
         }
 
-        private static bool TDxButtonState = false;
-        private static bool TDxCurrentVFO = false; //VFOA
+        // private static bool TDxButtonState = false;
+        // private static bool TDxCurrentVFO = false; //VFOA
 
         private void timer_navigate_Tick(object sender, System.EventArgs e)
         {
@@ -50132,7 +50132,7 @@ namespace PowerSDR
 
         }
 
-        private int default_notch_width = 100;
+        // private int default_notch_width = 100;
         //MAX_NOTCHES_IN_PASSBAND is delcared in consoole.cs, dsp.cs, and sdr.c, [sdrexport.h]
         private const int MAX_NOTCHES_IN_PASSBAND = 9;//18;     //used to be 9
         private const int MAX_NOTCHES_INITIALLY_IN_PASSBAND = 3;//;   //used to be 3

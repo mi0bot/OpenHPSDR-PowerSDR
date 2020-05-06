@@ -36,7 +36,7 @@ namespace PowerSDR
 {
     public class MobileWarnForm : Form
     {
-        private readonly Container components;
+        // private readonly Container components;
         private Button btnContinue;
         private CheckBox chkShowThisOnStartup;
         private Console console;
@@ -54,13 +54,13 @@ namespace PowerSDR
         /// </summary>
         protected override void Dispose(bool disposing)
         {
-            if (disposing)
-            {
-                if (components != null)
-                {
-                    components.Dispose();
-                }
-            }
+            //if (disposing)
+            //{
+            //    if (components != null)
+            //    {
+            //        components.Dispose();
+            //    }
+            //}
             base.Dispose(disposing);
         }
 
