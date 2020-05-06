@@ -1,10 +1,10 @@
 # OpenHPSDR-PowerSDR
 
-Latest Release v3.5.0 Beta 3 April 30, 2020
+Latest Release v3.5.0 Beta 4 May 6, 2020
 
 Read the RealeaseNotes.md for more information (Don't bother, they ain't up to date).
 
-# 3.5.0 Beta 3 (2020-4-30)
+# 3.5.0 Beta 4 (2020-5-06)
 - Add functionality for Hermes Lite
   - Added initial setup radio button to do basic setup
   - Adjusted setup form to reflect Hermes Lite functionality
@@ -13,7 +13,10 @@ Read the RealeaseNotes.md for more information (Don't bother, they ain't up to d
   - Auto adjust of S-Att to utilise full range of ADC
   - Power meter scaled correctly
   - Fixed PS SetPk variable not being saved correctly
-  - Change database location for HL2 to not interfere with offical PowerSDR releases
+  - Changed database location for HL2 to not interfere with offical PowerSDR releases
+  - Changed Setup/General/Hermes Lite Ctrl to repurpose Hercules button for N2ADR filter
+  - Setup wizard creates initial Hermes Lite Ctrl pins for N2ADR filter
+  - Fixed issue where changes to the Hermes Lite J16 receive pins were being lost over power cycle
   
 # 3.4.9 (2018-3-19)
 - Bug fix for manually entering frequency
