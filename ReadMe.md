@@ -17,6 +17,7 @@ Read the RealeaseNotes.md for more information (Don't bother, they ain't up to d
   - Changed Setup/General/Hermes Lite Ctrl to repurpose Hercules button for N2ADR filter
   - Setup wizard creates initial Hermes Lite Ctrl pins for N2ADR filter
   - Fixed issue where changes to the Hermes Lite J16 receive pins were being lost over power cycle
+  - Auto att keeps AGC gain constant
   
 # 3.4.9 (2018-3-19)
 - Bug fix for manually entering frequency
