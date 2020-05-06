@@ -1835,6 +1835,7 @@ namespace PowerSDR
                     console.SetupForm.MercuryPresent = mercury_present;
                     console.SetupForm.AlexPresent = alex_present;
                     console.SetupForm.forceAudioSampleRate1("192000");
+                    console.SetupForm.forceN2adrFilter = true;
                     break;
                 case Model.HPSDR:
                     console.SetupForm.PenelopePresent = penelope_present;
