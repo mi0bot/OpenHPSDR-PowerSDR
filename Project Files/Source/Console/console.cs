@@ -39001,6 +39001,9 @@ namespace PowerSDR
             return TuneLocation.Other;
         }
 
+        static Win32.LASTINPUTINFO plii;
+        static uint lastInput;
+
         private void Console_MouseWheel(object sender, MouseEventArgs e)
         {
             //			if(this.ActiveControl is TextBoxTS && this.ActiveControl != txtVFOAFreq
@@ -39020,6 +39023,49 @@ namespace PowerSDR
                 Console_KeyPress(this, new KeyPressEventArgs((char)Keys.Enter));
                 return;
             }
+
+            plii.cbSize = (uint)Marshal.SizeOf(plii); ;
+
+            Win32.GetLastInputInfo(ref plii);
+
+            int delay = (int)(plii.dwTime - lastInput);
+            lastInput = plii.dwTime;
+
+            if (100 > delay)
+            {
+                delay = (100 - delay);
+
+                if ( 50 < delay )
+                {
+                    delay -= 50;
+                    delay = (int) (Math.Pow(10, (double) delay/25));
+                }
+                else
+                {
+                    delay = 1;
+                }
+            }
+            else
+            {
+                delay = 1;
+            }
+
+
+            //switch (delay)
+            //{
+            //    case 1:
+            //    //case 2:
+            //        delay = 1;
+            //        break;
+
+            //    default:
+            //        delay = delay;
+            //        break;
+            //}
+
+
+            txtOverload.Text = delay.ToString();
+            //delay = 1;
 
             if (ClientRectangle.Contains(Form.MousePosition.X - Location.X,
                                          Form.MousePosition.Y - Location.Y))
@@ -39135,22 +39181,25 @@ namespace PowerSDR
 
                 case TuneLocation.DisplayBottom:
                     if (rx2_enabled && chkVFOSplit.Checked && current_click_tune_mode == ClickTuneMode.VFOB && wheel_tunes_vfob)
-                        VFOASubFreq = SnapTune(VFOASubFreq, step, num_steps);
+                        VFOASubFreq = SnapTune(VFOASubFreq, step * delay, num_steps);
                     else if (rx2_enabled || (current_click_tune_mode == ClickTuneMode.VFOB && wheel_tunes_vfob))
-                        VFOBFreq = SnapTune(VFOBFreq, step, num_steps);
+                        VFOBFreq = SnapTune(VFOBFreq, step * delay, num_steps);
                     else
-                        VFOAFreq = SnapTune(VFOAFreq, step, num_steps);
+                        VFOAFreq = SnapTune(VFOAFreq, step * delay, num_steps);
                     break;
 
                 case TuneLocation.Other:
                     if (current_click_tune_mode == ClickTuneMode.VFOB && wheel_tunes_vfob)
                     {
                         if (rx2_enabled && chkVFOSplit.Checked)
-                            VFOASubFreq = SnapTune(VFOASubFreq, step, num_steps);
+                            VFOASubFreq = SnapTune(VFOASubFreq, step * delay, num_steps);
                         else
-                            VFOBFreq = SnapTune(VFOBFreq, step, num_steps);
+                            VFOBFreq = SnapTune(VFOBFreq, step * delay, num_steps);
                     }
-                    else VFOAFreq = SnapTune(VFOAFreq, step, num_steps);
+                    else
+                    {
+                        VFOAFreq = SnapTune(VFOAFreq, step * delay, num_steps);
+                    }
                     break;
             }
         }
