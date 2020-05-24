@@ -39003,6 +39003,8 @@ namespace PowerSDR
 
         static Win32.LASTINPUTINFO plii;
         static uint lastInput;
+        static int accDelay;
+        static int wheelCount;
 
         private void Console_MouseWheel(object sender, MouseEventArgs e)
         {
@@ -39024,7 +39026,7 @@ namespace PowerSDR
                 return;
             }
 
-            plii.cbSize = (uint)Marshal.SizeOf(plii); ;
+            plii.cbSize = (uint)Marshal.SizeOf(plii);
 
             Win32.GetLastInputInfo(ref plii);
 
@@ -39034,38 +39036,39 @@ namespace PowerSDR
             if (100 > delay)
             {
                 delay = (100 - delay);
+                accDelay += delay;
+                wheelCount++;
+                delay = accDelay / wheelCount;
 
-                if ( 50 < delay )
+                if ( 70 < delay )
                 {
-                    delay -= 50;
-                    delay = (int) (Math.Pow(10, (double) delay/25));
+                    delay -= 60;
+                    delay = delay*2;
                 }
                 else
                 {
-                    delay = 1;
+                    delay = delay/3;
+                }
+
+                if (CurrentTuneStepHz > 100)
+                {
+                    delay /= CurrentTuneStepHz/100;
+
+                    if (0 == delay) delay = 1;
+                }
+                else
+                {
+                    delay *= 100/CurrentTuneStepHz;
                 }
             }
             else
             {
                 delay = 1;
+                wheelCount = 0;
+                accDelay = 0;
             }
 
-
-            //switch (delay)
-            //{
-            //    case 1:
-            //    //case 2:
-            //        delay = 1;
-            //        break;
-
-            //    default:
-            //        delay = delay;
-            //        break;
-            //}
-
-
-            txtOverload.Text = delay.ToString();
-            //delay = 1;
+            //Debug.WriteLine("delay: " + delay.ToString());
 
             if (ClientRectangle.Contains(Form.MousePosition.X - Location.X,
                                          Form.MousePosition.Y - Location.Y))
@@ -39175,7 +39178,7 @@ namespace PowerSDR
                     }
                     else
                     {
-                        VFOAFreq = SnapTune(VFOAFreq, step, num_steps);
+                        VFOAFreq = SnapTune(VFOAFreq, step * delay, num_steps);
                     }
                     break;
 
