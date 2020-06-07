@@ -31559,6 +31559,10 @@ POWER EXCEEDING THE RATING OF YOUR RADIO!
           <source>101</source>
           <target state="needs-review-translation">101</target>
         </trans-unit>
+        <trans-unit id="lblPreamp.ToolTip" translate="yes" xml:space="preserve">
+          <source>Double click to change mode</source>
+          <target state="new">Double click to change mode</target>
+        </trans-unit>
       </group>
     </body>
   </file>

@@ -8769,9 +8769,6 @@ namespace PowerSDR
                     //chkJanusPresent.Visible = false;
                     //chkExcaliburPresent.Enabled = false;
                     //chkExcaliburPresent.Visible = false;
-                    chkAlexPresent.Enabled = false;
-                    chkAlexPresent.Visible = false;
-
                     groupBoxRXOptions.Text = "Hermes Lite Options";
                     radMetis.Text = "Hermes Lite";
                     grpMetisAddr.Text = "Hermes Lite Address";
@@ -8780,7 +8777,7 @@ namespace PowerSDR
                     chkMercDither.Text = "Disable PS Sync";
                     chkHermesStepAttenuator.Checked = true;
                     chkApolloPresent.Enabled = true;
-                    chkApolloPresent.Visible = true;
+                    chkApolloPresent.Visible = false;
                     chkApolloPresent.Text = "PA Control";
                     chkApolloPresent.Checked = true;
                     tpApolloControl.Text = "PA Control";
@@ -8791,6 +8788,11 @@ namespace PowerSDR
                     toolTip1.SetToolTip(chkHERCULES, "Preset pins for N2ADR filter");
                     chkHERCULES.Text = "N2ADR filter";
                     btnPAGainReset_Click(sender, e);
+
+                    chkAlexPresent.Text = "Ant/Filters";
+                    chkAlexPresent.Enabled = true;
+                    chkAlexPresent.Visible = true;
+                    tpAlexControl.Text = "Ant/Filters";
                 }
                 else
                 {
@@ -8949,7 +8951,7 @@ namespace PowerSDR
                 }
             }
 
-            if (radGenModelHermes.Checked || radGenModelHPSDR.Checked || radGenModelHermesLite.Checked)
+            if (radGenModelHermes.Checked || radGenModelHPSDR.Checked)
             {
                 tpAlexControl.Text = "Alex";
                 chkHFTRRelay.Checked = false;

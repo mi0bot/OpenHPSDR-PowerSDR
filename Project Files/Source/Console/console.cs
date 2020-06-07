@@ -6486,6 +6486,7 @@ namespace PowerSDR
             this.lblPreamp.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.lblPreamp, "lblPreamp");
             this.lblPreamp.Name = "lblPreamp";
+            this.toolTip1.SetToolTip(this.lblPreamp, resources.GetString("lblPreamp.ToolTip"));
             this.lblPreamp.Click += new System.EventHandler(this.lblPreamp_Click);
             this.lblPreamp.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lblPreamp_MouseDoubleClick);
             // 
