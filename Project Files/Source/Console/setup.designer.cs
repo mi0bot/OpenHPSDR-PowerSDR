@@ -2981,6 +2981,13 @@
             this.radioButtonTS5 = new System.Windows.Forms.RadioButtonTS();
             this.radioButtonTS6 = new System.Windows.Forms.RadioButtonTS();
             this.timerVACrmatchMonitor = new System.Windows.Forms.Timer(this.components);
+            this.grpMouseWheel = new System.Windows.Forms.GroupBoxTS();
+            this.udMouseWheelKnee = new System.Windows.Forms.NumericUpDownTS();
+            this.udMouseWheelSlowGain = new System.Windows.Forms.NumericUpDownTS();
+            this.udMouseWheelFastGain = new System.Windows.Forms.NumericUpDownTS();
+            this.lblMouseWheelKnee = new System.Windows.Forms.LabelTS();
+            this.lblMouseWheelSlowGain = new System.Windows.Forms.LabelTS();
+            this.lblMouseWheelFastGain = new System.Windows.Forms.LabelTS();
             tpAlexAntCtrl = new System.Windows.Forms.TabPage();
             grpKBCW = new System.Windows.Forms.GroupBoxTS();
             tpAlexAntCtrl.SuspendLayout();
@@ -3953,6 +3960,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTS35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTS36)).BeginInit();
             this.panelTS4.SuspendLayout();
+            this.grpMouseWheel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.udMouseWheelKnee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udMouseWheelSlowGain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udMouseWheelFastGain)).BeginInit();
             this.SuspendLayout();
             // 
             // tpAlexAntCtrl
@@ -21271,6 +21282,7 @@
             // tpDisplayGeneral
             // 
             this.tpDisplayGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.tpDisplayGeneral.Controls.Add(this.grpMouseWheel);
             this.tpDisplayGeneral.Controls.Add(this.grpDisplay8000DLE);
             this.tpDisplayGeneral.Controls.Add(this.grpDisplayMultimeter);
             this.tpDisplayGeneral.Controls.Add(this.grpDisplayScopeMode);
@@ -50293,6 +50305,135 @@
             this.timerVACrmatchMonitor.Enabled = true;
             this.timerVACrmatchMonitor.Tick += new System.EventHandler(this.timerVACrmatchMonitor_Tick);
             // 
+            // grpMouseWheel
+            // 
+            this.grpMouseWheel.Controls.Add(this.lblMouseWheelFastGain);
+            this.grpMouseWheel.Controls.Add(this.lblMouseWheelSlowGain);
+            this.grpMouseWheel.Controls.Add(this.lblMouseWheelKnee);
+            this.grpMouseWheel.Controls.Add(this.udMouseWheelFastGain);
+            this.grpMouseWheel.Controls.Add(this.udMouseWheelSlowGain);
+            this.grpMouseWheel.Controls.Add(this.udMouseWheelKnee);
+            this.grpMouseWheel.Location = new System.Drawing.Point(343, 147);
+            this.grpMouseWheel.Name = "grpMouseWheel";
+            this.grpMouseWheel.Size = new System.Drawing.Size(200, 107);
+            this.grpMouseWheel.TabIndex = 45;
+            this.grpMouseWheel.TabStop = false;
+            this.grpMouseWheel.Text = "Mouse Wheel";
+            // 
+            // udMouseWheelKnee
+            // 
+            this.udMouseWheelKnee.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.udMouseWheelKnee.Location = new System.Drawing.Point(71, 19);
+            this.udMouseWheelKnee.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.udMouseWheelKnee.Minimum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.udMouseWheelKnee.Name = "udMouseWheelKnee";
+            this.udMouseWheelKnee.Size = new System.Drawing.Size(48, 20);
+            this.udMouseWheelKnee.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.udMouseWheelKnee, "Number of points to display in Phase Mode.");
+            this.udMouseWheelKnee.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            // 
+            // udMouseWheelSlowGain
+            // 
+            this.udMouseWheelSlowGain.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.udMouseWheelSlowGain.Location = new System.Drawing.Point(71, 47);
+            this.udMouseWheelSlowGain.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.udMouseWheelSlowGain.Minimum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.udMouseWheelSlowGain.Name = "udMouseWheelSlowGain";
+            this.udMouseWheelSlowGain.Size = new System.Drawing.Size(48, 20);
+            this.udMouseWheelSlowGain.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.udMouseWheelSlowGain, "Number of points to display in Phase Mode.");
+            this.udMouseWheelSlowGain.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            // 
+            // udMouseWheelFastGain
+            // 
+            this.udMouseWheelFastGain.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.udMouseWheelFastGain.Location = new System.Drawing.Point(71, 73);
+            this.udMouseWheelFastGain.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.udMouseWheelFastGain.Minimum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.udMouseWheelFastGain.Name = "udMouseWheelFastGain";
+            this.udMouseWheelFastGain.Size = new System.Drawing.Size(48, 20);
+            this.udMouseWheelFastGain.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.udMouseWheelFastGain, "Number of points to display in Phase Mode.");
+            this.udMouseWheelFastGain.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            // 
+            // lblMouseWheelKnee
+            // 
+            this.lblMouseWheelKnee.Image = null;
+            this.lblMouseWheelKnee.Location = new System.Drawing.Point(6, 16);
+            this.lblMouseWheelKnee.Name = "lblMouseWheelKnee";
+            this.lblMouseWheelKnee.Size = new System.Drawing.Size(59, 23);
+            this.lblMouseWheelKnee.TabIndex = 4;
+            this.lblMouseWheelKnee.Text = "Gain Swap";
+            this.lblMouseWheelKnee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblMouseWheelSlowGain
+            // 
+            this.lblMouseWheelSlowGain.Image = null;
+            this.lblMouseWheelSlowGain.Location = new System.Drawing.Point(6, 44);
+            this.lblMouseWheelSlowGain.Name = "lblMouseWheelSlowGain";
+            this.lblMouseWheelSlowGain.Size = new System.Drawing.Size(56, 23);
+            this.lblMouseWheelSlowGain.TabIndex = 5;
+            this.lblMouseWheelSlowGain.Text = "Slow Gain";
+            this.lblMouseWheelSlowGain.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblMouseWheelFastGain
+            // 
+            this.lblMouseWheelFastGain.Image = null;
+            this.lblMouseWheelFastGain.Location = new System.Drawing.Point(6, 70);
+            this.lblMouseWheelFastGain.Name = "lblMouseWheelFastGain";
+            this.lblMouseWheelFastGain.Size = new System.Drawing.Size(56, 23);
+            this.lblMouseWheelFastGain.TabIndex = 6;
+            this.lblMouseWheelFastGain.Text = "Fast Gain";
+            this.lblMouseWheelFastGain.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Setup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -51388,6 +51529,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTS36)).EndInit();
             this.panelTS4.ResumeLayout(false);
             this.panelTS4.PerformLayout();
+            this.grpMouseWheel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.udMouseWheelKnee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udMouseWheelSlowGain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udMouseWheelFastGain)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -52959,5 +53104,12 @@
         private System.Windows.Forms.RadioButtonTS radGenModelHermesLite;
         private System.Windows.Forms.LabelTS lblAutoAttnDelay;
         private System.Windows.Forms.NumericUpDownTS udHermesStepAttenuatorDelay;
+        private System.Windows.Forms.GroupBoxTS grpMouseWheel;
+        private System.Windows.Forms.LabelTS lblMouseWheelFastGain;
+        private System.Windows.Forms.LabelTS lblMouseWheelSlowGain;
+        private System.Windows.Forms.LabelTS lblMouseWheelKnee;
+        private System.Windows.Forms.NumericUpDownTS udMouseWheelFastGain;
+        private System.Windows.Forms.NumericUpDownTS udMouseWheelSlowGain;
+        private System.Windows.Forms.NumericUpDownTS udMouseWheelKnee;
     }
 }
