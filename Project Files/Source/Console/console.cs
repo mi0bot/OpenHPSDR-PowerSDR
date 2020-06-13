@@ -36052,6 +36052,7 @@ namespace PowerSDR
             panelVFOAHover.Invalidate();
             panelVFOBHover.Invalidate();
             //CWFWKeyer = chkCWBreakInEnabled.Checked;                  // **K5SO
+            chkMUT.Checked = false;
         }
 
         public void comboDisplayMode_SelectedIndexChanged(object sender, System.EventArgs e)
@@ -36579,7 +36580,7 @@ namespace PowerSDR
             if (chkMUT.Checked)
             {
                 Audio.MuteRX1 = true;
-                //  radio.GetDSPRX(0, 0).RXOutputGain = 0.0;
+                radio.GetDSPRX(0, 0).RXOutputGain = 0.0;
                 chkMUT.BackColor = button_selected_color;
                 lblRX1MuteVFOA.Text = "MUTE";
             }
