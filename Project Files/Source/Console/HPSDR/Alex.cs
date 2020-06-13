@@ -293,10 +293,17 @@ namespace PowerSDR
                 }
 
                 rx_out = rx_only_ant != 0 ? 1 : 0;
-                if (TRxAnt) trx_ant = TxAnt[idx];
-                else trx_ant = RxAnt[idx];
-                if (RxAnt[idx] != TxAnt[idx]) trx_ant_not_same = true;
+
+                if ((RxAnt[idx] != TxAnt[idx]) || (1 == rx_out)) trx_ant_not_same = true;
                 else trx_ant_not_same = false;
+
+				if (TRxAnt)
+				{
+					trx_ant = TxAnt[idx];
+					rx_out = 0;
+					rx_only_ant = 0;
+				}
+                else trx_ant = RxAnt[idx];
             }
 
             if (rx_out_override && rx_out == 1)

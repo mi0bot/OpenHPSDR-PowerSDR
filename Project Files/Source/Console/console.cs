@@ -33607,7 +33607,7 @@ namespace PowerSDR
             bool inhibit_input;
             while (chkPower.Checked)
             {
-                if (/*tx_inhibit_enabled && */ current_hpsdr_model != HPSDRModel.HPSDR)
+                if (tx_inhibit_enabled && current_hpsdr_model != HPSDRModel.HPSDR)
                 {
                     if (anan7000dpresent || anan8000dpresent)
                     inhibit_input = JanusAudio.getUserI02();
@@ -33625,7 +33625,7 @@ namespace PowerSDR
                         else TXInhibit = true;
                     }
                 }
-                //  else TXInhibit = false;
+                else TXInhibit = false;
                 Thread.Sleep(40);
             }
         }
