@@ -7968,7 +7968,7 @@
             0,
             0});
             this.udHermesStepAttenuatorDelay.Minimum = new decimal(new int[] {
-            1,
+            0,
             0,
             0,
             0});

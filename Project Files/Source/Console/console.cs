@@ -28488,7 +28488,7 @@ namespace PowerSDR
 
                 if (!mox)
                 {
-                    if (udRX1StepAttData.Tag != null)
+                    if (udRX1StepAttData.Tag != null && SetupForm.HermesStepAttenuatorDelay != 0)
                     {
                         if (current_band == RX1Band)
                         {
@@ -28544,6 +28544,8 @@ namespace PowerSDR
                     }
                     else
                     {
+                        udRX1StepAttData.Tag = null;
+                        lblPreamp.Text = "S-ATT";
                         attn_loop = SetupForm.HermesStepAttenuatorDelay*2;
                     }
                 }
@@ -52814,7 +52816,7 @@ namespace PowerSDR
         {
             if (current_hpsdr_model == HPSDRModel.HERMESLITE)
             {
-                if (udRX1StepAttData.Tag == null)
+                if (udRX1StepAttData.Tag == null && SetupForm.HermesStepAttenuatorDelay != 0)
                 {
                     udRX1StepAttData.Tag = 1;
                     lblPreamp.Text = "A-ATT";
