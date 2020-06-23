@@ -8491,6 +8491,97 @@ namespace PowerSDR
             if (radGenModelHermesLite.Checked)
             {
                 console.CurrentHPSDRModel = HPSDRModel.HERMESLITE;
+                radAlexR1_160.Enabled = false;
+                radAlexR2_160.Enabled = false;
+                radAlexR3_160.Enabled = false;
+                radAlexR1_80.Enabled = false;
+                radAlexR2_80.Enabled = false;
+                radAlexR3_80.Enabled = false;
+                radAlexR1_60.Enabled = false;
+                radAlexR2_60.Enabled = false;
+                radAlexR3_60.Enabled = false;
+                radAlexR1_40.Enabled = false;
+                radAlexR2_40.Enabled = false;
+                radAlexR3_40.Enabled = false;
+                radAlexR1_30.Enabled = false;
+                radAlexR2_30.Enabled = false;
+                radAlexR3_30.Enabled = false;
+                radAlexR1_20.Enabled = false;
+                radAlexR2_20.Enabled = false;
+                radAlexR3_20.Enabled = false;
+                radAlexR1_17.Enabled = false;
+                radAlexR2_17.Enabled = false;
+                radAlexR3_17.Enabled = false;
+                radAlexR1_15.Enabled = false;
+                radAlexR2_15.Enabled = false;
+                radAlexR3_15.Enabled = false;
+                radAlexR1_12.Enabled = false;
+                radAlexR2_12.Enabled = false;
+                radAlexR3_12.Enabled = false;
+                radAlexR1_10.Enabled = false;
+                radAlexR2_10.Enabled = false;
+                radAlexR3_10.Enabled = false;
+                radAlexR1_6.Enabled = false;
+                radAlexR2_6.Enabled = false;
+                radAlexR3_6.Enabled = false;
+                radAlexT1_160.Enabled = false;
+                radAlexT2_160.Enabled = false;
+                radAlexT3_160.Enabled = false;
+                radAlexT1_80.Enabled = false;
+                radAlexT2_80.Enabled = false;
+                radAlexT3_80.Enabled = false;
+                radAlexT1_60.Enabled = false;
+                radAlexT2_60.Enabled = false;
+                radAlexT3_60.Enabled = false;
+                radAlexT1_40.Enabled = false;
+                radAlexT2_40.Enabled = false;
+                radAlexT3_40.Enabled = false;
+                radAlexT1_30.Enabled = false;
+                radAlexT2_30.Enabled = false;
+                radAlexT3_30.Enabled = false;
+                radAlexT1_20.Enabled = false;
+                radAlexT2_20.Enabled = false;
+                radAlexT3_20.Enabled = false;
+                radAlexT1_17.Enabled = false;
+                radAlexT2_17.Enabled = false;
+                radAlexT3_17.Enabled = false;
+                radAlexT1_15.Enabled = false;
+                radAlexT2_15.Enabled = false;
+                radAlexT3_15.Enabled = false;
+                radAlexT1_12.Enabled = false;
+                radAlexT2_12.Enabled = false;
+                radAlexT3_12.Enabled = false;
+                radAlexT1_10.Enabled = false;
+                radAlexT2_10.Enabled = false;
+                radAlexT3_10.Enabled = false;
+                radAlexT1_6.Enabled = false;
+                radAlexT2_6.Enabled = false;
+                radAlexT3_6.Enabled = false;
+                chkAlex160R2.Enabled = false;
+                chkAlex80R2.Enabled = false;
+                chkAlex60R2.Enabled = false;
+                chkAlex40R2.Enabled = false;
+                chkAlex30R2.Enabled = false;
+                chkAlex20R2.Enabled = false;
+                chkAlex17R2.Enabled = false;
+                chkAlex15R2.Enabled = false;
+                chkAlex12R2.Enabled = false;
+                chkAlex10R2.Enabled = false;
+                chkAlex6R2.Enabled = false;
+                chkAlex160XV.Enabled = false;
+                chkAlex80XV.Enabled = false;
+                chkAlex60XV.Enabled = false;
+                chkAlex40XV.Enabled = false;
+                chkAlex30XV.Enabled = false;
+                chkAlex20XV.Enabled = false;
+                chkAlex17XV.Enabled = false;
+                chkAlex15XV.Enabled = false;
+                chkAlex12XV.Enabled = false;
+                chkAlex10XV.Enabled = false;
+                chkAlex6XV.Enabled = false;
+                chkBlockTxAnt2.Enabled = false;
+                chkBlockTxAnt3.Enabled = false;
+                chkDisableRXOut.Enabled = false;
             }
 
             radGenModelHPSDR_or_Hermes_CheckedChanged(sender, e, true);
@@ -8961,8 +9052,27 @@ namespace PowerSDR
             else
             {
                 tpAlexControl.Text = "Ant/Filters";
-                chkHFTRRelay.Visible = true;
-                chkHFTRRelay.Enabled = true;
+
+                if (radGenModelHermesLite.Checked)
+                {
+                    chkRxOutOnTx.Enabled = false;
+                    chkRxOutOnTx.Visible = false;
+                    chkEXT1OutOnTx.Enabled = false;
+                    chkEXT1OutOnTx.Visible = false;
+                    chkEXT2OutOnTx.Enabled = false;
+                    chkEXT2OutOnTx.Visible = false;
+                    chkHFTRRelay.Enabled = false;
+                    chkHFTRRelay.Visible = false;
+                    chkBPF2Gnd.Enabled = false;
+                    chkBPF2Gnd.Visible = false;
+                    chkEnableXVTRHF.Enabled = false;
+                    chkEnableXVTRHF.Visible = false;
+                }
+                else
+                {
+                    chkHFTRRelay.Visible = true;
+                    chkHFTRRelay.Enabled = true;
+                }
             }
 
             if (radGenModelANAN10E.Checked)
@@ -16944,7 +17054,11 @@ namespace PowerSDR
                 //  {
                 //    grpAlexAntCtrl.Enabled = false;
                 // }
-                console.chkSR.Enabled = true;
+
+                if (radGenModelHermesLite.Checked)
+                    console.chkSR.Enabled = false;
+                else
+                    console.chkSR.Enabled = true;
                 // if (console.RX2PreampPresent && !radGenModelANAN100D.Checked) console.comboRX2Preamp.Visible = false;
                 if (chkApolloPresent.Checked) chkApolloPresent.Checked = false;
                 if (radGenModelHermes.Checked || radGenModelANAN10.Checked || radGenModelANAN10E.Checked || radGenModelANAN100.Checked ||
