@@ -8448,8 +8448,9 @@ namespace PowerSDR
                 radPenny10MHz.Checked = true;
                 rad12288MHzPenny.Checked = true;
                 chkAlexPresent.Enabled = true;
-                chkApolloPresent.Enabled = true;
-                chkApolloPresent.Visible = true;
+                chkApolloPresent.Enabled = false;
+                chkApolloPresent.Visible = false;
+                chkApolloPresent.Checked = false;
                 groupBox10MhzClock.Visible = false;
                 groupBox122MHz.Visible = false;
                 groupBoxMicSource.Visible = false;
@@ -8491,6 +8492,11 @@ namespace PowerSDR
             if (radGenModelHermesLite.Checked)
             {
                 console.CurrentHPSDRModel = HPSDRModel.HERMESLITE;
+                chkAlexPresent.Enabled = true;
+                chkAlexPresent.Visible = false;
+                chkAlexPresent.Checked = true;
+                chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
+                chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
                 radAlexR1_160.Enabled = false;
                 radAlexR2_160.Enabled = false;
                 radAlexR3_160.Enabled = false;
@@ -8881,8 +8887,10 @@ namespace PowerSDR
                     btnPAGainReset_Click(sender, e);
 
                     chkAlexPresent.Text = "Ant/Filters";
-                    chkAlexPresent.Enabled = true;
-                    chkAlexPresent.Visible = true;
+                    chkAlexPresent.Enabled = false;
+                    chkAlexPresent.Visible = false;
+                    chkAlexPresent.Checked = false;
+                    chkAlexAntCtrl.Enabled = true;
                     tpAlexControl.Text = "Ant/Filters";
                 }
                 else
@@ -9284,7 +9292,7 @@ namespace PowerSDR
             }
 
             // now make sure enablements are correct 
-            if (!chkAlexPresent.Checked)
+            if (!chkAlexPresent.Checked && !radGenModelHermesLite.Checked)
             {
                 chkAlexAntCtrl.Enabled = false;
                 SetAlexAntEnabled(false);
@@ -17066,9 +17074,18 @@ namespace PowerSDR
             }
             else
             {
-                chkAlexAntCtrl.Checked = false;
-                chkAlexAntCtrl.Enabled = false;
-                grpAlexAntCtrl.Enabled = false;
+                if (radGenModelHermesLite.Checked )
+                {
+                    chkAlexAntCtrl.Checked = true;
+                    chkAlexAntCtrl.Enabled = true;
+                    grpAlexAntCtrl.Enabled = true;
+                }
+                else
+                {
+                    chkAlexAntCtrl.Checked = false;
+                    chkAlexAntCtrl.Enabled = false;
+                    grpAlexAntCtrl.Enabled = false;
+                }
                 radAlexAutoCntl.Checked = true;
                 radAlexManualCntl.Enabled = false;
                 console.chkSR.Enabled = false;
