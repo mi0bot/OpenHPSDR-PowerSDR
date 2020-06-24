@@ -8497,6 +8497,7 @@ namespace PowerSDR
                 chkAlexPresent.Checked = true;
                 chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
                 chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
+                chkMouseWheelAcc_CheckedChanged(this, EventArgs.Empty);
                 radAlexR1_160.Enabled = false;
                 radAlexR2_160.Enabled = false;
                 radAlexR3_160.Enabled = false;
@@ -22127,6 +22128,26 @@ namespace PowerSDR
         private void grpHermesStepAttenuator_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void chkMouseWheelAcc_CheckedChanged(object sender, EventArgs e)
+        {
+            console.MouseWheelEnable = chkMouseWheelAcc.Checked;
+        }
+
+        private void udMouseWheelKnee_ValueChanged(object sender, EventArgs e)
+        {
+            console.MouseWheelKnee = udMouseWheelKnee.Value;
+        }
+
+        private void udMouseWheelSlowGain_ValueChanged(object sender, EventArgs e)
+        {
+            console.MouseWheelSlowGain = udMouseWheelSlowGain.Value;
+        }
+
+        private void udMouseWheelFastGain_ValueChanged(object sender, EventArgs e)
+        {
+            console.MouseWheelFastGain = udMouseWheelFastGain.Value;
         }
 
         //private void chkCTUNScroll_CheckedChanged(object sender, EventArgs e)

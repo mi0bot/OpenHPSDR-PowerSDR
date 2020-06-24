@@ -43,7 +43,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(315, 20);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // label1
             // 
@@ -91,8 +91,8 @@
             this.mappingsLB.Name = "mappingsLB";
             this.mappingsLB.Size = new System.Drawing.Size(356, 173);
             this.mappingsLB.TabIndex = 5;
-            this.mappingsLB.SelectedIndexChanged += new System.EventHandler(this.mappingsLB_SelectedIndexChanged);
-            this.mappingsLB.DoubleClick += new System.EventHandler(this.mappingsLB_DoubleClick);
+            this.mappingsLB.SelectedIndexChanged += new System.EventHandler(this.MappingsLB_SelectedIndexChanged);
+            this.mappingsLB.DoubleClick += new System.EventHandler(this.MappingsLB_DoubleClick);
             // 
             // LoadDialog
             // 

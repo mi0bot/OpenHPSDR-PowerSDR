@@ -60,17 +60,17 @@ namespace Midi2Cat.IO
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {           
             loadButton.Enabled = (textBox1.Text.Trim().Length > 0);
         }
 
-        private void mappingsLB_SelectedIndexChanged(object sender, EventArgs e)
+        private void MappingsLB_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBox1.Text = (string)mappingsLB.SelectedItem;
         }
 
-        private void mappingsLB_DoubleClick(object sender, EventArgs e)
+        private void MappingsLB_DoubleClick(object sender, EventArgs e)
         {
             if (mappingsLB.SelectedItem != null)
             {

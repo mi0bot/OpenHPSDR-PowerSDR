@@ -39009,6 +39009,11 @@ namespace PowerSDR
         static int accDelay;
         static int wheelCount;
 
+        public bool MouseWheelEnable { get; set; }
+        public decimal MouseWheelKnee { get; set; }
+        public decimal MouseWheelSlowGain { get; set; }
+        public decimal MouseWheelFastGain { get; set; }
+
         private void Console_MouseWheel(object sender, MouseEventArgs e)
         {
             //			if(this.ActiveControl is TextBoxTS && this.ActiveControl != txtVFOAFreq
@@ -39036,7 +39041,7 @@ namespace PowerSDR
             int delay = (int)(plii.dwTime - lastInput);
             lastInput = plii.dwTime;
 
-            if (100 > delay)
+            if (100 > delay && MouseWheelEnable)
             {
                 delay = (100 - delay);
                 accDelay += delay;

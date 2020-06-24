@@ -582,6 +582,26 @@
         AAAAAAAB4AAAAAAAAAHgAAAAAAAAA/AAAAAAAAAH//////////8=
 </target>
         </trans-unit>
+        <trans-unit id="toolTip1.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+          <source>157, 17</source>
+          <target state="needs-review-translation">157, 17</target>
+        </trans-unit>
+        <trans-unit id="openFileDialog1.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+          <source>17, 17</source>
+          <target state="needs-review-translation">17, 17</target>
+        </trans-unit>
+        <trans-unit id="mainMenu1.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+          <source>254, 17</source>
+          <target state="needs-review-translation">254, 17</target>
+        </trans-unit>
+        <trans-unit id="saveFileDialog1.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+          <source>371, 17</source>
+          <target state="needs-review-translation">371, 17</target>
+        </trans-unit>
+        <trans-unit id="timerVACrmatchMonitor.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+          <source>507, 17</source>
+          <target state="needs-review-translation">507, 17</target>
+        </trans-unit>
       </group>
     </body>
   </file>
