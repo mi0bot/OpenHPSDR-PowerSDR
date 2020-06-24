@@ -48743,7 +48743,7 @@ namespace PowerSDR
             if (chkRX2Mute.Checked)
             {
                 Audio.MuteRX2 = true;
-                //  radio.GetDSPRX(1, 0).RXOutputGain = 0.0;
+                radio.GetDSPRX(1, 0).RXOutputGain = 0.0;
                 lblRX2MuteVFOB.Text = "MUTE";
             }
             else
