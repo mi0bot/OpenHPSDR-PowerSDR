@@ -1,10 +1,10 @@
 # OpenHPSDR-PowerSDR
 
-Latest Release v3.5.0 Beta 4 May 6, 2020
+Latest Release v3.5.0 Beta 5 June 26, 2020
 
 Read the RealeaseNotes.md for more information (Don't bother, they ain't up to date).
 
-# 3.5.0 Beta 4 (2020-5-06)
+# 3.5.0 Beta 5 (2020-6-26)
 - Add functionality for Hermes Lite
   - Added initial setup radio button to do basic setup
   - Adjusted setup form to reflect Hermes Lite functionality
@@ -18,6 +18,10 @@ Read the RealeaseNotes.md for more information (Don't bother, they ain't up to d
   - Setup wizard creates initial Hermes Lite Ctrl pins for N2ADR filter
   - Fixed issue where changes to the Hermes Lite J16 receive pins were being lost over power cycle
   - Auto att keeps AGC gain constant
+  - Corrected operation of "Rx/TX Ant" button so that it work with RX1 on Filter/Ant setup page (Alex renamed to Filter/Ant)  
+  - Auto Att can now be switch off by setting "Auto delay" to 0
+  - Re-enabled "MUT" button. It mightn't work on second Rx
+  - Added experimental variable mouse wheel scroll. Enable/Disable via Setup/Display
   
 # 3.4.9 (2018-3-19)
 - Bug fix for manually entering frequency
