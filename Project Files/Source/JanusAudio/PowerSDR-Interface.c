@@ -821,7 +821,7 @@ KD5TFDVK6APHAUDIO_API void SetRX7VFOfreq(int rx7) {
 
 /*
 C0
-0 0 0 1 0 0 1 x    
+0 0 0 1 0 0 1 x   '0x09'   
 C1
 0 0 0 0 0 0 0 0
 |             |
@@ -981,7 +981,7 @@ KD5TFDVK6APHAUDIO_API void SetAlex4LPFBits(int bits) {
 
 /*
 C0
-0 0 0 1 0 1 0 x   '0x14'
+0 0 0 1 0 1 0 x   '0x0a'
 C1
 0 0 0 0 0 0 0 0
   | | | | | | |
@@ -1178,7 +1178,7 @@ KD5TFDVK6APHAUDIO_API void SetADC1LNAData(int bits) {
 }
 /*
 C0
-0 0 0 1 0 1 1 x  0x16
+0 0 0 1 0 1 1 x  0x0b
 C1
 0 0 0 0 0 0 0 0
     | |       |
@@ -1277,17 +1277,17 @@ KD5TFDVK6APHAUDIO_API void EnableCWKeyerSpacing(int bits) {
 
 /*
 C0
-0 0 0 1 1 0 0 x   	    
+0 0 0 1 1 0 0 x   '0x0c'  	    
 */
 
 /*
 C0
-0 0 0 1 1 0 1 x   	
+0 0 0 1 1 0 1 x   '0x0d'  	
 */
 
 /*
 C0
-0 0 0 1 1 1 0 x  
+0 0 0 1 1 1 0 x  '0x0e'  
 C1
 0 0 0 0 0 0 0 0
 | | | | | | | |
@@ -1339,7 +1339,7 @@ KD5TFDVK6APHAUDIO_API void SetTxAttenData(int bits) {
   
 /*
 C0
-0 0 0 1 1 1 1 x  
+0 0 0 1 1 1 1 x	  '0x0f'  
 C1
 0 0 0 0 0 0 0 0
               |
@@ -1382,7 +1382,7 @@ KD5TFDVK6APHAUDIO_API void SetCWPTTDelay(int delay) {
 
 /*
 C0
-0 0 1 0 0 0 0 x  
+0 0 1 0 0 0 0 x   '0x10' 
 C1
 0 0 0 0 0 0 0 0
 |             |
@@ -1416,7 +1416,7 @@ KD5TFDVK6APHAUDIO_API void SetCWSidetoneFreq(int freq) {
 
 /*
 C0
-0 0 1 0 0 0 1 x  
+0 0 1 0 0 0 1 x  '0x11'  
 C1
 0 0 0 0 0 0 0 0
 |             |
@@ -1446,7 +1446,7 @@ C4
 
 /*
 C0
-0 0 1 0 0 1 0 x
+0 0 1 0 0 1 0 x  '0x12'
 C1
 0 0 0 0 0 0 0 0
 | | | | | | | |
@@ -1484,6 +1484,33 @@ KD5TFDVK6APHAUDIO_API void SetXVTREnable(int e)
 KD5TFDVK6APHAUDIO_API void SetEERPWMmax(int max) {
          eer_pwm_max = max; 
 }
+
+/*
+C0
+0 0 1 0 0 1 1 x   '0x13'
+*/
+
+/*
+C0
+0 0 1 0 1 0 0 x   '0x14'
+*/
+
+/*
+C0
+0 0 1 0 1 0 1 x   '0x15'
+*/
+
+/*
+C0
+0 0 1 0 1 1 0 x   '0x16'
+*/
+
+/*
+C0
+0 0 1 0 1 1 1 x   '0x17'
+*/
+
+
 
 // *************************************************
 // misc functions
