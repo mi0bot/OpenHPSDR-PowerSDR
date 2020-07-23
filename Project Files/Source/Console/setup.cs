@@ -9068,8 +9068,8 @@ namespace PowerSDR
                     chkRxOutOnTx.Visible = false;
                     chkEXT1OutOnTx.Enabled = false;
                     chkEXT1OutOnTx.Visible = false;
-                    chkEXT2OutOnTx.Enabled = false;
-                    chkEXT2OutOnTx.Visible = false;
+                    chkEXT2OutOnTx.Enabled = true;
+                    chkEXT2OutOnTx.Visible = true;
                     chkHFTRRelay.Enabled = false;
                     chkHFTRRelay.Visible = false;
                     chkBPF2Gnd.Enabled = false;
