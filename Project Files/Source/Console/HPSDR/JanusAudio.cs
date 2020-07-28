@@ -192,6 +192,7 @@ namespace PowerSDR
         public static bool FastConnect = false;
         public static HPSDRHW MetisBoardID = HPSDRHW.Hermes;
         public static byte MetisCodeVersion = 0;
+        public static byte MetisCodeVersionMinor = 0;
         public static string EthernetHostIPAddress = "";
         public static string Metis_IP_address = "";
         public static string MetisMAC = "";
@@ -371,6 +372,7 @@ namespace PowerSDR
             int chosenDevice = 0;
             MetisBoardID = mhd[chosenDevice].deviceType;
             MetisCodeVersion = mhd[chosenDevice].codeVersion;
+            MetisCodeVersionMinor = mhd[chosenDevice].codeVersionMinor;
             Metis_IP_address = mhd[chosenDevice].IPAddress;
             MetisMAC = mhd[chosenDevice].MACAddress;
             EthernetHostIPAddress = mhd[chosenDevice].hostPortIPAddress.ToString();
@@ -1216,6 +1218,7 @@ namespace PowerSDR
                         Array.Copy(data, 3, MAC, 0, 6);
                         MetisMAC = BitConverter.ToString(MAC);
                         byte codeVersion = data[9];
+                        byte codeVersionMinor = data[21];
                         byte boardType = data[10];
 
                         // check for HPSDR frame ID and type 2 (not currently streaming data, which also means 'not yet in use')
@@ -1253,6 +1256,7 @@ namespace PowerSDR
                                 mhd.MACAddress = MetisMAC;
                                 mhd.deviceType = (HPSDRHW)boardType;
                                 mhd.codeVersion = codeVersion;
+                                mhd.codeVersionMinor = codeVersionMinor;
                                 mhd.InUse = false;
                                 mhd.hostPortIPAddress = hostPortIPAddress;
 
@@ -1374,8 +1378,9 @@ namespace PowerSDR
 
     public class HPSDRDevice
     {
-        public HPSDRHW deviceType;   // which type of device (currently Metis or Hermes)
+        public HPSDRHW deviceType;      // which type of device (currently Metis or Hermes)
         public byte codeVersion;        // reported code version type
+        public byte codeVersionMinor;   // reported code minor version type
         public bool InUse;              // whether already in use
         public string IPAddress;        // currently, an IPV4 address
         public string MACAddress;       // a physical (MAC) address

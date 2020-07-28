@@ -34252,7 +34252,7 @@ namespace PowerSDR
                     }
                     else
                     {
-                        txtCPUMeter.Text = String.Format("{0:#0.0}C Ver {1:#00}", HermesLiteTemp, JanusAudio.getOzyFWVersion());
+                        txtCPUMeter.Text = String.Format("{0:#0.0}C v{1:#00}p{2:#}", HermesLiteTemp, JanusAudio.getOzyFWVersion(), JanusAudio.MetisCodeVersionMinor);
                     }
                 }
                 else if ((anan7000dpresent || anan8000dpresent) && ANAN8000DLEDisplayVoltsAmps)
