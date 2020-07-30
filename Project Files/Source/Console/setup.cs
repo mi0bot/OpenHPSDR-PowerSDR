@@ -18467,7 +18467,9 @@ namespace PowerSDR
             //JanusAudio.GetMetisCodeVersion(ver_bytes);
             // lblMetisCodeVersion.Text = BitConverter.ToString(ver_bytes);
             //lblMetisCodeVersion.Text = ver_bytes[0].ToString("0\\.0");
-            lblMetisCodeVersion.Text = JanusAudio.MetisCodeVersion.ToString("0\\.0");
+            lblMetisCodeVersion.Text = JanusAudio.MetisCodeVersion.ToString("0\\.0") +
+                "p" + JanusAudio.MetisCodeVersionMinor.ToString("0") +
+                " Rx " + JanusAudio.MetisNumberRx.ToString("0");
             // JanusAudio.GetMetisBoardID(id_bytes);
             // lblMetisBoardID.Text = BitConverter.ToString(id_bytes);
             lblMetisBoardID.Text = JanusAudio.MetisBoardID.ToString();

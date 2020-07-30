@@ -193,6 +193,7 @@ namespace PowerSDR
         public static HPSDRHW MetisBoardID = HPSDRHW.Hermes;
         public static byte MetisCodeVersion = 0;
         public static byte MetisCodeVersionMinor = 0;
+        public static byte MetisNumberRx = 0;
         public static string EthernetHostIPAddress = "";
         public static string Metis_IP_address = "";
         public static string MetisMAC = "";
@@ -373,6 +374,7 @@ namespace PowerSDR
             MetisBoardID = mhd[chosenDevice].deviceType;
             MetisCodeVersion = mhd[chosenDevice].codeVersion;
             MetisCodeVersionMinor = mhd[chosenDevice].codeVersionMinor;
+            MetisNumberRx = mhd[chosenDevice].numberRx;
             Metis_IP_address = mhd[chosenDevice].IPAddress;
             MetisMAC = mhd[chosenDevice].MACAddress;
             EthernetHostIPAddress = mhd[chosenDevice].hostPortIPAddress.ToString();
@@ -1220,6 +1222,7 @@ namespace PowerSDR
                         byte codeVersion = data[9];
                         byte codeVersionMinor = data[21];
                         byte boardType = data[10];
+                        byte numberRx = data[19];
 
                         // check for HPSDR frame ID and type 2 (not currently streaming data, which also means 'not yet in use')
                         // changed to find Metis boards, even if alreay in use!  This prevents the need to power-cycle metis.
@@ -1257,6 +1260,7 @@ namespace PowerSDR
                                 mhd.deviceType = (HPSDRHW)boardType;
                                 mhd.codeVersion = codeVersion;
                                 mhd.codeVersionMinor = codeVersionMinor;
+                                mhd.numberRx = numberRx;
                                 mhd.InUse = false;
                                 mhd.hostPortIPAddress = hostPortIPAddress;
 
@@ -1381,6 +1385,7 @@ namespace PowerSDR
         public HPSDRHW deviceType;      // which type of device (currently Metis or Hermes)
         public byte codeVersion;        // reported code version type
         public byte codeVersionMinor;   // reported code minor version type
+        public byte numberRx;           // Number of hardware receivers
         public bool InUse;              // whether already in use
         public string IPAddress;        // currently, an IPV4 address
         public string MACAddress;       // a physical (MAC) address

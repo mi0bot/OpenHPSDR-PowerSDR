@@ -1260,6 +1260,7 @@
             this.tcDisplay = new System.Windows.Forms.TabControl();
             this.tpDisplayGeneral = new System.Windows.Forms.TabPage();
             this.grpMouseWheel = new System.Windows.Forms.GroupBoxTS();
+            this.chkMouseWheelAcc = new System.Windows.Forms.CheckBoxTS();
             this.lblMouseWheelFastGain = new System.Windows.Forms.LabelTS();
             this.lblMouseWheelSlowGain = new System.Windows.Forms.LabelTS();
             this.lblMouseWheelKnee = new System.Windows.Forms.LabelTS();
@@ -2987,7 +2988,6 @@
             this.radioButtonTS5 = new System.Windows.Forms.RadioButtonTS();
             this.radioButtonTS6 = new System.Windows.Forms.RadioButtonTS();
             this.timerVACrmatchMonitor = new System.Windows.Forms.Timer(this.components);
-            this.chkMouseWheelAcc = new System.Windows.Forms.CheckBoxTS();
             tpAlexAntCtrl = new System.Windows.Forms.TabPage();
             tpAlexAntCtrl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.udATTOnTX)).BeginInit();
@@ -7514,7 +7514,7 @@
             this.lblMetisCodeVersion.Image = null;
             this.lblMetisCodeVersion.Location = new System.Drawing.Point(180, 16);
             this.lblMetisCodeVersion.Name = "lblMetisCodeVersion";
-            this.lblMetisCodeVersion.Size = new System.Drawing.Size(26, 16);
+            this.lblMetisCodeVersion.Size = new System.Drawing.Size(71, 16);
             this.lblMetisCodeVersion.TabIndex = 5;
             this.lblMetisCodeVersion.Text = "00";
             // 
@@ -21309,6 +21309,20 @@
             this.grpMouseWheel.TabIndex = 45;
             this.grpMouseWheel.TabStop = false;
             this.grpMouseWheel.Text = "Mouse Wheel";
+            // 
+            // chkMouseWheelAcc
+            // 
+            this.chkMouseWheelAcc.AutoSize = true;
+            this.chkMouseWheelAcc.Checked = true;
+            this.chkMouseWheelAcc.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkMouseWheelAcc.Image = null;
+            this.chkMouseWheelAcc.Location = new System.Drawing.Point(9, 19);
+            this.chkMouseWheelAcc.Name = "chkMouseWheelAcc";
+            this.chkMouseWheelAcc.Size = new System.Drawing.Size(102, 17);
+            this.chkMouseWheelAcc.TabIndex = 42;
+            this.chkMouseWheelAcc.Text = "Acceleration On";
+            this.toolTip1.SetToolTip(this.chkMouseWheelAcc, "Check to turn on mouse wheel acceleration on");
+            this.chkMouseWheelAcc.CheckedChanged += new System.EventHandler(this.chkMouseWheelAcc_CheckedChanged);
             // 
             // lblMouseWheelFastGain
             // 
@@ -50439,20 +50453,6 @@
             // 
             this.timerVACrmatchMonitor.Enabled = true;
             this.timerVACrmatchMonitor.Tick += new System.EventHandler(this.timerVACrmatchMonitor_Tick);
-            // 
-            // chkMouseWheelAcc
-            // 
-            this.chkMouseWheelAcc.AutoSize = true;
-            this.chkMouseWheelAcc.Checked = true;
-            this.chkMouseWheelAcc.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkMouseWheelAcc.Image = null;
-            this.chkMouseWheelAcc.Location = new System.Drawing.Point(9, 19);
-            this.chkMouseWheelAcc.Name = "chkMouseWheelAcc";
-            this.chkMouseWheelAcc.Size = new System.Drawing.Size(102, 17);
-            this.chkMouseWheelAcc.TabIndex = 42;
-            this.chkMouseWheelAcc.Text = "Acceleration On";
-            this.toolTip1.SetToolTip(this.chkMouseWheelAcc, "Check to turn on mouse wheel acceleration on");
-            this.chkMouseWheelAcc.CheckedChanged += new System.EventHandler(this.chkMouseWheelAcc_CheckedChanged);
             // 
             // Setup
             // 
