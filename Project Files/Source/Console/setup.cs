@@ -8872,7 +8872,9 @@ namespace PowerSDR
                     grpMetisAddr.Text = "Hermes Lite Address";
                     grpHermesStepAttenuator.Text = "Hermes Lite Attenuator";
                     grpHermesPAGainByBand.Text = "Gain By Band (dB) Hermes Lite";
-                    chkMercDither.Text = "Disable PS Sync";
+                    chkMercRandom.Text = "Disable PS Sync";
+                    chkMercDither.Enabled = false;
+                    chkMercDither.Visible = false;
                     chkHermesStepAttenuator.Checked = true;
                     chkApolloPresent.Enabled = true;
                     chkApolloPresent.Visible = false;
@@ -18418,11 +18420,22 @@ namespace PowerSDR
                */
             }
 
-            if (console.PowerOn && (radGenModelHermes.Checked || radGenModelHermesLite.Checked))
+            if (console.PowerOn && (radGenModelHermes.Checked))
             {
                 // byte[] ver_bytes = new byte[1];
                 // JanusAudio.GetMetisCodeVersion(ver_bytes);
                 lblOzyFX2.Text = JanusAudio.MetisCodeVersion.ToString("Hermes: 0\\.0");//ver_bytes[0].ToString("Hermes: 0\\.0");
+                lblOzyFWVer.Text = "";
+                lblMercuryFWVer.Text = "";
+                lblMercury2FWVer.Text = "";
+                lblPenelopeFWVer.Text = "";
+            }
+
+            if (console.PowerOn && (radGenModelHermesLite.Checked))
+            {
+                // byte[] ver_bytes = new byte[1];
+                // JanusAudio.GetMetisCodeVersion(ver_bytes);
+                lblOzyFX2.Text = JanusAudio.MetisCodeVersion.ToString("Hermes Lite: 0\\.0") + JanusAudio.MetisCodeVersionMinor.ToString("\\p0");
                 lblOzyFWVer.Text = "";
                 lblMercuryFWVer.Text = "";
                 lblMercury2FWVer.Text = "";
