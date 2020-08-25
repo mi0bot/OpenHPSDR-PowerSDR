@@ -37136,15 +37136,17 @@ namespace PowerSDR
                 }
                 JanusAudio.SetDelayXmit(1, TxDelayLoops);
 
-                if (cw_fw_keyer &&
-                    (RX1DSPMode == DSPMode.CWL || RX1DSPMode == DSPMode.CWU) &&
+                if ( cw_fw_keyer &&
+                     (RX1DSPMode == DSPMode.CWL || RX1DSPMode == DSPMode.CWU) &&
                      !chkTUN.Checked &&
                      current_ptt_mode != PTTMode.SPACE &&
-                    current_ptt_mode != PTTMode.CAT
-                    && current_ptt_mode != PTTMode.CW
-                    )
+                     // current_ptt_mode != PTTMode.CW && // Mi0BOT: Removed as it was causing a problem with CWX
+                     current_ptt_mode != PTTMode.CAT
+                   )
+
                     JanusAudio.SetXmitBit(0);
-                else JanusAudio.SetXmitBit(1);
+                else 
+                    JanusAudio.SetXmitBit(1);
 
                 if (serialPTT != null) serialPTT.setDTR(true);
 
