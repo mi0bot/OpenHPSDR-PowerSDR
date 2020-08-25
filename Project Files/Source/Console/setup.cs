@@ -18435,7 +18435,9 @@ namespace PowerSDR
             {
                 // byte[] ver_bytes = new byte[1];
                 // JanusAudio.GetMetisCodeVersion(ver_bytes);
-                lblOzyFX2.Text = JanusAudio.MetisCodeVersion.ToString("Hermes Lite: 0\\.0") + JanusAudio.MetisCodeVersionMinor.ToString("\\p0");
+                lblOzyFX2.Text = JanusAudio.MetisCodeVersion.ToString("Hermes Lite: 0\\.0") + 
+                                 JanusAudio.MetisCodeVersionMinor.ToString("\\p0") +
+                                 " Rx " + JanusAudio.MetisNumberRx.ToString("0");
                 lblOzyFWVer.Text = "";
                 lblMercuryFWVer.Text = "";
                 lblMercury2FWVer.Text = "";
