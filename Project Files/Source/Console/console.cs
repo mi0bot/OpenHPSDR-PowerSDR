@@ -28446,18 +28446,38 @@ namespace PowerSDR
                                     txtOverload.Text = "ADC1 Overload!";
                                 else if (!mox)
                                 {
-                                    if (udRX1StepAttData.Value < udRX1StepAttData.Maximum)
-                                    {
-                                        udRX1StepAttData.Value++;
-                                        if (ptbRF.Value < ptbRF.Maximum)
-                                        {
-                                            ptbRF.Value++;
-                                            ptbRF_Scroll(this, EventArgs.Empty);
-                                        }
+                                    decimal attStep = 1;
 
-                                        autoAttSearch = false;
-                                        attn_loop = SetupForm.HermesStepAttenuatorDelay * 2;
+                                    if (current_band != RX1Band)
+                                    {
+                                        // Changed band and already in over load - set attenuator step to 10dB to quickly remove overload
+                                        attStep = 10;
                                     }
+                                    else
+                                    {
+                                        // The auto search has hit overload so stop it
+                                        autoAttSearch = false;
+                                    }
+
+
+                                    if ((udRX1StepAttData.Value + attStep) > udRX1StepAttData.Maximum)
+                                    {
+                                        // The requested attentuator step was to large, limit it to the max possible 
+                                        attStep = udRX1StepAttData.Maximum - udRX1StepAttData.Value;
+                                    }
+
+                                    udRX1StepAttData.Value += attStep;
+                                    
+                                    if ((ptbRF.Value + attStep) > ptbRF.Maximum)
+                                    {
+                                        // The requested AGC step was to large, limit it to the max possible 
+                                        attStep = ptbRF.Maximum - ptbRF.Value;
+                                    }
+
+                                    ptbRF.Value += (int) attStep;
+                                    ptbRF_Scroll(this, EventArgs.Empty);
+
+                                    attn_loop = SetupForm.HermesStepAttenuatorDelay * 2;
                                 }
                                 break;
                             case 2:
