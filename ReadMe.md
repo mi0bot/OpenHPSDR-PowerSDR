@@ -1,10 +1,10 @@
 # OpenHPSDR-PowerSDR
 
-Latest Release v3.5.0 Beta 5 June 26, 2020
+Latest Release v3.5.0 Beta 6 September 15, 2020
 
 Read the RealeaseNotes.md for more information (Don't bother, they ain't up to date).
 
-# 3.5.0 Beta 5 (2020-6-26)
+# 3.5.0 Beta 5 (2020-9-15)
 - Add functionality for Hermes Lite
   - Added initial setup radio button to do basic setup
   - Adjusted setup form to reflect Hermes Lite functionality
@@ -22,6 +22,10 @@ Read the RealeaseNotes.md for more information (Don't bother, they ain't up to d
   - Auto Att can now be switch off by setting "Auto delay" to 0
   - Re-enabled "MUT" button. It mightn't work on second Rx
   - Added experimental variable mouse wheel scroll. Enable/Disable via Setup/Display
+  - Added ability to adjust Tx buffer latency and PTT hang time
+  - Auto Att increases attenuation by 10 dB if overload exists on band change
+  - Fixed bug which caused PTT to not obay hang time using CWX
+  - Added display of minor revision and number of Rxs
   
 # 3.4.9 (2018-3-19)
 - Bug fix for manually entering frequency

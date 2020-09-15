@@ -35,14 +35,14 @@ namespace PowerSDR
     class TitleBar
     {
         public const string BUILD_NAME = "mRX PS";
-        public const string BUILD_DATE = "(06/26/20)";
+        public const string BUILD_DATE = "(09/15/20)";
 
         public static string GetString()
         {
             string version = GetVerNum();
             string s = "PowerSDR™ OpenHPSDR";
             if (BUILD_NAME != "") s += " " + BUILD_NAME;
-            s += " v" + version + " beta 5 (HL2)";
+            s += " v" + version + " beta 6 (HL2)";
             if (BUILD_DATE != "") s += " " + BUILD_DATE;
 
             return s;
