@@ -23159,6 +23159,28 @@ namespace PowerSDR
             }
         }
 
+        private decimal tx_latency = 10;
+        public decimal TXLatency
+        {
+            get { return tx_latency; }
+            set
+            {
+                tx_latency = value;
+                JanusAudio.SetTxBufferLatency((int) tx_latency);
+            }
+        }
+
+        private decimal ptt_hang = 4;
+        public decimal PTTHang
+        {
+            get { return ptt_hang; }
+            set
+            {
+                ptt_hang = value;
+                JanusAudio.SetPTTHangTime((int)ptt_hang);
+            }
+        }
+
         private double vfo_offset = 0.0;
         public double VFOOffset
         {

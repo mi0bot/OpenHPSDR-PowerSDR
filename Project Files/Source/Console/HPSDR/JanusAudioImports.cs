@@ -7,7 +7,7 @@ namespace PowerSDR
     {
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern void DeInitMetisSockets();
-        
+
         [DllImport("JanusAudio.dll", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
         public static extern int nativeInitMetis(String netaddr);
 
@@ -30,7 +30,7 @@ namespace PowerSDR
         public static extern void SetXmitBit(int xmitbit);  // bit xmitbit ==0, recv mode, != 0, xmit mode
 
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void SetDelayXmit(int bit, int loops);  
+        public static extern void SetDelayXmit(int bit, int loops);
 
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern int GetDiagData(int* a, int count);  // get diag data, count is how many slots are in array 
@@ -234,7 +234,7 @@ namespace PowerSDR
 
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern int getSeqError();
-        
+
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern int getMercuryFWVersion();
 
@@ -390,18 +390,24 @@ namespace PowerSDR
 
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern void SetAIN4Voltage(int v);
-     
+
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern void isOrionMKII(int v);
 
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern void SetProLpacks(int lpacks);
-        
+
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern int GetOoopCounter();
 
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern void ResetOoopCounter();
-        
+
+        [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void SetPTTHangTime(int time);
+
+        [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void SetTxBufferLatency(int latency);
+
     }
 }

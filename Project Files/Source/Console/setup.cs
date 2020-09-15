@@ -22167,6 +22167,16 @@ namespace PowerSDR
             console.MouseWheelFastGain = udMouseWheelFastGain.Value;
         }
 
+        private void udTxBufferLat_ValueChanged(object sender, EventArgs e)
+        {
+            console.TXLatency = udTxBufferLat.Value;
+        }
+
+        private void udPTTHang_ValueChanged(object sender, EventArgs e)
+        {
+            console.PTTHang = udPTTHang.Value;
+        }
+
         //private void chkCTUNScroll_CheckedChanged(object sender, EventArgs e)
         //{
 

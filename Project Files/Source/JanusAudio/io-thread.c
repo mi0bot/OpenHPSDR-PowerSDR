@@ -1370,7 +1370,6 @@ void IOThreadMainLoop(void) {
 					case 20:
 					case 21:
 					case 22:
-					case 23:
 					case 25:
 					case 27:
 					case 29:
@@ -1405,16 +1404,16 @@ void IOThreadMainLoop(void) {
 						FPGAWriteBufp[writebufpos] |= 0x0a;
 						break;
 					case 6: 
-						FPGAWriteBufp[writebufpos] |= 0x12; //C0 0001 001x
+						FPGAWriteBufp[writebufpos] |= 0x12; //C0 0001 001x (Address 0x09)
 						break;
 					case 7: //Preamp control
-						FPGAWriteBufp[writebufpos] |= 0x14; //C0 0001 010x
+						FPGAWriteBufp[writebufpos] |= 0x14; //C0 0001 010x (Address 0x0a)
 						break;
 					case 8: // Step ATT control
-						FPGAWriteBufp[writebufpos] |= 0x16; //C0 0001 011x
+						FPGAWriteBufp[writebufpos] |= 0x16; //C0 0001 011x (Address 0x0b)
 						break;
 					case 9: // Alex 3 control
-						FPGAWriteBufp[writebufpos] |= 0x18; //C0 0001 100x
+						FPGAWriteBufp[writebufpos] |= 0x18; //C0 0001 100x (Address 0x0c)
 						break;
 					case 10: // Alex 4 control
 						FPGAWriteBufp[writebufpos] |= 0x1a; //C0 0001 101x
@@ -1427,6 +1426,9 @@ void IOThreadMainLoop(void) {
 						break;
 					case 13: //RX7 VFO
 						FPGAWriteBufp[writebufpos] |= 0x10;
+						break;
+					case 23: //Tx buffer latency  & PTT Hang Time
+						FPGAWriteBufp[writebufpos] |= 0x2e; //C0 0010 111x (Address 0x17)
 						break;
 					case 24: // ADC assignments & ADC Tx ATT
 						FPGAWriteBufp[writebufpos] |= 0x1c; //C0 0001 110x
@@ -1463,7 +1465,6 @@ void IOThreadMainLoop(void) {
 					case 20:
 					case 21:
 					case 22:
-					case 23:
 					case 25:
 					case 27:
 					case 29:
@@ -1524,6 +1525,9 @@ void IOThreadMainLoop(void) {
 					case 13:
 						FPGAWriteBufp[writebufpos] = (VFOfreq_rx7 >> 24) & 0xff; // RX7
 						break;
+					case 23:
+						FPGAWriteBufp[writebufpos] = 0; 
+						break;
 					case 24: // ADC
 						FPGAWriteBufp[writebufpos] = ADC_cntrl1 & 0xff;   //RX1, RX2, RX3, and RX4 ADC assignments;
 						break;
@@ -1558,7 +1562,6 @@ void IOThreadMainLoop(void) {
 					case 20:
 					case 21:
 					case 22:
-					case 23:
 					case 25:
 					case 27:
 					case 29:
@@ -1605,6 +1608,9 @@ void IOThreadMainLoop(void) {
 					case 13:
 						FPGAWriteBufp[writebufpos] = (VFOfreq_rx7 >> 16) & 0xff; // RX7 freq
 						break;
+					case 23: 
+						FPGAWriteBufp[writebufpos] = 0;
+						break;
 					case 24: // ADC
 						FPGAWriteBufp[writebufpos] = ADC_cntrl2 & 0x3f;  //RX5, RX6, RX7 ADC assignments;
 						break;
@@ -1638,7 +1644,6 @@ void IOThreadMainLoop(void) {
 					case 20:
 					case 21:
 					case 22:
-				    case 23:
 					case 25:
 					case 27:
 					case 29:
@@ -1685,6 +1690,9 @@ void IOThreadMainLoop(void) {
 					case 13:
 						FPGAWriteBufp[writebufpos] = (VFOfreq_rx7 >> 8) & 0xff;
 						break;
+					case 23:
+						FPGAWriteBufp[writebufpos] = PTTHangTime;
+						break;
 					case 24: // ADC
 						FPGAWriteBufp[writebufpos] = tx_att_data & 0x1f;
 						break;
@@ -1719,7 +1727,6 @@ void IOThreadMainLoop(void) {
 					case 20:
 					case 21:
 					case 22:
-					case 23:
 					case 25:
 					case 27:
 					case 29:
@@ -1765,6 +1772,9 @@ void IOThreadMainLoop(void) {
 						break;
 					case 13:
 						FPGAWriteBufp[writebufpos] = VFOfreq_rx7 & 0xff;
+						break;
+					case 23:
+						FPGAWriteBufp[writebufpos] = TxBufferLatency;
 						break;
 					case 24: // ADC
 						FPGAWriteBufp[writebufpos] = 0;

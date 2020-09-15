@@ -830,6 +830,10 @@
             this.lblOzyFWVer = new System.Windows.Forms.LabelTS();
             this.lblOzyFX2 = new System.Windows.Forms.LabelTS();
             this.groupBoxRXOptions = new System.Windows.Forms.GroupBoxTS();
+            this.labelTS405 = new System.Windows.Forms.LabelTS();
+            this.labelTS404 = new System.Windows.Forms.LabelTS();
+            this.udPTTHang = new System.Windows.Forms.NumericUpDownTS();
+            this.udTxBufferLat = new System.Windows.Forms.NumericUpDownTS();
             this.udMaxFreq = new System.Windows.Forms.NumericUpDownTS();
             this.labelTS57 = new System.Windows.Forms.LabelTS();
             this.chkMercRandom = new System.Windows.Forms.CheckBoxTS();
@@ -3114,6 +3118,8 @@
             this.tpHPSDR.SuspendLayout();
             this.grpVersion.SuspendLayout();
             this.groupBoxRXOptions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.udPTTHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udTxBufferLat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.udMaxFreq)).BeginInit();
             this.groupBoxMicSource.SuspendLayout();
             this.groupBox122MHz.SuspendLayout();
@@ -7988,7 +7994,7 @@
             this.udHermesStepAttenuatorDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.udHermesStepAttenuatorDelay, "Specifies how often the Auto Attenuate checks for lower noise floor");
             this.udHermesStepAttenuatorDelay.Value = new decimal(new int[] {
-            20,
+            100,
             0,
             0,
             0});
@@ -14617,16 +14623,100 @@
             // 
             // groupBoxRXOptions
             // 
+            this.groupBoxRXOptions.Controls.Add(this.labelTS405);
+            this.groupBoxRXOptions.Controls.Add(this.labelTS404);
+            this.groupBoxRXOptions.Controls.Add(this.udPTTHang);
+            this.groupBoxRXOptions.Controls.Add(this.udTxBufferLat);
             this.groupBoxRXOptions.Controls.Add(this.udMaxFreq);
             this.groupBoxRXOptions.Controls.Add(this.labelTS57);
             this.groupBoxRXOptions.Controls.Add(this.chkMercRandom);
             this.groupBoxRXOptions.Controls.Add(this.chkMercDither);
             this.groupBoxRXOptions.Location = new System.Drawing.Point(288, 16);
             this.groupBoxRXOptions.Name = "groupBoxRXOptions";
-            this.groupBoxRXOptions.Size = new System.Drawing.Size(156, 104);
+            this.groupBoxRXOptions.Size = new System.Drawing.Size(283, 104);
             this.groupBoxRXOptions.TabIndex = 3;
             this.groupBoxRXOptions.TabStop = false;
             this.groupBoxRXOptions.Text = "Mercury Options";
+            // 
+            // labelTS405
+            // 
+            this.labelTS405.Image = null;
+            this.labelTS405.Location = new System.Drawing.Point(139, 42);
+            this.labelTS405.Name = "labelTS405";
+            this.labelTS405.Size = new System.Drawing.Size(86, 29);
+            this.labelTS405.TabIndex = 7;
+            this.labelTS405.Text = "PTT Hang";
+            this.labelTS405.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelTS404
+            // 
+            this.labelTS404.Image = null;
+            this.labelTS404.Location = new System.Drawing.Point(121, 18);
+            this.labelTS404.Name = "labelTS404";
+            this.labelTS404.Size = new System.Drawing.Size(104, 27);
+            this.labelTS404.TabIndex = 6;
+            this.labelTS404.Text = "Tx Buffer latency ";
+            this.labelTS404.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // udPTTHang
+            // 
+            this.udPTTHang.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.udPTTHang.Location = new System.Drawing.Point(231, 48);
+            this.udPTTHang.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.udPTTHang.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.udPTTHang.Name = "udPTTHang";
+            this.udPTTHang.Size = new System.Drawing.Size(37, 20);
+            this.udPTTHang.TabIndex = 5;
+            this.udPTTHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.toolTip1.SetToolTip(this.udPTTHang, "Sets PTT hang time");
+            this.udPTTHang.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.udPTTHang.ValueChanged += new System.EventHandler(this.udPTTHang_ValueChanged);
+            // 
+            // udTxBufferLat
+            // 
+            this.udTxBufferLat.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.udTxBufferLat.Location = new System.Drawing.Point(231, 22);
+            this.udTxBufferLat.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.udTxBufferLat.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.udTxBufferLat.Name = "udTxBufferLat";
+            this.udTxBufferLat.Size = new System.Drawing.Size(37, 20);
+            this.udTxBufferLat.TabIndex = 4;
+            this.udTxBufferLat.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.toolTip1.SetToolTip(this.udTxBufferLat, "Sets Tx latency");
+            this.udTxBufferLat.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.udTxBufferLat.ValueChanged += new System.EventHandler(this.udTxBufferLat_ValueChanged);
             // 
             // udMaxFreq
             // 
@@ -14636,7 +14726,7 @@
             0,
             0,
             131072});
-            this.udMaxFreq.Location = new System.Drawing.Point(88, 72);
+            this.udMaxFreq.Location = new System.Drawing.Point(73, 72);
             this.udMaxFreq.Maximum = new decimal(new int[] {
             150,
             0,
@@ -14660,7 +14750,7 @@
             // labelTS57
             // 
             this.labelTS57.Image = null;
-            this.labelTS57.Location = new System.Drawing.Point(15, 72);
+            this.labelTS57.Location = new System.Drawing.Point(5, 72);
             this.labelTS57.Name = "labelTS57";
             this.labelTS57.Size = new System.Drawing.Size(70, 16);
             this.labelTS57.TabIndex = 2;
@@ -50618,6 +50708,8 @@
             this.grpVersion.ResumeLayout(false);
             this.grpVersion.PerformLayout();
             this.groupBoxRXOptions.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.udPTTHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udTxBufferLat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.udMaxFreq)).EndInit();
             this.groupBoxMicSource.ResumeLayout(false);
             this.groupBox122MHz.ResumeLayout(false);
@@ -53133,5 +53225,9 @@
         private System.Windows.Forms.NumericUpDownTS udMouseWheelKnee;
         private System.Windows.Forms.GroupBoxTS grpKBCW;
         private System.Windows.Forms.CheckBoxTS chkMouseWheelAcc;
+        private System.Windows.Forms.LabelTS labelTS405;
+        private System.Windows.Forms.LabelTS labelTS404;
+        private System.Windows.Forms.NumericUpDownTS udPTTHang;
+        private System.Windows.Forms.NumericUpDownTS udTxBufferLat;
     }
 }

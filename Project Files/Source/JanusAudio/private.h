@@ -398,6 +398,9 @@ extern unsigned int OutputPowerFactor;
 extern int HermesPowerEnabled;
 extern int HermesDCV;
 
+extern int TxBufferLatency;
+extern int PTTHangTime;
+
 #ifndef GLOBAL_DECL
 extern int CandCAddrMask;
 extern int CandCFwdPowerBit;
