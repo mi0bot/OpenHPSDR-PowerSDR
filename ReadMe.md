@@ -4,7 +4,7 @@ Latest Release v3.5.0 Beta 6 September 15, 2020
 
 Read the RealeaseNotes.md for more information (Don't bother, they ain't up to date).
 
-# 3.5.0 Beta 5 (2020-9-15)
+# 3.5.0 Beta 6 (2020-9-15)
 - Add functionality for Hermes Lite
   - Added initial setup radio button to do basic setup
   - Adjusted setup form to reflect Hermes Lite functionality
