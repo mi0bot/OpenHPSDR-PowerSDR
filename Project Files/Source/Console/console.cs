@@ -7745,17 +7745,20 @@ namespace PowerSDR
             DateTime oldDate = new DateTime(year, month, day);
             DateTime currentDate = DateTime.Today;
 
-            int daysElapsed = (currentDate - oldDate).Days;
-
-            if(90 < daysElapsed)
+            if (0 == Win32.GetKeyState(0x11))   //VK_CONTROL
             {
-                // Exceeded beta trail period
-                MessageBox.Show("Sorry, but this beta's time limit has expired. " +
-                   "Please dowload the latest version");
+                int daysElapsed = (currentDate - oldDate).Days;
 
-                // Shut down the current process
-                Application.Exit();
-                return;
+                if (90 < daysElapsed)
+                {
+                    // Exceeded beta trail period
+                    MessageBox.Show("Sorry, but this beta's time limit has expired. " +
+                       "Please dowload the latest version");
+
+                    // Shut down the current process
+                    Application.Exit();
+                    return;
+                }
             }
  
             bool runAsAdmin = wp.IsInRole(WindowsBuiltInRole.Administrator);

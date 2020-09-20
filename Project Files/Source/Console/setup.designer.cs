@@ -14655,7 +14655,7 @@
             this.labelTS404.Name = "labelTS404";
             this.labelTS404.Size = new System.Drawing.Size(104, 27);
             this.labelTS404.TabIndex = 6;
-            this.labelTS404.Text = "Tx Buffer latency ";
+            this.labelTS404.Text = "Tx Buffer latency";
             this.labelTS404.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // udPTTHang

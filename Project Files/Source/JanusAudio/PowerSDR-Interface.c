@@ -1558,7 +1558,7 @@ C4
 
 */
 
-KD5TFDVK6APHAUDIO_API void SetTxBufferLacency(int latency) {
+KD5TFDVK6APHAUDIO_API void SetTxBufferLatency(int latency) {
 	TxBufferLatency = latency & 0x1f;
 	return;
 }

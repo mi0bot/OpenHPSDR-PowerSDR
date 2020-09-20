@@ -126,6 +126,9 @@ namespace PowerSDR
         [DllImport("ws2_32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         public static extern Int32 WSACleanup();
 
+        [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
+        public static extern short GetKeyState(int nVirtKey);
+
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
         public struct WSAData
         {
