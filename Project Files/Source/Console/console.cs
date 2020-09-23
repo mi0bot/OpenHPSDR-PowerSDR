@@ -37361,6 +37361,11 @@ namespace PowerSDR
                 return;
             }
 
+            if (!chkMOX.Checked)
+            {
+                JanusAudio.SetCWX(0);
+            }
+
             if (allow_mox_bypass && current_ptt_mode != PTTMode.MIC &&
                                     current_ptt_mode != PTTMode.SPACE &&
                                     current_ptt_mode != PTTMode.CAT)

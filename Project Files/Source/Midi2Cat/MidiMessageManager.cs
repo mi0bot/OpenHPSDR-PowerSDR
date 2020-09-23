@@ -76,7 +76,7 @@ namespace Midi2Cat
 
         public void Close()
         {
-            foreach( var binding in bindings.Values)
+            foreach ( var binding in bindings.Values)
             {
                 binding.Device.CloseMidiIn();
                 binding.Device.CloseMidiOut();
