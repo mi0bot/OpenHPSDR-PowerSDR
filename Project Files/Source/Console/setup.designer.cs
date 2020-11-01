@@ -14697,7 +14697,7 @@
             0});
             this.udTxBufferLat.Location = new System.Drawing.Point(231, 22);
             this.udTxBufferLat.Maximum = new decimal(new int[] {
-            31,
+            70,
             0,
             0,
             0});

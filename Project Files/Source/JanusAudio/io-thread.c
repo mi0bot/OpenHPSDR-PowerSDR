@@ -1691,7 +1691,7 @@ void IOThreadMainLoop(void) {
 						FPGAWriteBufp[writebufpos] = (VFOfreq_rx7 >> 8) & 0xff;
 						break;
 					case 23:
-						FPGAWriteBufp[writebufpos] = PTTHangTime;
+						FPGAWriteBufp[writebufpos] = PTTHangTime & 0x1f;
 						break;
 					case 24: // ADC
 						FPGAWriteBufp[writebufpos] = tx_att_data & 0x1f;
@@ -1774,7 +1774,7 @@ void IOThreadMainLoop(void) {
 						FPGAWriteBufp[writebufpos] = VFOfreq_rx7 & 0xff;
 						break;
 					case 23:
-						FPGAWriteBufp[writebufpos] = TxBufferLatency;
+						FPGAWriteBufp[writebufpos] = TxBufferLatency & 0x7f;
 						break;
 					case 24: // ADC
 						FPGAWriteBufp[writebufpos] = 0;

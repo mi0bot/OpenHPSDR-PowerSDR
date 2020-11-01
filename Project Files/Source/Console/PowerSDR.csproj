@@ -36,7 +36,7 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <UICulture>en-US</UICulture>
-    <PublishUrl>C:\Users\reid\Documents\OpenHPSDR-PowerSDR\Publish\</PublishUrl>
+    <PublishUrl>D:\Documents\OpenHPSDR-PowerSDR\Publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -46,7 +46,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -1227,6 +1227,10 @@
     <ProjectReference Include="..\Midi2Cat\Midi2Cat.csproj">
       <Project>{66ade184-31ba-4f5b-8007-f39ef1b90f95}</Project>
       <Name>Midi2Cat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\wdsp\wdsp.vs2013.vcxproj">
+      <Project>{6dbdf457-8e84-4dff-b1e4-a9177d15d89f}</Project>
+      <Name>wdsp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
