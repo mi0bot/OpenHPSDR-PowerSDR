@@ -1152,7 +1152,7 @@ C4
   | | +-------+------------ Hermes/Angelia/Orion RX1 Input Attenuator (0 – 31dB) [4:0]
   | +---------------------- Hermes/Angelia/Orion RX1 Attenuator enable (0 = disable, 1 = enable)
   |                         If disabled then Preamp On/Off bit is used.
-  +-------------------------HermseLite full LNA enable (0 = disable, 1 = enable)
+  +-------------------------HermesLite full LNA enable (0 = disable, 1 = enable)
 */
 
 KD5TFDVK6APHAUDIO_API void SetADC1StepAttenData(int bits) {

@@ -8873,8 +8873,10 @@ namespace PowerSDR
                     grpHermesStepAttenuator.Text = "Hermes Lite Attenuator";
                     grpHermesPAGainByBand.Text = "Gain By Band (dB) Hermes Lite";
                     chkMercRandom.Text = "Disable PS Sync";
-                    chkMercDither.Enabled = false;
-                    chkMercDither.Visible = false;
+                    chkMercDither.Enabled = true;
+                    chkMercDither.Visible = true;
+                    chkMercDither.Text = "Band Volts";
+                    toolTip1.SetToolTip(chkMercDither, "Selects Band Volts PWM output instead of Fan Control PWM");
                     chkHermesStepAttenuator.Checked = true;
                     chkApolloPresent.Enabled = true;
                     chkApolloPresent.Visible = false;
