@@ -18555,6 +18555,17 @@ namespace PowerSDR
                     chkPenOCrcv127.Checked = true;
                     chkPenOCrcv106.Checked = true;
                     chkPenOCrcv107.Checked = true;
+                    chkPenOCxmit1601.Checked = true;
+                    chkPenOCxmit802.Checked = true;
+                    chkPenOCxmit603.Checked = true;
+                    chkPenOCxmit403.Checked = true;
+                    chkPenOCxmit304.Checked = true;
+                    chkPenOCxmit204.Checked = true;
+                    chkPenOCxmit175.Checked = true;
+                    chkPenOCxmit155.Checked = true;
+                    chkPenOCxmit126.Checked = true;
+                    chkPenOCxmit106.Checked = true;
+
                     break;
                 case false:
                     foreach (Control c in grpPennyExtCtrl.Controls)
