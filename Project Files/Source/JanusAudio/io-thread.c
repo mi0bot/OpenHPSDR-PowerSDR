@@ -1955,7 +1955,7 @@ void IOThreadMainLoop(void) {
 				case OUT_STATE_LEFT_LO_NEEDED:
 					out_state = OUT_STATE_RIGHT_HI_NEEDED;
 					if (enable_cw_keyer) {
-                    FPGAWriteBufp[writebufpos] = (cw_dash | cw_dot | cwx) & 0x07;
+                    FPGAWriteBufp[writebufpos] = (cwx_ptt | cw_dash | cw_dot | cwx) & 0x0f;
 					}
 					else {
 					FPGAWriteBufp[writebufpos] = outbufp[outbufpos];

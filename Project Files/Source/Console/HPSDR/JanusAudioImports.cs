@@ -314,6 +314,9 @@ namespace PowerSDR
         public static extern void SetCWX(int bit);
 
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void SetCWXPTT(int bit);
+
+        [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern void SetDiscoveryMode(int b);
 
         [DllImport("JanusAudio.dll", CallingConvention = CallingConvention.Cdecl)]

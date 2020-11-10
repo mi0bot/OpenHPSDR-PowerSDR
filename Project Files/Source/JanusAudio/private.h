@@ -329,6 +329,7 @@ extern int reverse_paddles;
 extern int cw_dash;
 extern int cw_dot;
 extern int cwx;
+extern int cwx_ptt;
 
 extern int MicBoost;
 extern int LineIn;

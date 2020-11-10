@@ -4985,6 +4985,20 @@ namespace PowerSDR
             return;
         }
 
+        public void CWXPTT(int msg, MidiDevice device) 
+        {
+            if (127 == msg)
+            {
+                JanusAudio.SetCWXPTT(1);
+            }
+            else
+            {
+                JanusAudio.SetCWXPTT(0);
+            }
+
+            return;
+        }
+
         #endregion
 
     }

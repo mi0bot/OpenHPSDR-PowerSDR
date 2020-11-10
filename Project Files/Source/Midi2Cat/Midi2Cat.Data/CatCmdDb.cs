@@ -404,6 +404,8 @@ namespace Midi2Cat.Data
         [CatCommandAttribute("Toggle Wheel to VFOA/VFOB ", ControlType.Button)]  //-W2PA Added a toggle between A/B for main wheel 
         ToggleVFOWheel = 700,
         [CatCommandAttribute("CWX Key ", ControlType.Button)] 
-        CWXKey = 800
+        CWXKey = 800,
+        [CatCommandAttribute("CWX PTT ", ControlType.Button)] 
+        CWXPTT = 801
     }
 }// namespace

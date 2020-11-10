@@ -1596,6 +1596,15 @@ KD5TFDVK6APHAUDIO_API void SetCWX(int bit) {
 	}
 }
 
+KD5TFDVK6APHAUDIO_API void SetCWXPTT(int bit) { 
+	if ( bit != 0 ) {
+		cwx_ptt = 8;
+	}
+	else {
+		cwx_ptt = 0;
+	}
+}
+
 KD5TFDVK6APHAUDIO_API int GetC1Bits(void) { 
 	return C1Mask; 
 }
