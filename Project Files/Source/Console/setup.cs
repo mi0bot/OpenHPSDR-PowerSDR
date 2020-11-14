@@ -8589,6 +8589,18 @@ namespace PowerSDR
                 chkBlockTxAnt2.Enabled = false;
                 chkBlockTxAnt3.Enabled = false;
                 chkDisableRXOut.Enabled = false;
+                chkCWAutoSwitchMode.Enabled = false;
+                chkCWAutoSwitchMode.Checked = false;
+                chkCWKeyerIambic.Enabled = false;
+                chkCWKeyerIambic.Checked = false;
+                chkStrictCharSpacing.Enabled = false;
+                chkStrictCharSpacing.Checked = false;
+                chkCWKeyerMode.Enabled = false;
+                chkCWKeyerMode.Checked = false;
+                chkCWKeyerRevPdl.Enabled = false;
+                chkCWKeyerRevPdl.Checked = false;
+                udCWKeyerWeight.Enabled = false;
+                lblCWWeight.Enabled = false;
             }
 
             radGenModelHPSDR_or_Hermes_CheckedChanged(sender, e, true);
