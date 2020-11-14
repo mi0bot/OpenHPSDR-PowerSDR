@@ -8897,7 +8897,10 @@ namespace PowerSDR
                     tpApolloControl.Text = "PA Control";
                     grpApolloCtrl.Text = "PA Control";
                     chkApolloTuner.Text = "Enable PA";
-                    chkApolloFilter.Text = "Enable Full Duplex";
+                    if (chkApolloTuner.Checked)
+                        chkApolloFilter.Text = "Disable ATU Control";
+                    else
+                        chkApolloFilter.Text = "Enable Full Duplex";
                     udMaxFreq.Value = 38.40M;
                     toolTip1.SetToolTip(chkHERCULES, "Preset pins for N2ADR filter");
                     chkHERCULES.Text = "N2ADR filter";
@@ -19691,6 +19694,11 @@ namespace PowerSDR
         private void chkApolloTuner_CheckedChanged(object sender, EventArgs e)
         {
             console.ApolloTunerEnabled = chkApolloTuner.Checked;
+
+            if (chkApolloTuner.Checked)
+                chkApolloFilter.Text = "Disable ATU Control";
+            else
+                chkApolloFilter.Text = "Enable Full Duplex";
 
             // if (chkApolloTuner.Checked) JanusAudio.EnableApolloTuner(1);
             // else JanusAudio.EnableApolloTuner(0);
