@@ -1,10 +1,10 @@
 # OpenHPSDR-PowerSDR
 
-Latest Release v3.5.0 Beta 7 September 23, 2020
+Latest Release v3.5.0 Beta 8 November 15, 2020
 
 Read the RealeaseNotes.md for more information (Don't bother, they ain't up to date).
 
-# 3.5.0 Beta 7 (2020-9-23)
+# 3.5.0 Beta 8 (2020-11-15)
 - Add functionality for Hermes Lite
   - Added initial setup radio button to do basic setup
   - Adjusted setup form to reflect Hermes Lite functionality
@@ -28,6 +28,11 @@ Read the RealeaseNotes.md for more information (Don't bother, they ain't up to d
   - Added display of minor revision and number of Rxs
   - Fixed bug is Tx latency up/down control
   - Added ability to key Tx via MIDI
+  - Added ability to PTT (CWX) via MIDI
+  - Added ability to trip PTT in CWX before keying. This is measured in dot periods, so will vary by WPM
+  - Extended Tx latency control to 70 mSec 
+  - Added option to switch between Fan PWM and Band Volts
+  - Updated Hermes Lite Control to populate Tx fields
   
 # 3.4.9 (2018-3-19)
 - Bug fix for manually entering frequency
