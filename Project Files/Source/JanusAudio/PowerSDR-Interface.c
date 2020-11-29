@@ -1543,7 +1543,7 @@ C3
 */
 
 KD5TFDVK6APHAUDIO_API void SetPTTHangTime(int time) {
-	PTTHangTime = time & 0x1f;
+	PTTHangTime = time;
 	return;
 }
 
@@ -1559,7 +1559,7 @@ C4
 */
 
 KD5TFDVK6APHAUDIO_API void SetTxBufferLatency(int latency) {
-	TxBufferLatency = latency & 0x1f;
+	TxBufferLatency = latency;
 	return;
 }
 

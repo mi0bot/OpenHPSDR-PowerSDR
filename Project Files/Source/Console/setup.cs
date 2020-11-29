@@ -2678,6 +2678,9 @@ namespace PowerSDR
             radPROLatency2_CheckedChanged(this, e);
             radPROLatency4_CheckedChanged(this, e);
 
+            udTxBufferLat_ValueChanged(this, e);
+            udPTTHang_ValueChanged(this, e);
+
             // Audio Tab
             comboAudioSoundCard_SelectedIndexChanged(this, e);
             comboAudioDriver1_SelectedIndexChanged(this, e);
@@ -19812,8 +19815,8 @@ namespace PowerSDR
             }
             else if (console.HERMESLITEPresent)
             {
-                udHermesStepAttenuatorData.Maximum = (decimal)32;
-                udHermesStepAttenuatorData.Minimum = (decimal)-28;
+                udHermesStepAttenuatorData.Maximum = (decimal)22;
+                udHermesStepAttenuatorData.Minimum = (decimal)-38;
             }
             else
             {
