@@ -19815,8 +19815,8 @@ namespace PowerSDR
             }
             else if (console.HERMESLITEPresent)
             {
-                udHermesStepAttenuatorData.Maximum = (decimal)22;
-                udHermesStepAttenuatorData.Minimum = (decimal)-38;
+                udHermesStepAttenuatorData.Maximum = (decimal)32;
+                udHermesStepAttenuatorData.Minimum = (decimal)-28;
             }
             else
             {

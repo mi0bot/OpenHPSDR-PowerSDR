@@ -1,10 +1,10 @@
 # OpenHPSDR-PowerSDR
 
-Latest Release v3.5.0 Beta 9 November 29, 2020
+Latest Release v3.5.0 Beta 10 November 29, 2020
 
 Read the RealeaseNotes.md for more information (Don't bother, they ain't up to date).
 
-# 3.5.0 Beta 9 (2020-11-29)
+# 3.5.0 Beta 10 (2020-11-29)
 - Add functionality for Hermes Lite
   - Added initial setup radio button to do basic setup
   - Adjusted setup form to reflect Hermes Lite functionality
@@ -36,7 +36,7 @@ Read the RealeaseNotes.md for more information (Don't bother, they ain't up to d
   - Fixed bug in Tx latency which cause roll over after 31 mSec
   - Fixed bug which caused Tx latency and PPT hang to initial to zero
   - Set default latency to 20 mSec and PTT hang to 12 mSec
-  - Adjusted LNA gain range to display correct dBm values, approx +/- 1dB @ 7Mhz and +/- 2dB @ 29 Mhz   
+  - Auto Att backs off by 3db at limit to allow more headroom
   
 # 3.4.9 (2018-3-19)
 - Bug fix for manually entering frequency

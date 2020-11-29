@@ -18731,8 +18731,8 @@ namespace PowerSDR
                 }
                 else if (HERMESLITEPresent)
                 {
-                    udRX1StepAttData.Maximum = (decimal)22;
-                    udRX1StepAttData.Minimum = (decimal)-38;
+                    udRX1StepAttData.Maximum = (decimal)32;
+                    udRX1StepAttData.Minimum = (decimal)-28;
                 }
                 else
                 {
@@ -18759,7 +18759,7 @@ namespace PowerSDR
                     else if (HERMESLITEPresent)
                     {
                         JanusAudio.SetAlexAtten(0);
-                        JanusAudio.SetADC1LNAData((int)(22 - rx1_attenuator_data));
+                        JanusAudio.SetADC1LNAData((int)(32 - rx1_attenuator_data));
                     }
                     else
                     {
@@ -28482,6 +28482,7 @@ namespace PowerSDR
                                     {
                                         // The auto search has hit overload so stop it
                                         autoAttSearch = false;
+                                        attStep = 3;
                                     }
 
 

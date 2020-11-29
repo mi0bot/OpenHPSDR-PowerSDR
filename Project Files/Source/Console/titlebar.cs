@@ -42,7 +42,7 @@ namespace PowerSDR
             string version = GetVerNum();
             string s = "PowerSDR™ OpenHPSDR";
             if (BUILD_NAME != "") s += " " + BUILD_NAME;
-            s += " v" + version + " beta 9 (HL2)";
+            s += " v" + version + " beta 10 (HL2)";
             if (BUILD_DATE != "") s += " " + BUILD_DATE;
 
             return s;
