@@ -1962,6 +1962,10 @@ namespace PowerSDR
                         rx1_meter_cal_offset = 3.00f;
                         rx2_meter_cal_offset = 3.00f;
                         break;
+                    case HPSDRModel.HERMESLITE:
+                        rx1_meter_cal_offset = -10.00f;
+                        rx2_meter_cal_offset = -10.00f;
+                        break;
                     default:
                         rx1_meter_cal_offset = -2.44f;
                         rx2_meter_cal_offset = -2.44f;
@@ -8068,6 +8072,10 @@ namespace PowerSDR
                     case HPSDRModel.ORIONMKII:
                         rx_meter_cal_offset_by_radio[i] = 0.9449f; 
                         rx_display_cal_offset_by_radio[i] = 0.9468f; 
+                        break;
+                    case HPSDRModel.HERMESLITE:
+                        rx_meter_cal_offset_by_radio[i] = -10.0f; 
+                        rx_display_cal_offset_by_radio[i] = -10.0f; 
                         break;
                     default:
                         rx_meter_cal_offset_by_radio[i] = 0.98f;
