@@ -1,10 +1,10 @@
 # OpenHPSDR-PowerSDR
 
-Latest Release v3.5.0 Beta 10 November 29, 2020
+Latest Release v3.5.0 Beta 11 February 13, 2021
 
 Read the RealeaseNotes.md for more information (Don't bother, they ain't up to date).
 
-# 3.5.0 Beta 10 (2020-11-29)
+# 3.5.0 Beta 11 (2021-02-13)
 - Add functionality for Hermes Lite
   - Added initial setup radio button to do basic setup
   - Adjusted setup form to reflect Hermes Lite functionality
@@ -26,7 +26,7 @@ Read the RealeaseNotes.md for more information (Don't bother, they ain't up to d
   - Auto Att increases attenuation by 10 dB if overload exists on band change
   - Fixed bug which caused PTT to not obay hang time using CWX
   - Added display of minor revision and number of Rxs
-  - Fixed bug is Tx latency up/down control
+  - Fixed bug in Tx latency up/down control
   - Added ability to key Tx via MIDI
   - Added ability to PTT (CWX) via MIDI
   - Added ability to trip PTT in CWX before keying. This is measured in dot periods, so will vary by WPM
@@ -34,9 +34,10 @@ Read the RealeaseNotes.md for more information (Don't bother, they ain't up to d
   - Added option to switch between Fan PWM and Band Volts
   - Updated Hermes Lite Control to populate Tx fields
   - Fixed bug in Tx latency which cause roll over after 31 mSec
-  - Fixed bug which caused Tx latency and PPT hang to initial to zero
+  - Fixed bug which caused Tx latency and PPT hang to initialise to zero
   - Set default latency to 20 mSec and PTT hang to 12 mSec
   - Auto Att backs off by 3db at limit to allow more headroom
+  - Adjusted S meter calibration to better reflect correct signal level. Should be within +/- 2dB
   
 # 3.4.9 (2018-3-19)
 - Bug fix for manually entering frequency
