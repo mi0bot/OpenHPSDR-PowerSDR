@@ -13,7 +13,7 @@ Read the RealeaseNotes.md for more information (Don't bother, they ain't up to d
   - Auto adjust of S-Att to utilise full range of ADC
   - Power meter scaled correctly
   - Fixed PS SetPk variable not being saved correctly
-  - Changed database location for HL2 to not interfere with offical PowerSDR releases
+  - Changed database location for HL2 to not interfere with official  PowerSDR releases
   - Changed Setup/General/Hermes Lite Ctrl to repurpose Hercules button for N2ADR filter
   - Setup wizard creates initial Hermes Lite Ctrl pins for N2ADR filter
   - Fixed issue where changes to the Hermes Lite J16 receive pins were being lost over power cycle
@@ -24,7 +24,7 @@ Read the RealeaseNotes.md for more information (Don't bother, they ain't up to d
   - Added experimental variable mouse wheel scroll. Enable/Disable via Setup/Display
   - Added ability to adjust Tx buffer latency and PTT hang time
   - Auto Att increases attenuation by 10 dB if overload exists on band change
-  - Fixed bug which caused PTT to not obay hang time using CWX
+  - Fixed bug which caused PTT to not obey hang time using CWX
   - Added display of minor revision and number of Rxs
   - Fixed bug in Tx latency up/down control
   - Added ability to key Tx via MIDI
