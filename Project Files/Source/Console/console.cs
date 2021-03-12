@@ -7746,25 +7746,6 @@ namespace PowerSDR
             int day = Convert.ToInt32(parts[1]);
             int year = Convert.ToInt32(parts[2]) + 2000;
 
-            DateTime oldDate = new DateTime(year, month, day);
-            DateTime currentDate = DateTime.Today;
-
-            if (0 == Win32.GetKeyState(0x11))   //VK_CONTROL
-            {
-                int daysElapsed = (currentDate - oldDate).Days;
-
-                if (90 < daysElapsed)
-                {
-                    // Exceeded beta trail period
-                    MessageBox.Show("Sorry, but this beta's time limit has expired. " +
-                       "Please dowload the latest version");
-
-                    // Shut down the current process
-                    Application.Exit();
-                    return;
-                }
-            }
- 
             bool runAsAdmin = wp.IsInRole(WindowsBuiltInRole.Administrator);
 
             if (!runAsAdmin)
